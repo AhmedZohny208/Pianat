@@ -1,0 +1,125 @@
+/* General */
+
+input[type="password"] {
+  -webkit-text-security: disc;
+}
+
+/* ---------------------------------------- */
+.login-page .login-background {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  z-index: -1;
+}
+.login-card {
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  margin-top: 175px;
+  margin-bottom: 175px;
+}
+
+.login-card img {
+  margin-bottom: 11px;
+  margin-top: 12px;
+}
+
+.login-card h3 {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 35.61px;
+  color: #002044;
+  margin-bottom: 0px;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #BA902E;
+  line-height: 44.98px;
+}
+
+.login-card p {
+  font-size: 14px;
+  color: #9FA2B4;
+  line-height: 20px;
+}
+
+#login-form {
+  width: 100%;
+  padding: 0px 35px 47px 35px;
+}
+
+#login-form input {
+  background-color: #F0F1F7;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 11px 13px;
+}
+
+#login-form input::placeholder {
+  color: #4B506D;
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.ant-form-item-label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #002044;
+  margin-bottom: 10px;
+}
+
+.ant-row.ant-form-item {
+  margin-bottom: 18px;
+}
+
+.main-input,
+.main-input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: 1px solid #F9F9F9;
+  color: #002044;
+  font-size: 14px;
+}
+
+.password-form-item .ant-form-item-control-input-content {
+  position: relative;
+}
+
+.ant-input-suffix {
+  position: absolute;
+  top: 8px;
+  left: 13.8px;
+}
+
+.ant-input-suffix svg {
+  color: #4B506D;
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+.submit-btn,
+.submit-btn:hover {
+  width: 100%;
+  background-color: #002044;
+  color: #fff;
+  box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 17px;
+}
