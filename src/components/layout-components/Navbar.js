@@ -9,12 +9,11 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link class="navbar-brand" href="#">
-          <img src="/img/brand.png" alt="brand" />
+          <img src="/img/brand.png" alt="brand" width={217} height={61} />
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        
         <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
           <div className='right-side d-flex align-items-center'>
             <FiMenu />
             <form className="search d-flex position-relative">
@@ -24,6 +23,7 @@ export default function Navbar() {
               </button>
             </form>
           </div>
+
           <div className='left-side d-flex align-items-center'>
             <div className='notification'>
               <BiBell />
@@ -38,6 +38,7 @@ export default function Navbar() {
               <p className='mb-0'>سالي جورج</p>
             </div>
           </div>
+
         </div>
       </div>
     </nav>

@@ -123,3 +123,83 @@ input[type="password"] {
   font-size: 16px;
   margin-top: 17px;
 }
+
+/* ================================================================= */
+/* Navbar */
+.navbar {
+  background-color: #002044;
+  padding-right: 41px;
+  padding-left: 51px;
+  height: 80px;
+}
+
+/* Navbar rightside */
+.navbar .right-side {
+  margin-right: 30px;
+}
+
+.navbar .right-side svg {
+  color: #fff;
+  font-size: 40px;
+}
+
+.navbar .search {
+  margin-right: 47px;
+}
+
+.navbar .search svg {
+  color: #6F767E;
+  font-size: 26px;
+}
+
+.navbar .search input {
+  padding-right: 48px;
+  border-radius: 12px;
+  width: 275px;
+  height: 40px;
+  font-size: 14px;
+  caret-color: #4C6FFF;
+  background-color: #F4F4F4;
+  border-color: #002044;
+}
+
+.navbar .right-side .form-control:focus {
+  color: #4C6FFF;
+  background-color: #F4F4F4;
+  border-color: #002044;
+  outline: 0;
+  box-shadow: unset;
+}
+
+/* Navbar leftside */
+
+.navbar .left-side .notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar .left-side .circle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background: #BA902E;
+  border-radius: 12px;
+  width: 10px;
+  height: 10px;
+}
+
+.navbar .left-side .avatar {
+  margin-right: 31px;
+}
+
+.navbar .left-side svg {
+  color: #BFC8D1;
+  font-size: 26px;
+}
+
+.navbar .left-side p {
+  color: #fff;
+  margin-right: 11px;
+}
+
+/* ================================================================= */
