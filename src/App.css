@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 /* General */
 
 input[type="password"] {
@@ -126,33 +128,38 @@ input[type="password"] {
 
 /* ================================================================= */
 /* Navbar */
-.navbar {
+.ant-layout-header {
   background-color: #002044;
   padding-right: 41px;
   padding-left: 51px;
   height: 80px;
 }
 
-/* Navbar rightside */
-.navbar .right-side {
+.navbar-collapse {
+  padding-left: 51px;
+  height: 80px;
+}
+
+/* ant-layout-header rightside */
+.ant-layout-header .right-side {
   margin-right: 30px;
 }
 
-.navbar .right-side svg {
+.ant-layout-header .right-side svg {
   color: #fff;
   font-size: 40px;
 }
 
-.navbar .search {
+.ant-layout-header .search {
   margin-right: 47px;
 }
 
-.navbar .search svg {
+.ant-layout-header .search svg {
   color: #6F767E;
   font-size: 26px;
 }
 
-.navbar .search input {
+.ant-layout-header .search input {
   padding-right: 48px;
   border-radius: 12px;
   width: 275px;
@@ -163,7 +170,7 @@ input[type="password"] {
   border-color: #002044;
 }
 
-.navbar .right-side .form-control:focus {
+.ant-layout-header .right-side .form-control:focus {
   color: #4C6FFF;
   background-color: #F4F4F4;
   border-color: #002044;
@@ -171,35 +178,310 @@ input[type="password"] {
   box-shadow: unset;
 }
 
-/* Navbar leftside */
+/* ant-layout-header leftside */
 
-.navbar .left-side .notification {
+.ant-layout-header .left-side .notification {
   position: relative;
   cursor: pointer;
 }
 
-.navbar .left-side .circle {
+.ant-layout-header .left-side .circle {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 36%;
+  right: 5%;
   background: #BA902E;
   border-radius: 12px;
   width: 10px;
   height: 10px;
 }
 
-.navbar .left-side .avatar {
+.ant-layout-header .left-side .avatar {
   margin-right: 31px;
 }
 
-.navbar .left-side svg {
+.ant-layout-header .left-side svg {
   color: #BFC8D1;
   font-size: 26px;
 }
 
-.navbar .left-side p {
+.ant-layout-header .left-side p {
   color: #fff;
   margin-right: 11px;
 }
 
+/* Humburger icon */
+.humburger {
+  cursor: pointer;
+}
+
+.humburger .line {
+  width: 35.36px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.humburger .line.middle {
+  margin: 12.38px 0;
+}
+
 /* ================================================================= */
+
+/* ================================================================= */
+/* Home Page */
+/* .home {
+  padding: 26px;
+} */
+
+/* ================================================================= */
+/* side bar */
+
+/* .side-menu {
+  position: fixed;
+  background: #fff;
+  width: 278px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.side-menu .top-section {
+  background: #002044;
+  position: relative;
+}
+
+.side-menu .top-section .logo {
+  padding: 10px 41px 9px 20px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.side-menu .top-section .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.side-menu .top-section .toggle-menu-btn {
+  color: #BA902E;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: -30px;
+  cursor: pointer;
+}
+
+.side-menu .main-menu {
+  margin: 10px 0;
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.side-menu .main-menu .menu-item {
+  padding: 10px 32px 10px 0px;
+  color: #9A9AB0;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.side-menu .main-menu .menu-item .menu-icon {
+  border-radius: 8px;
+}
+
+.side-menu .main-menu .menu-item.active .menu-icon {
+  background-color: #BA902E;
+}
+
+.side-menu .main-menu .menu-item.active .menu-icon svg {
+  stroke: #fff
+}
+
+.side-menu .main-menu .menu-item .menu-icon svg,
+.side-menu .main-menu .menu-item .menu-icon svg path {
+  stroke: #9A9AB0;
+}
+
+.side-menu .main-menu .menu-item .menu-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.side-menu .main-menu .menu-item span {
+  display: inline-block;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.005em;
+  margin-right: 24px;
+}
+
+.side-menu .main-menu .menu-item.active span {
+  color: #BA902E;
+}
+
+.side-menu .main-menu .sub-menu {
+  color: #9A9AB0;
+}
+
+.side-menu .main-menu .sub-menu a {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  color: #9A9AB0;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-right: 47px;
+}
+
+.side-menu .main-menu .sub-menu .submenu-icon {
+  display: inline-block;
+  font-size: 7px;
+  line-height: 20px;
+}
+
+.side-menu .main-menu .sub-menu .submenu-icon svg {
+  margin-bottom: 4px;
+  margin-left: 6px;
+} */
+
+/* ================================================================ */
+
+/* Layout */
+/* width */
+aside ::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+aside ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+aside ::-webkit-scrollbar-thumb {
+  background: #BA902E; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+aside ::-webkit-scrollbar-thumb:hover {
+  background: #BA902E; 
+}
+
+/* 1) SideNav */
+.ant-layout-sider {
+  background: #fff;
+}
+
+.ant-layout-sider {
+  min-width: 278px !important;
+  width: 278px !important;
+}
+
+.ant-layout-sider-children {
+  position: fixed;
+  width: 278px !important;
+}
+
+.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 80px);
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+  min-height: 48px;
+}
+
+.ant-menu-item.ant-menu-item-only-child .ant-menu-title-content {
+  font-weight: 400 !important;
+}
+
+.ant-layout-sider-children .logo {
+  background-color: #002044;
+  height: 80px;
+  padding: 10px 41px 9px 20px;
+  overflow: hidden;
+}
+.ant-layout-sider-children .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ant-menu.ant-menu-sub.ant-menu-inline {
+  background: #fff;
+}
+
+.ant-menu-title-content {
+  text-align: right;
+}
+.ant-menu-submenu-arrow {
+  right: unset;
+  left: 16px;
+}
+
+.ant-menu-item, 
+.ant-menu-submenu-title {
+  padding-right: 32px !important;
+}
+
+.ant-menu-item svg,
+.ant-menu-submenu-title svg,
+.ant-menu-submenu-title svg path {
+  stroke: #9A9AB0;
+  border-radius: 8px;
+  display: block;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.ant-menu-submenu-arrow {
+  color: #9A9AB0;
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.ant-menu-item span,
+.ant-menu-title-content {
+  color: #9A9AB0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 24px;
+}
+
+/* Active item */
+.ant-menu-item.ant-menu-item-selected {
+  background-color: unset !important;
+}
+.ant-menu-item.ant-menu-item-selected::after {
+  border-right: unset;
+}
+.ant-menu-submenu.ant-menu-submenu-selected svg,
+.ant-menu-submenu.ant-menu-submenu-selected svg path,
+.ant-menu-item.ant-menu-item-selected svg {
+  background-color: #BA902E;
+  stroke: #fff;
+}
+.ant-menu-submenu.ant-menu-submenu-selected span,
+.ant-menu-item.ant-menu-item-selected span,
+.ant-menu-submenu.ant-menu-submenu-selected i {
+  color: #BA902E !important;
+}
+
+/* 2) Navbar */
+.ant-layout-header {
+  height: 80px;
+  background: #002044;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  width: calc(100% - 278px);
+}
