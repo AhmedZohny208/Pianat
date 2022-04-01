@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif !important;
   background-color: #E5E5E5;
   margin: 0;
   padding: 0;
@@ -48,3 +48,7 @@ body{
   display: block;
 } */
 
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: unset;
+}

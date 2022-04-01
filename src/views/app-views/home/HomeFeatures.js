@@ -1,5 +1,7 @@
 import React from 'react'
 import {ReactComponent as ReactLogo} from '../../../components/layout-components/svgs/boxNumber.svg';
+import {ReactComponent as CurrentDocNum} from '../../../components/layout-components/svgs/currentDocNum.svg';
+import {ReactComponent as Employee} from '../../../components/layout-components/svgs/employee.svg';
 import { AiOutlinePlus } from 'react-icons/ai'
 
 export default function HomeFeatures() {
@@ -21,7 +23,7 @@ export default function HomeFeatures() {
           <p>اجمالي عدد الوثائق الحالية</p>
           <div className='d-flex justify-content-between align-items-center'>
             <div className='number'>120,000,000</div>
-            <ReactLogo className='logo' />
+            <CurrentDocNum className='logo' style={{ height: '47px' }} />
           </div>        
         </div>
       </div>
@@ -31,7 +33,7 @@ export default function HomeFeatures() {
           <p>عدد المستثمرين</p>
           <div className='d-flex justify-content-between align-items-center'>
             <div className='number'>120,000,000</div>
-            <ReactLogo className='logo' />
+            <Employee className='logo' />
           </div>        
         </div>
       </div>

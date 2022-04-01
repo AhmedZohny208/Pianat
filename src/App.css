@@ -384,6 +384,10 @@ aside ::-webkit-scrollbar-thumb:hover {
   width: 278px !important;
 }
 
+.ant-layout-sider.ant-layout-sider-collapsed .ant-layout-sider-children {
+  width: 110px !important;
+}
+
 .ant-layout-sider-children {
   position: fixed;
   width: 278px !important;
@@ -486,7 +490,6 @@ aside ::-webkit-scrollbar-thumb:hover {
   width: calc(100% - 278px);
 }
 
-
 /* Home page */
 /* .home {
   padding: 26px;
@@ -506,6 +509,10 @@ aside ::-webkit-scrollbar-thumb:hover {
 .homeFeatures {
   color: #fff;
   margin-bottom: 56px;
+}
+
+.homeFeatures .content {
+  height: 116px;
 }
 
 .homeFeatures .dark-blue {
@@ -550,6 +557,37 @@ aside ::-webkit-scrollbar-thumb:hover {
   margin-left: 13px;
 }
 
+/* Table card */
+.ant-card {
+  border-radius: 5px;
+}
+.ant-card-head-wrapper {
+  padding-top: 10px;
+  padding-bottom: 13px;
+}
+.ant-card-head {
+  border-bottom: 0;
+}
+.ant-card-head-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+.ant-card-body {
+  padding: 0;
+}
+
+.under-construction-btn {
+  color: #6F767E;
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid #6f767e3f;
+  border-radius: 8px;
+}
+.under-construction-btn span {
+  margin-right: 5px;
+}
+
 /* Table */
 .ant-table-content thead tr th {
   background-color: #002044;
@@ -567,6 +605,7 @@ aside ::-webkit-scrollbar-thumb:hover {
 .ant-table-content td,
 .ant-table-content th {
   text-align: right !important;
+  padding-right: 24px !important;
 }
 
 .ant-table-content td {
