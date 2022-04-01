@@ -549,3 +549,40 @@ aside ::-webkit-scrollbar-thumb:hover {
 .btn-icon {
   margin-left: 13px;
 }
+
+/* Table */
+.ant-table-content thead tr th {
+  background-color: #002044;
+  color: #fff;
+}
+.ant-table-content thead tr th::before {
+  background: unset !important;
+}
+.ant-table-container table > thead > tr:first-child th:first-child {
+  border-top-left-radius: unset !important;
+}
+.ant-table-container table > thead > tr:first-child th:last-child {
+  border-top-right-radius: unset !important;
+}
+.ant-table-content td,
+.ant-table-content th {
+  text-align: right !important;
+}
+
+.ant-table-content td {
+  color: #425466;
+}
+
+.home-table-btn {
+  width: 120px;
+  height: 28px;
+  background: #F1E9D5;
+  color: #BA902E;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1px;
+}
+
+.home-table-btn-icon {
+  margin-right: 8px;
+}
