@@ -485,3 +485,67 @@ aside ::-webkit-scrollbar-thumb:hover {
   z-index: 1000;
   width: calc(100% - 278px);
 }
+
+
+/* Home page */
+/* .home {
+  padding: 26px;
+} */
+
+.home .content {
+  padding: 16px
+}
+
+.home h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #002044;
+  margin-bottom: 28px;
+}
+
+.homeFeatures {
+  color: #fff;
+  margin-bottom: 56px;
+}
+
+.homeFeatures .dark-blue {
+  background: linear-gradient(100.96deg, #002044 3.99%, #163D69 93.91%);
+  border-radius: 8px;
+}
+
+.homeFeatures .light-blue {
+  background: linear-gradient(100.96deg, #5B9BD5 3.99%, #1B79CF 93.91%);
+  border-radius: 8px;
+}
+
+.homeFeatures .content .number,
+.homeFeatures .content .logo {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0.005em;
+}
+
+.homeFeatures .btn {
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 55px;
+}
+
+.dark-blue-btn {
+  background: #002044;
+  color: #fff !important;
+  margin-bottom: 15px;
+}
+
+.light-gold-btn,
+.light-gold-btn:hover {
+  background: #F4EFE6;
+  color: #BA902E;
+}
+
+.btn-icon {
+  margin-left: 13px;
+}

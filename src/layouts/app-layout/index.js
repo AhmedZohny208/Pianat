@@ -9,6 +9,7 @@ import {
 } from '@ant-design/icons';
 import { BiSearch, BiBell } from 'react-icons/bi'
 import { Avatar } from 'antd'
+import Home from '../../views/app-views/home';
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -89,101 +90,7 @@ export default function AppLayout() {
             padding: '22px'
           }}
         >
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
-          <div>content</div>
+          <Home />
         </Content>
       </Layout>
     </Layout>
