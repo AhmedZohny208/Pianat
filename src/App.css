@@ -375,6 +375,11 @@ aside ::-webkit-scrollbar-thumb:hover {
 }
 
 /* 1) SideNav */
+.ant-menu {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .ant-layout-sider {
   background: #fff;
 }
@@ -456,10 +461,28 @@ aside ::-webkit-scrollbar-thumb:hover {
 .ant-menu-item span,
 .ant-menu-title-content {
   color: #9A9AB0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  margin-right: 24px;
+  margin-right: 8px;
 }
+
+.ant-menu-sub .ant-menu-item {
+  min-height: 30px !important;
+}
+.ant-menu-sub.ant-menu-inline > .ant-menu-item, .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: 30px;
+}
+.ant-menu-sub .ant-menu-item span {
+  font-size: 14px !important;
+}
+
+.ant-menu-inline .ant-menu-submenu-title,
+.ant-menu-inline.ant-menu-root .ant-menu-item {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  padding-left: unset !important;
+}
+
 
 /* Active item */
 .ant-menu-item.ant-menu-item-selected {
@@ -474,10 +497,17 @@ aside ::-webkit-scrollbar-thumb:hover {
   background-color: #BA902E;
   stroke: #fff;
 }
-.ant-menu-submenu.ant-menu-submenu-selected span,
-.ant-menu-item.ant-menu-item-selected span,
-.ant-menu-submenu.ant-menu-submenu-selected i {
+
+.ant-menu-submenu-arrow:hover,
+.ant-menu-submenu-active:hover i {
   color: #BA902E !important;
+}
+
+.ant-menu-submenu.ant-menu-submenu-selected .ant-menu-item-selected span {
+  color: #BA902E !important;
+}
+.ant-menu-submenu.ant-menu-submenu-selected .ant-menu-item-selected .minus {
+  background-color: #BA902E !important;
 }
 
 /* 2) Navbar */

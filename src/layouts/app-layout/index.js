@@ -10,6 +10,7 @@ import {
 import { BiSearch, BiBell } from 'react-icons/bi'
 import { Avatar } from 'antd'
 import Home from '../../views/app-views/home';
+import Minus from '../../components/layout-components/svgs/Minus';
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -29,19 +30,19 @@ export default function AppLayout() {
         <Menu defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1" icon={<Grid />}>الرئيسية</Menu.Item>
           <SubMenu key="sub1" icon={<AlertTriangle className='nav-icon' />} title="المخالفات">
-            <Menu.Item key="3">مخالفات صناديق الإستثمار</Menu.Item>
-            <Menu.Item key="4">مخالفات مقدمى الخدمات</Menu.Item>
+            <Menu.Item icon={<Minus />} key="3">مخالفات صناديق الإستثمار</Menu.Item>
+            <Menu.Item icon={<Minus />} key="4">مخالفات مقدمى الخدمات</Menu.Item>
           </SubMenu>
           <SubMenu key="sub2" icon={<GrBarChart />} title="المؤشرات العامة">
-            <Menu.Item key="6">مؤشرات حجم السوق</Menu.Item>
-            <Menu.Item key="7">مؤشرات حجم التعاملات</Menu.Item>
-            <Menu.Item key="8">مؤشرات القطاعات الاستثمارية</Menu.Item>
-            <Menu.Item key="9">مؤشرات الانشطة الاستثمارية</Menu.Item>
-            <Menu.Item key="10">مؤشرات الادوات الاستثمارية</Menu.Item>
-            <Menu.Item key="11">مؤشرات تدفقات رؤوس الاموال</Menu.Item>
-            <Menu.Item key="12">مؤشرات نسب السيولة</Menu.Item>
-            <Menu.Item key="13">مؤشرات السيولة</Menu.Item>
-            <Menu.Item key="14">مؤشرات بين القطاعات و المؤشرات</Menu.Item>
+            <Menu.Item icon={<Minus />} key="6">مؤشرات حجم السوق</Menu.Item>
+            <Menu.Item icon={<Minus />} key="7">مؤشرات حجم التعاملات</Menu.Item>
+            <Menu.Item icon={<Minus />} key="8">مؤشرات القطاعات الاستثمارية</Menu.Item>
+            <Menu.Item icon={<Minus />} key="9">مؤشرات الانشطة الاستثمارية</Menu.Item>
+            <Menu.Item icon={<Minus />} key="10">مؤشرات الادوات الاستثمارية</Menu.Item>
+            <Menu.Item icon={<Minus />} key="11">مؤشرات تدفقات رؤوس الاموال</Menu.Item>
+            <Menu.Item icon={<Minus />} key="12">مؤشرات نسب السيولة</Menu.Item>
+            <Menu.Item icon={<Minus />} key="13">مؤشرات السيولة</Menu.Item>
+            <Menu.Item icon={<Minus />} key="14">مؤشرات بين القطاعات و المؤشرات</Menu.Item>
           </SubMenu>
         </Menu>
       </Sider>
