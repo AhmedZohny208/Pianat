@@ -25,7 +25,7 @@ export default function AppLayout() {
 
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="logo">
-          <img src="/img/brand.png" alt="brand" />
+          <img src={`${collapsed ? '/img/logo.png' : '/img/brand.png'}`} alt="brand" />
         </div>
         <Menu defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1" icon={<Grid />}>الرئيسية</Menu.Item>
@@ -48,40 +48,38 @@ export default function AppLayout() {
       </Sider>
 
       <Layout>
-        <Header className="site-layout-background" style={{ padding: 0 }}>
-          
+        <Header className={`site-layout-background ${collapsed ? 'collapsed' : ''}`} style={{ padding: 0 }}>
+          <div className="d-flex collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
 
-        <div className="d-flex collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-
-          <div className='right-side d-flex align-items-center'>
-            {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-              className: 'trigger',
-              onClick: toggle,
-            })}
-            <form className="search d-flex position-relative">
-              <input className="form-control me-2" type="search" placeholder="بحث" aria-label="Search" />
-              <button className="btn position-absolute" type="submit">
-                <BiSearch />
-              </button>
-            </form>
-          </div>
-
-          <div className='left-side d-flex align-items-center'>
-            <div className='notification'>
-              <BiBell />
-              <div className="circle"></div>
+            <div className='right-side d-flex align-items-center'>
+              {React.createElement(collapsed ? MenuFoldOutlined : MenuUnfoldOutlined, {
+                className: 'trigger',
+                onClick: toggle,
+              })}
+              <form className="search d-flex position-relative">
+                <input className="form-control me-2" type="search" placeholder="بحث" aria-label="Search" />
+                <button className="btn position-absolute" type="submit">
+                  <BiSearch />
+                </button>
+              </form>
             </div>
-            <div className="avatar d-flex align-items-center">
-              <Avatar 
-                alt="avatar"
-                src="/img/avatar/Sally.png"
-                style={{ width: 48, height: 48 }} 
-              />
-              <p className='mb-0'>سالي جورج</p>
-            </div>
-          </div>
 
-        </div>
+            <div className='left-side d-flex align-items-center'>
+              <div className='notification'>
+                <BiBell />
+                <div className="circle"></div>
+              </div>
+              <div className="avatar d-flex align-items-center">
+                <Avatar 
+                  alt="avatar"
+                  src="/img/avatar/Sally.png"
+                  style={{ width: 48, height: 48 }} 
+                />
+                <p className='mb-0'>سالي جورج</p>
+              </div>
+            </div>
+
+          </div>
         </Header>
 
         <Content
