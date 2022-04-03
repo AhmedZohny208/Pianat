@@ -6,8 +6,6 @@ import { APP_PREFIX_PATH, AUTH_PREFIX_PATH } from '../configs/AppConfig'
 
 export default function View(props) {
 
-  console.log(props)
-
   return (
     <Switch>
       <Route exact path="/">

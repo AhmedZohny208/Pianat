@@ -4,21 +4,19 @@ import {
   ArrowLeftOutlined,
   DownOutlined
 } from '@ant-design/icons';
+import {ReactComponent as Dots} from '../../../components/layout-components/svgs/dots.svg';
 import data from './dataSource'
 
 const menu = () => {
   return (
-  <Menu>
-    <Menu.Item key="0">
-      <a href="https://www.antgroup.com">1st menu item</a>
-    </Menu.Item>
-    <Menu.Item key="1">
-      <a href="https://www.aliyun.com">2nd menu item</a>
-    </Menu.Item>
-    <Menu.Divider />
-    <Menu.Item key="3">3rd menu item</Menu.Item>
-  </Menu>
-
+    <Menu>
+      <Menu.Item className='text-start' key="0">
+        <button className='btn'>الكل</button>
+      </Menu.Item>
+      <Menu.Item className='text-start' key="1">
+        <button className='btn'>تحت الانشاء</button>
+      </Menu.Item>
+    </Menu>
   )
 }
 
@@ -59,18 +57,30 @@ export default function HomeTable() {
       title: 'الحالة',
       dataIndex: 'status',
       key: 'status',
-      render: text => (
-        <div className='text-center fw-bold' style={{ fontSize: '12px' }}>{text}</div>
+      render: (text, record) => (
+        <div className={`text-center fw-bold ${record.review === true && 'text-danger'}`} style={{ fontSize: '12px' }}>{text}</div>
       )
+    },
+    {
+      title: 'الحالة',
+      dataIndex: 'review',
+      hidden: true,
+      key: 'review',
     },
     {
       title: 'إجراءات',
       key: 'action',
-      render: () => (
-        <button className='btn home-table-btn'>مراجعة النشرة <ArrowLeftOutlined className='home-table-btn-icon' /></button>
+      render: (text, record) => (
+        <div className='d-flex'>
+          <div className='home-table-action'>
+            <button className='btn home-table-btn'>مراجعة النشرة <ArrowLeftOutlined className='home-table-btn-icon' /></button>
+            <div className={`home-table-btn-review ${record.review === false && 'd-none'}`}></div>
+          </div>
+          <Dots style={{ marginRight: '6px' }} />
+        </div>
       )
     },
-  ]
+  ].filter(item => !item.hidden);
 
   return (
     <Card title="نشرات تحت الانشاء" extra={<UnderConstruction />} bordered={false} style={{ marginBottom: '480px' }}>

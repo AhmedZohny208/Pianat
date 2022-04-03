@@ -665,6 +665,10 @@ aside ::-webkit-scrollbar-thumb:hover {
   color: #425466;
 }
 
+.home-table-action {
+  position: relative;
+}
+
 .home-table-btn {
   width: 120px;
   height: 28px;
@@ -675,6 +679,63 @@ aside ::-webkit-scrollbar-thumb:hover {
   line-height: 1px;
 }
 
+.home-table-btn-review {
+  position: absolute;
+  top: 0%;
+  width: 10px;
+  height: 10px;
+  background-color: #D0342C;
+  border-radius: 50%;
+}
+
 .home-table-btn-icon {
   margin-right: 8px;
+}
+
+/* New Subscription Modal */
+.ant-modal.new-subscription-modal {
+  width: 641px !important;
+}
+.ant-modal.new-subscription-modal .ant-modal-content {
+  border-radius: 5px !important;
+}
+.ant-modal.new-subscription-modal .modal-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.ant-modal.new-subscription-modal .row {
+  margin-bottom: 12px;
+}
+
+.ant-modal.new-subscription-modal .newSub-btn {
+  background: #F4EFE6;
+  color: #BA902E;
+  height: 46px;
+  width: 286px;
+  border-radius: 5px;
+  padding: 8px;
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  letter-spacing: 0.3px;
+}
+.ant-modal.new-subscription-modal .newSub-btn.last {
+  width: 581px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.ant-modal.new-subscription-modal .newSub-btn-svg {
+  margin-left: 10.5px;
+}
+
+.ant-modal.new-subscription-modal .ant-modal-close-x {
+  line-height: 50px;
+}
+.ant-modal.new-subscription-modal .ant-modal-close-x span {
+  color: #000;
 }
