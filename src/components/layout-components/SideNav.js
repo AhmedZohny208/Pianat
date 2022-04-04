@@ -1,9 +1,9 @@
 import React from 'react'
 import { Layout, Menu } from 'antd';
-import AlertTriangle from './svgs/alertTriangle'
-import Grid from './svgs/grid'
+import AlertTriangle from '../shared-components/svgs/alertTriangle'
+import Grid from '../shared-components/svgs/grid'
 import { GrBarChart } from 'react-icons/gr'
-import Minus from './svgs/Minus';
+import Minus from '../shared-components/svgs/Minus';
 import { Link } from 'react-router-dom';
 import { APP_PREFIX_PATH } from '../../configs/AppConfig';
 
@@ -18,7 +18,10 @@ export default function SideNav({ collapsed }) {
         <img src={`${collapsed ? '/img/logo.png' : '/img/brand.png'}`} alt="brand" />
       </div>
       <Menu defaultSelectedKeys={['1']} mode="inline">
-        <Menu.Item key="1" icon={<Grid />}>الرئيسية</Menu.Item>
+        <Menu.Item key="1" icon={<Grid />}>
+          الرئيسية
+          <Link to={`${APP_PREFIX_PATH}`} />
+          </Menu.Item>
 
         <SubMenu key="sub1" icon={<AlertTriangle className='nav-icon' />} title="المخالفات">
           <Menu.Item icon={<Minus />} key="3">

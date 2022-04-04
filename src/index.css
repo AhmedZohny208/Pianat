@@ -18,10 +18,6 @@ ul{
 li{
   list-style: none;
 }
-body{
-  background-color: #eee;
-  font-family: 'Open Sans', sans-serif;
-}
 
 /* width */
 /* ::-webkit-scrollbar {

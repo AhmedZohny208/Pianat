@@ -1,6 +1,6 @@
 import React from 'react'
 import { Modal } from 'antd';
-import {ReactComponent as NewSubModal} from '../../layout-components/svgs/newSubModal.svg';
+import {ReactComponent as NewSubModal} from '../svgs/newSubModal.svg';
 
 export default function NewSubscriptionModal({ visible, onCancel }) {
   return (

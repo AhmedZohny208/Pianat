@@ -772,3 +772,68 @@ aside ::-webkit-scrollbar-thumb:hover {
 .ant-modal.new-subscription-modal .ant-modal-close-x span {
   color: #000;
 }
+
+/* ===================== Violations ===================== */
+.violations .main-card {
+  width: 100%;
+  background-color: #fff;
+  padding: 24px;
+  box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  border-radius: 5px;
+}
+
+.violations .main-card h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #27272E;
+  margin-bottom: 32px;
+}
+
+.violations .main-card .item {
+  height: 45px;
+  width: 302px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.violations .main-card .item:hover {
+  box-shadow: 0px 2px 16px #F4F4F4;
+}
+
+.violations .main-card .item p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #27272E;
+  padding-right: 24px;
+  margin-bottom: 0;
+  position: relative;
+}
+.violations .main-card .item p::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.violations .main-card .item.one p::before {
+  background-color: #9F203E;
+}
+.violations .main-card .item.two p::before {
+  background-color: #FFAD4C;
+}
+.violations .main-card .item.three p::before {
+  background-color: #904CFF;
+}
+.violations .main-card .item.four p::before {
+  background-color: #010324;
+}
+.violations .main-card .item.five p::before {
+  background-color: #4C6FFF;
+}
+
+.violations .main-card .item .icon {
+  margin-top: 3px;
+  margin-left: 16px;
+}
