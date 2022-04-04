@@ -4,8 +4,8 @@ import {
   ArrowLeftOutlined,
   DownOutlined
 } from '@ant-design/icons';
-import {ReactComponent as Dots} from '../../../components/layout-components/svgs/dots.svg';
-import data from './dataSource'
+import {ReactComponent as Dots} from './svgs/dots.svg';
+import data from '../../views/app-views/home/dataSource'
 
 const menu = () => {
   return (

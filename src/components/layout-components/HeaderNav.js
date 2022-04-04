@@ -1,10 +1,12 @@
 import React from 'react'
-import { Layout, Avatar } from 'antd';
+import { Layout } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined
 } from '@ant-design/icons';
-import { BiSearch, BiBell } from 'react-icons/bi'
+import { BiSearch } from 'react-icons/bi'
+import NavProfile from './NavProfile';
+import NavNotification from './NavNotification';
 
 const { Header } = Layout;
 
@@ -27,18 +29,8 @@ export default function HeaderNav({ collapsed, toggle }) {
         </div>
 
         <div className='left-side d-flex align-items-center'>
-          <div className='notification'>
-            <BiBell />
-            <div className="circle"></div>
-          </div>
-          <div className="avatar d-flex align-items-center">
-            <Avatar 
-              alt="avatar"
-              src="/img/avatar/Sally.png"
-              style={{ width: 48, height: 48 }} 
-            />
-            <p className='mb-0'>سالي جورج</p>
-          </div>
+          <NavNotification />
+          <NavProfile />
         </div>
 
       </div>

@@ -1,11 +1,22 @@
-import React from 'react'
-import {ReactComponent as ReactLogo} from '../../../components/layout-components/svgs/boxNumber.svg';
-import {ReactComponent as CurrentDocNum} from '../../../components/layout-components/svgs/currentDocNum.svg';
-import {ReactComponent as Employee} from '../../../components/layout-components/svgs/employee.svg';
+import React, { useState } from 'react'
+import {ReactComponent as ReactLogo} from './svgs/boxNumber.svg';
+import {ReactComponent as CurrentDocNum} from './svgs/currentDocNum.svg';
+import {ReactComponent as Employee} from './svgs/employee.svg';
 import { AiOutlinePlus } from 'react-icons/ai'
+import NewSubscriptionModal from './Modals/NewSubscriptionModal';
 
 export default function HomeFeatures() {
+  const [newSubscriptionVisible, isNewSubscriptionVisible] = useState(false)
+
+  const showNewSubscriptionModal = () => {
+    isNewSubscriptionVisible(true)
+  }
+  const handleCancelNewSubscriptionModal = () => {
+    isNewSubscriptionVisible(false)
+  }
+
   return (
+    <>
     <div className="homeFeatures row">
 
       <div className="col-lg-3">
@@ -39,9 +50,9 @@ export default function HomeFeatures() {
       </div>
 
       <div className="col-lg-3">
-        <div className="d-flex flex-column">
+        <div className="content p-0 d-flex flex-column">
           <div>
-            <button className="w-100 btn dark-blue-btn">
+            <button className="w-100 btn dark-blue-btn" onClick={() => showNewSubscriptionModal()}>
               <AiOutlinePlus className='btn-icon' />
               إنشاء نشرة اكتتاب جديدة
             </button>
@@ -56,5 +67,8 @@ export default function HomeFeatures() {
       </div>
 
     </div>
+    
+    <NewSubscriptionModal visible={newSubscriptionVisible} onCancel={handleCancelNewSubscriptionModal} />
+    </>
   )
 }

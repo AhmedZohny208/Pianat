@@ -23,7 +23,7 @@ export default function SideNav({ collapsed }) {
         <SubMenu key="sub1" icon={<AlertTriangle className='nav-icon' />} title="المخالفات">
           <Menu.Item icon={<Minus />} key="3">
             مخالفات صناديق الإستثمار
-            <Link to={`${APP_PREFIX_PATH}/about`} />
+            <Link to={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations`} />
           </Menu.Item>
           <Menu.Item icon={<Minus />} key="4">مخالفات مقدمى الخدمات</Menu.Item>
         </SubMenu>
