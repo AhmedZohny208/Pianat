@@ -28,7 +28,10 @@ export default function SideNav({ collapsed }) {
             مخالفات صناديق الإستثمار
             <Link to={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations`} />
           </Menu.Item>
-          <Menu.Item icon={<Minus />} key="4">مخالفات مقدمى الخدمات</Menu.Item>
+          <Menu.Item icon={<Minus />} key="4">
+            مخالفات مقدمى الخدمات
+              <Link to={`${APP_PREFIX_PATH}/mokhlfat/service-provider-violations`} />
+            </Menu.Item>
         </SubMenu>
 
         <SubMenu key="sub2" icon={<GrBarChart />} title="المؤشرات العامة">

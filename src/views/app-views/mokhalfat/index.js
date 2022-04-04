@@ -11,5 +11,3 @@ export default function Mokhlfat({ match }) {
     </Suspense>
   )
 }
-
-// /home/mokhlfat

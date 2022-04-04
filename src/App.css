@@ -788,6 +788,9 @@ aside ::-webkit-scrollbar-thumb:hover {
   color: #27272E;
   margin-bottom: 32px;
 }
+.violations.service-Provider .main-card h1 {
+  margin-bottom: 0px;
+}
 
 .violations .main-card .item {
   height: 45px;
@@ -795,6 +798,11 @@ aside ::-webkit-scrollbar-thumb:hover {
   margin-bottom: 16px;
   border-radius: 5px;
   transition: 0.5s;
+}
+.violations.service-Provider .main-card .item {
+  height: unset;
+  width: unset;
+  margin-bottom: 16px;
 }
 .violations .main-card .item:hover {
   box-shadow: 0px 2px 16px #F4F4F4;
@@ -831,6 +839,19 @@ aside ::-webkit-scrollbar-thumb:hover {
 }
 .violations .main-card .item.five p::before {
   background-color: #4C6FFF;
+}
+
+.violations.service-Provider .main-card .item.one p::before {
+  background-color: #0AB39C;
+}
+.violations.service-Provider .main-card .item.two p::before {
+  background-color: #299CDB;
+}
+.violations.service-Provider .main-card .item.three p::before {
+  background-color: #405189;
+}
+.violations.service-Provider .main-card .item.four p::before {
+  background-color: #F06548;
 }
 
 .violations .main-card .item .icon {
