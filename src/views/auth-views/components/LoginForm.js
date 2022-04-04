@@ -2,6 +2,7 @@ import React from 'react'
 import { Form, Input } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function LoginForm() {
   let history = useHistory();
@@ -17,9 +18,17 @@ export default function LoginForm() {
       >
         <Input placeholder='أدخل بريدك الإلكتروني' className="text-input"/>
       </Form.Item>
+
+      <div className='d-flex justify-content-between'>
+        <div class="ant-col ant-form-item-label">
+          <label for="login-form_password" class="" title="كلمة المرور">كلمة المرور</label>
+        </div>
+        <div className="forgot-password">
+          <Link to='!#'>هل نسيت كلمة السر؟</Link>
+        </div>
+      </div>
       <Form.Item 
         name="password"
-        label="كلمة المرور" 
         className='password-form-item'
       >
         <Input.Password className='password-input' placeholder='أدخل كلمة المرور' iconRender={visible => (visible ? <EyeTwoTone className='eye-icon' /> : <EyeInvisibleOutlined className='eye-icon' />)} />
