@@ -788,7 +788,8 @@ aside ::-webkit-scrollbar-thumb:hover {
   color: #27272E;
   margin-bottom: 32px;
 }
-.violations.service-Provider .main-card h1 {
+.violations.service-Provider .main-card h1,
+.violations.investment-policy .main-card h1 {
   margin-bottom: 0px;
 }
 
@@ -799,7 +800,8 @@ aside ::-webkit-scrollbar-thumb:hover {
   border-radius: 5px;
   transition: 0.5s;
 }
-.violations.service-Provider .main-card .item {
+.violations.service-Provider .main-card .item,
+.violations.investment-policy .main-card .item {
   height: unset;
   width: unset;
   margin-bottom: 16px;

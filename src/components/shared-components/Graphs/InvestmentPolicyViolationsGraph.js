@@ -10,27 +10,27 @@ Chart.register(ChartDataLabels);
 
 const data = {
   labels: [
-    'مخالفات نسب الاستثمار',
-    'مخالفات نظم الرقابة',
-    'مخالفات الالتزام بالقيود الاستثمارية',
-    'مخالفات الحوكمة',
-    'مخالفات عرض القوائم المالية'
+    'صندوق سندى',
+    'صندوق نماء',
+    'صندوق ثراء',
+    'صندوق الخير',
+    'صندوق الحكمة',
   ],
   datasets: [{
-    data: [34, 20, 75, 10, 255],
+    data: [8, 6, 10, 6, 30],
     backgroundColor: [
-      '#9F203E',
-      '#FFAD4C',
-      '#904CFF',
-      '#010324',
-      '#4C6FFF',
+      '#299CDB',
+      '#F7B84B',
+      '#405189',
+      '#0AB39C',
+      '#F06548',
     ],
     borderColor: [
-      '#9F203E',
-      '#FFAD4C',
-      '#904CFF',
-      '#010324',
-      '#4C6FFF',
+      '#299CDB',
+      '#F7B84B',
+      '#405189',
+      '#0AB39C',
+      '#F06548',
     ],
     borderWidth: [
       '4',
@@ -75,9 +75,10 @@ const plugins = [{
       var fontSize = (height / 200).toFixed(2);
       ctx.font = fontSize + "em Cairo";
       ctx.textBaseline = "top";
-      var text = "394 مخالفة",
+      var text = "50 مخالفة",
       textX = Math.round((width - ctx.measureText(text).width) / 1),
       textY = height / 2;
+      textX = textX - 10;
       textY = textY - 10
       ctx.fillText(text, textX, textY);
       ctx.save();
@@ -85,7 +86,7 @@ const plugins = [{
   ChartDataLabels
 }]
 
-export default function InvestmentFundViolationsGraph() {
+export default function InvestmentPolicyViolationsGraph() {
   return (
     <div style={{ width: '340px', height: '340px' }}>
       <Doughnut data={data} options={options} plugins={plugins} />
