@@ -76,12 +76,31 @@ export const options = {
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December'];
 
+let width, height, gradient;
+function getGradient(ctx, chartArea) {
+  const chartWidth = chartArea.right - chartArea.left;
+  const chartHeight = chartArea.bottom - chartArea.top;
+  if (!gradient || width !== chartWidth || height !== chartHeight) {
+    width = chartWidth;
+    height = chartHeight;
+    gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+    gradient.addColorStop(0, 'rgba(0, 32, 68, 0)');
+    gradient.addColorStop(1, 'rgba(0, 32, 68, 0.25)');
+  }
+
+  return gradient;
+}
+
 export const data = {
   labels: labels,
   datasets: [{
     data: [10000, 12000, 15000, 25000, 20000, 16000, 28000, 22000, 24000, 26000, 20000, 14000],
     fill: true,
-    backgroundColor: 'rgba(0, 32, 68, 0.25)',
+    backgroundColor: function(context) {
+      const chart = context.chart;
+      const {ctx, chartArea} = chart;
+      return getGradient(ctx, chartArea);
+    },
     borderColor: '#000',
     tension: 0.7
   }]
