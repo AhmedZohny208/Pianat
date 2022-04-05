@@ -49,10 +49,10 @@ export const options = {
       max: 30000,
       grid: {
         lineWidth: 2,
-        drawTicks: false
+        drawTicks: false,
+        color: '#E1E1FB'
       },
       ticks: {
-        // font: 'Cairo',
         font: {
           size: 20,
           weight: 600,
