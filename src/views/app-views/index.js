@@ -8,9 +8,12 @@ export default function AppViews() {
     <Suspense fallback={<Loading cover="content"/>}>
       <Switch>
         <Route path={`${APP_PREFIX_PATH}`} component={lazy(() => import(`./home`))} exact />
+
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations`} component={lazy(() => import(`./mokhalfat/investmentFundsViolations`))} exact />
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/Investment-policy-violations`} component={lazy(() => import(`./mokhalfat/investmentPolicyViolations`))} exact />
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/service-provider-violations`} component={lazy(() => import(`./mokhalfat/serviceProviderViolations`))} exact />
+
+        <Route path={`${APP_PREFIX_PATH}/indicators/market-size`} component={lazy(() => import(`./indications/marketSizeIndicators`))} exact />
 
         {/* <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}`} /> */}
       </Switch>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {ReactComponent as LeftArrow} from '../../../../components/shared-components/svgs/leftArrow.svg';
-import InvestmentFundViolationsGraph from '../../../../components/shared-components/Graphs/InvestmentFundViolationsGraph'
+import InvestmentFundViolationsGraph from '../../../../components/shared-components/Graphs/donut/InvestmentFundViolationsGraph'
 
 export default function InvestmentFundsViolations() {
   return (

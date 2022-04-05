@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceProviderViolationsGraph from '../../../../components/shared-components/Graphs/ServiceProviderViolationsGraph'
+import ServiceProviderViolationsGraph from '../../../../components/shared-components/Graphs/donut/ServiceProviderViolationsGraph'
 
 export default function ServiceProviderViolations() {
   return (

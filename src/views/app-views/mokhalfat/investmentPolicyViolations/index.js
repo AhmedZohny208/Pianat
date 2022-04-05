@@ -1,5 +1,5 @@
 import React from 'react'
-import InvestmentPolicyViolationsGraph from '../../../../components/shared-components/Graphs/InvestmentPolicyViolationsGraph'
+import InvestmentPolicyViolationsGraph from '../../../../components/shared-components/Graphs/donut/InvestmentPolicyViolationsGraph'
 
 export default function InvestmentPolicyViolations() {
   return (

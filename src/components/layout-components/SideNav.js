@@ -39,7 +39,10 @@ export default function SideNav({ collapsed }) {
         </SubMenu>
 
         <SubMenu key="sub2" icon={<GrBarChart />} title="المؤشرات العامة">
-          <Menu.Item icon={<Minus />} key="6">مؤشرات حجم السوق</Menu.Item>
+          <Menu.Item icon={<Minus />} key="6">
+            مؤشرات حجم السوق
+            <Link to={`${APP_PREFIX_PATH}/indicators/market-size`} />
+            </Menu.Item>
           <Menu.Item icon={<Minus />} key="7">مؤشرات حجم التعاملات</Menu.Item>
           <Menu.Item icon={<Minus />} key="8">مؤشرات القطاعات الاستثمارية</Menu.Item>
           <Menu.Item icon={<Minus />} key="9">مؤشرات الانشطة الاستثمارية</Menu.Item>
