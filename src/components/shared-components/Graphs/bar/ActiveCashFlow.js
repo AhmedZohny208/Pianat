@@ -21,6 +21,7 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   elements: {
     bar: {
       borderWidth: 0,
@@ -29,7 +30,10 @@ export const options = {
   plugins: {
     legend: {
       display: false,
-    }
+    },
+    datalabels: {
+      display: false
+    },
   },
   scales: {
     xAxis: {
@@ -82,11 +86,9 @@ export const data = {
       label: 'Dataset 1',
       data: [5000, 28000, 32000, 11000],
       borderRadius: 7,
-      // backgroundColor: ["#5541D7", "#5541D7", "#5541D7", "#5541D7"],
       backgroundColor(c) {
         const value = c.raw;
         let alpha = (10 + value) / 11000;
-        console.log(alpha)
         return `rgba(85, 65, 215, ${alpha})`
       },
       borderSkipped: false,
@@ -97,6 +99,8 @@ export const data = {
 
 export default function ActiveCashFlow() {
   return (
-    <Bar options={options} data={data} />
+    <div style={{ height: '290px' }}>
+      <Bar options={options} data={data} />
+    </div>
   )
 }

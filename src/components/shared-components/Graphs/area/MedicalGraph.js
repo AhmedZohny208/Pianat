@@ -25,6 +25,7 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   elements: {
     point:{
       radius: 0
@@ -33,14 +34,17 @@ export const options = {
   plugins: {
     legend: {
       display: false
-    }
+    },
+    datalabels: {
+      display: false
+    },
   },
   scales: {
     xAxis: {
       display: false,
       reverse: true,
       grid: {
-        display: false
+        display: false,
       }
     },
     myScale: {
@@ -50,6 +54,7 @@ export const options = {
       grid: {
         lineWidth: 2,
         drawTicks: false,
+        drawBorder: false,
         color: '#E1E1FB'
       },
       ticks: {
@@ -78,10 +83,14 @@ export const data = {
     fill: true,
     backgroundColor: 'rgba(0, 32, 68, 0.25)',
     borderColor: '#000',
-    tension: 0.5
+    tension: 0.7
   }]
 };
 
 export function MedicalGraph() {
-  return <Line options={options} data={data} />;
+  return (
+    <div style={{ height: '290px' }}>
+      <Line options={options} data={data} />
+    </div>
+  );
 }

@@ -23,6 +23,7 @@ ChartJS.register(ChartDataLabels);
 
 export const options = {
   indexAxis: 'y',
+  maintainAspectRatio: false,
   elements: {
     bar: {
       borderWidth: 0,
@@ -83,7 +84,7 @@ export const data = {
       borderRadius: 6.7,
       backgroundColor: ["#002044", "#299CDB", "#0AB39C", "#F06548"],
       borderSkipped: false,
-      barThickness: 32,
+      barThickness: 32
     }
   ],
 };
@@ -92,6 +93,8 @@ const plugins = [{ ChartDataLabels }]
 
 export default function ForeignInvestmentsAmount() {
   return (
-    <Bar options={options} data={data} plugins={plugins} />
+    <div style={{ height: '290px' }}>
+      <Bar options={options} data={data} plugins={plugins} />
+    </div>
   )
 }

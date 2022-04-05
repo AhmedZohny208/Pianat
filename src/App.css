@@ -860,3 +860,91 @@ aside ::-webkit-scrollbar-thumb:hover {
   margin-top: 3px;
   margin-left: 16px;
 }
+
+/* ===================== Indications ===================== */
+.main-card.indications {
+  background: #FFFFFF;
+  box-shadow: 0px 5.24409px 13.9843px -1.74803px rgba(50, 50, 71, 0.02);
+  border-radius: 27.9685px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.main-card.indications .card-title {
+  color: #27272E;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button.quarters {
+  font-size: 20px;
+  border-radius: 16px;
+  height: 55px;
+}
+button.quarters span svg {
+  font-size: 12px !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.main-card.indications .graph {
+  margin: 32px 0;
+}
+
+.main-card.indications .item {
+  padding-right: 25px;
+  position: relative;
+}
+.main-card.indications .item::before {
+  content: '';
+  position: absolute;
+  top: 41%;
+  right: 0;
+  width: 10.52px;
+  height: 10.52px;
+  border-radius: 50%;
+}
+.main-card.indications .item.one::before {
+  background-color: #405189;
+}
+.main-card.indications .item.two::before {
+  background-color: #299CDB;
+}
+.main-card.indications .item.three::before {
+  background-color: #0AB39C;
+}
+.main-card.indications .item.four::before {
+  background-color: #F06548;
+}
+
+.main-card.indications .item p {
+  margin-bottom: 0;
+}
+
+.main-card.indications .item .value {
+  font-weight: 600;
+  font-size: 18.417px;
+  color: #27272E;
+}
+.main-card.indications .item .value span {
+  font-weight: 700;
+  font-size: 15.786px;
+  color: #66CB9F;
+  margin-right: 8px;
+}
+.main-card.indications .item .desc {
+  font-weight: 500;
+  font-size: 15.786px;
+  color: #425466;
+}
+
+.main-card.indications .total h4 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #11142D;
+}
+.main-card.indications .total p {
+  font-weight: 600;
+  font-size: 20px;
+  color: #92929D;
+}
