@@ -15,6 +15,8 @@ export default function AppViews() {
 
         <Route path={`${APP_PREFIX_PATH}/indicators/market-size`} component={lazy(() => import(`./indications/marketSizeIndicators`))} exact />
 
+        <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund`} component={lazy(() => import(`./createSubscription/StockFund`))} exact />
+
         {/* <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}`} /> */}
       </Switch>
     </Suspense>
