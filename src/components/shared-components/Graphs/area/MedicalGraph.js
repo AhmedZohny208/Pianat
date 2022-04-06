@@ -78,12 +78,14 @@ const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 let width, height, gradient;
 function getGradient(ctx, chartArea) {
-  const chartWidth = chartArea.right - chartArea.left;
-  const chartHeight = chartArea.bottom - chartArea.top;
+  // const chartWidth = chartArea.right - chartArea.left;
+  // const chartHeight = chartArea.bottom - chartArea.top;
+  const chartWidth = 852.6000671386719;
+  const chartHeight = 226;
   if (!gradient || width !== chartWidth || height !== chartHeight) {
     width = chartWidth;
     height = chartHeight;
-    gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+    gradient = ctx.createLinearGradient(0, 258, 0, 32);
     gradient.addColorStop(0, 'rgba(0, 32, 68, 0)');
     gradient.addColorStop(1, 'rgba(0, 32, 68, 0.25)');
   }
@@ -96,12 +98,13 @@ export const data = {
   datasets: [{
     data: [10000, 12000, 15000, 25000, 20000, 16000, 28000, 22000, 24000, 26000, 20000, 14000],
     fill: true,
+    // backgroundColor: '#000',
     backgroundColor: function(context) {
       const chart = context.chart;
       const {ctx, chartArea} = chart;
       return getGradient(ctx, chartArea);
     },
-    borderColor: '#000',
+    borderColor: '#002044',
     tension: 0.7
   }]
 };
@@ -113,3 +116,10 @@ export function MedicalGraph() {
     </div>
   );
 }
+
+// bottom: 258
+// height: 226
+// left: 1.5
+// right: 854.1000671386719
+// top: 32
+// width: 852.6000671386719
