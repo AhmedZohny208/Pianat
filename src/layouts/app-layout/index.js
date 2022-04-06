@@ -20,7 +20,8 @@ export default function AppLayout() {
           className="site-layout-background"
           style={{
             marginTop: '80px',
-            padding: '22px'
+            padding: '22px',
+            backgroundColor: '#fafafa'
           }}
         >
           <AppViews />

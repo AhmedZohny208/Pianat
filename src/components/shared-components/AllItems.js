@@ -1,13 +1,17 @@
 import React from 'react'
 import SingleItemBtn from './Buttons/SingleItemBtn'
+import {ReactComponent as Check} from './svgs/check.svg';
+import {ReactComponent as NotCompleted} from './svgs/notCompleted.svg';
+import {ReactComponent as Help} from './svgs/help.svg';
+import {ReactComponent as Comment} from './svgs/comment.svg';
 
 export default function AllItems() {
   return (
     <div className="all-items">
       <div className="row gx-4">
-        <SingleItemBtn content={'1. تعريفات عامة'} />
-        <SingleItemBtn content={'2. مقدمة وأحكام عامة'} />
-        <SingleItemBtn content={'3. تعريف وشكل الصندوق'} />
+        <SingleItemBtn content={'1. تعريفات عامة'} rightIcon={<Check />} />
+        <SingleItemBtn content={'2. مقدمة وأحكام عامة'} rightIcon={<Check />} />
+        <SingleItemBtn content={'3. تعريف وشكل الصندوق'} rightIcon={<NotCompleted />} />
         <SingleItemBtn content={'4. هدف وغرض الصندوق'} />
         <SingleItemBtn content={'5. مصادر أموال الصندوق والوثائق المصدرة منها'} />
         <SingleItemBtn content={'6. الجهات متلقية الاكتتاب والشراء والاسترداد'} />
@@ -32,10 +36,10 @@ export default function AllItems() {
         <SingleItemBtn content={'25. لافصاح الدوري عن المعلومات'} />
         <SingleItemBtn content={'22. القوائم المالية والتقييم'} />
         <SingleItemBtn content={'27. الأعباء المالية'} />
-        <SingleItemBtn content={'28. أسماء و عناوين مسؤولي الاتصال'} />
+        <SingleItemBtn content={'28. أسماء و عناوين مسؤولي الاتصال'} leftIcon={<Help />} />
         <SingleItemBtn content={'29. إقرار الشركة ومدير الاستثمار'} />
         <SingleItemBtn content={'30. إقرار مراقبا الحسابات'} />
-        <SingleItemBtn content={'31. إقرار المستشار القانوني'} />
+        <SingleItemBtn content={'31. إقرار المستشار القانوني'} leftIcon={<Comment />} />
       </div>
     </div>
   )

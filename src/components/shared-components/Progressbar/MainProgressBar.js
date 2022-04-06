@@ -10,7 +10,7 @@ export default function MainProgressBar() {
         <span>من إكمال النشرة بالكامل</span>
       </h6>
 
-      <Progress percent={30} showInfo={false} />
+      <Progress percent={10} showInfo={false} />
     </div>
   )
 }

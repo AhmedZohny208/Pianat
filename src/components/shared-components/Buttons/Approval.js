@@ -1,7 +1,11 @@
 import React from 'react'
+import {ReactComponent as Approve} from '../svgs/approval.svg';
 
 export default function Approval() {
   return (
-    <div>Approval</div>
+    <button className='btn approval'>
+      <Approve />
+      اعتماد
+      </button>
   )
 }

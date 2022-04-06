@@ -4,6 +4,7 @@ import {ReactComponent as StockFundIcon} from '../../../components/shared-compon
 import {ReactComponent as AvatarIcon} from '../../../components/shared-components/svgs/avatarIconSmall.svg';
 import MainProgressBar from '../../../components/shared-components/Progressbar/MainProgressBar';
 import AllItems from '../../../components/shared-components/AllItems';
+import AllItemsActions from '../../../components/shared-components/AllItemsActions';
 
 export default function StockFund() {
   return (
@@ -28,6 +29,7 @@ export default function StockFund() {
 
       <MainProgressBar />
       <AllItems />
+      <AllItemsActions />
     </div>
 
     </>
