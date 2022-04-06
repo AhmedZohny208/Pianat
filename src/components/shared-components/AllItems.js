@@ -36,10 +36,10 @@ export default function AllItems() {
         <SingleItemBtn content={'25. لافصاح الدوري عن المعلومات'} />
         <SingleItemBtn content={'22. القوائم المالية والتقييم'} />
         <SingleItemBtn content={'27. الأعباء المالية'} />
-        <SingleItemBtn content={'28. أسماء و عناوين مسؤولي الاتصال'} leftIcon={<Help />} />
+        <SingleItemBtn content={'28. أسماء و عناوين مسؤولي الاتصال'} leftIcon={<Help />} tip={'help'} />
         <SingleItemBtn content={'29. إقرار الشركة ومدير الاستثمار'} />
         <SingleItemBtn content={'30. إقرار مراقبا الحسابات'} />
-        <SingleItemBtn content={'31. إقرار المستشار القانوني'} leftIcon={<Comment />} />
+        <SingleItemBtn content={'31. إقرار المستشار القانوني'} leftIcon={<Comment />} tip={'comment'} />
       </div>
     </div>
   )
