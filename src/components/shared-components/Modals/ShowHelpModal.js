@@ -76,7 +76,6 @@ export default function ShowHelpModal({ visible, onCancel }) {
           <DownloadDoc />
           <UploadFile />
         </div>
-
       </Form>
 
       <Send />
