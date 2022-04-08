@@ -1223,3 +1223,68 @@ button.quarters span svg {
 .solution-text textarea {
   background-color: #fff !important;
 }
+
+/* ================ Stock fund page item ================ */
+.stock-fund-item .header {
+  margin-top: 16px;
+  margin-bottom: 9px;
+}
+.stock-fund-item .header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  height: 34px;
+  line-height: 34px;
+}
+.stock-fund-item .header .icon {
+  margin-left: 9px;
+}
+.stock-fund-item .header svg {
+  cursor: pointer;
+}
+
+.stock-fund-item .items-header {
+  height: 61px;
+  background: #002044;
+  border-radius: 5px;
+  padding: 18px 13px;
+}
+.stock-fund-item .items-header h4 {
+  height: 34px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navigate {
+  margin-top: 56px;
+}
+
+.navigate .btn.prev,
+.navigate .btn.next {
+  height: 50px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.navigate .btn.prev {
+  width: 184px;
+  background: #ddd;
+  color: #050505;
+}
+.navigate .btn.next {
+  width: 230px;
+  background: #002044;
+  color: #FFFFFF;
+}
+
+.navigate .btn svg {
+  margin-bottom: 2px;
+}
+
+.navigate .btn.prev svg {
+  margin-left: 13px;
+}
+.navigate .btn.next svg {
+  margin-right: 13px;
+}

@@ -9,29 +9,28 @@ import AllItemsActions from '../../../components/shared-components/AllItemsActio
 export default function StockFund() {
   return (
     <>
-    <div className='create-subscription'>
-      <CreateSubscriptionBreadcrumb />
+      <div className='create-subscription'>
+        <CreateSubscriptionBreadcrumb />
 
-      <div className="header">
-        <h1>بنود نشرة الإكتتاب لصندوق استثمار خيري</h1>
+        <div className='header'>
+          <h1>بنود نشرة الإكتتاب لصندوق استثمار خيري</h1>
 
-        <div className='details d-flex'>
-          <h3>
-            <StockFundIcon />
-            صندوق اوراق مالية
+          <div className='details d-flex'>
+            <h3>
+              <StockFundIcon />
+              صندوق اوراق مالية
             </h3>
-          <p>
-            <AvatarIcon />
-            (مدير الاستثمار) عبد الرحمن علي
+            <p>
+              <AvatarIcon />
+              (مدير الاستثمار) عبد الرحمن علي
             </p>
+          </div>
         </div>
+
+        <MainProgressBar progress={10} info={'إكمال النشرة بالكامل'} />
+        <AllItems />
+        <AllItemsActions />
       </div>
-
-      <MainProgressBar />
-      <AllItems />
-      <AllItemsActions />
-    </div>
-
     </>
   )
 }

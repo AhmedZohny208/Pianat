@@ -1,13 +1,13 @@
 import React from 'react'
 import { Progress } from 'antd';
 
-export default function MainProgressBar() {
+export default function MainProgressBar({ progress, info }) {
   return (
     <div className='main-progress'>
       <h6>
         <span>أكملت</span>
-        <span className='percentage'> 10% </span>
-        <span>من إكمال النشرة بالكامل</span>
+        <span className='percentage'> {progress}% </span>
+        <span>من إكمال {info}</span>
       </h6>
 
       <Progress percent={10} showInfo={false} />
