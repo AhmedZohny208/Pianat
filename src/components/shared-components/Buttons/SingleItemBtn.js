@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import ShowHelpModal from '../Modals/ShowHelpModal'
 import ShowCommentModal from '../Modals/ShowCommentModal'
+import { useHistory } from 'react-router-dom'
 
-export default function SingleItemBtn({ content, rightIcon, leftIcon, tip }) {
+export default function SingleItemBtn({ content, rightIcon, leftIcon, tip, to }) {
+  const history = useHistory()
   const [helpVisible, isHelpVisible] = useState(false)
   const [commentVisible, isCommentVisible] = useState(false)
 
@@ -23,7 +25,11 @@ export default function SingleItemBtn({ content, rightIcon, leftIcon, tip }) {
   return (
     <>
     <div className="col-4">
-      <button style={{ fontSize: content.length > 49 ? '13px' : '14px' }} className='btn single-item'>
+      <button 
+        style={{ fontSize: content.length > 49 ? '13px' : '14px' }} 
+        className='btn single-item'
+        onClick={() => history.push(to)}
+      >
         <span className='right-icon'>{rightIcon && rightIcon}</span>
         {content}
         <span 
