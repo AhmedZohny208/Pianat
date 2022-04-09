@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../../../components/shared-components/Headers/ItemPage'
 import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import SidebarItems from './SidebarItems'
 import { item1 } from '../../../configs/Items'
 
 export default function StockFundItem1() {
@@ -31,7 +30,6 @@ export default function StockFundItem1() {
       </div>
 
       <NavigateItems item={1} />
-      {/* <SidebarItems /> */}
     </div>
   )
 }
