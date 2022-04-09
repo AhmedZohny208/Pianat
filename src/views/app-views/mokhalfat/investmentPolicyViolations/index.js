@@ -2,11 +2,11 @@ import React from 'react'
 import InvestmentPolicyViolationsGraph from '../../../../components/shared-components/Graphs/donut/InvestmentPolicyViolationsGraph'
 import { ReactComponent as Download } from '../../../../components/shared-components/svgs/download.svg'
 import { ReactComponent as OtherFund } from '../../../../components/shared-components/svgs/otherFund.svg'
-import { ReactComponent as Arrow } from '../../../../components/shared-components/svgs/accordionArrow.svg'
-import { ReactComponent as DownloadGold } from '../../../../components/shared-components/svgs/accodionDownloadGold.svg'
-import { ReactComponent as DownArrow } from '../../../../components/shared-components/svgs/accordionDown.svg'
+import { violations } from './data'
+import SingleViolation from '../../../../components/shared-components/Accordions/Violation'
 
 export default function InvestmentPolicyViolations() {
+
   return (
     <>
       <div className='violations investment-policy'>
@@ -54,72 +54,9 @@ export default function InvestmentPolicyViolations() {
         </div>
 
         <div className='violations-container'>
-          <div className='info'>
-            <div className='title'>
-              <Arrow />
-              <h6>اذون خزانة البنك المركزي المصري</h6>
-            </div>
-            <p className='number'>
-              العمليات المخالفه:<span>1200</span>
-            </p>
-            <button className='btn download'>
-              <DownloadGold />
-              تنزيل المرفقات
-            </button>
-            <p className='recomendation'>
-              التوصية:
-              <span>اغلاق المخالفة</span>
-            </p>
-            <p className='action'>
-              القرار المتخذ:
-              <span>اغلاق المخالفة</span>
-            </p>
-            <DownArrow />
-          </div>
-          <div className='info'>
-            <div className='title'>
-              <Arrow />
-              <h6>اذون خزانة البنك المركزي المصري</h6>
-            </div>
-            <p className='number'>
-              العمليات المخالفه:<span>1200</span>
-            </p>
-            <button className='btn download'>
-              <DownloadGold />
-              تنزيل المرفقات
-            </button>
-            <p className='recomendation'>
-              التوصية:
-              <span>اغلاق المخالفة</span>
-            </p>
-            <p className='action'>
-              القرار المتخذ:
-              <span>اغلاق المخالفة</span>
-            </p>
-            <DownArrow />
-          </div>
-          <div className='info'>
-            <div className='title'>
-              <Arrow />
-              <h6>اذون خزانة البنك المركزي المصري</h6>
-            </div>
-            <p className='number'>
-              العمليات المخالفه:<span>1200</span>
-            </p>
-            <button className='btn download'>
-              <DownloadGold />
-              تنزيل المرفقات
-            </button>
-            <p className='recomendation'>
-              التوصية:
-              <span>اغلاق المخالفة</span>
-            </p>
-            <p className='action'>
-              القرار المتخذ:
-              <span>اغلاق المخالفة</span>
-            </p>
-            <DownArrow />
-          </div>
+          {violations.map((violation) => {
+            return <SingleViolation key={violation.key} violation={violation} />
+          })}
         </div>
       </div>
     </>

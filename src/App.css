@@ -1446,8 +1446,9 @@ button.quarters span svg {
   border-radius: 5px;
   height: 44px;
   padding: 0 20px;
+  margin-bottom: 24px;
 }
-.accordion.violations .info:not(:last-child) {
+.accordion.violations .full-info:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -1474,6 +1475,16 @@ button.quarters span svg {
   margin-bottom: 0px;
 }
 
+.accordion.violations .info .number {
+  width: 16%;
+}
+.accordion.violations .info .recomendation {
+  width: 16%;
+}
+.accordion.violations .info .action {
+  width: 19%;
+}
+
 .accordion.violations .info button.download {
   width: 148px;
   height: 28px;
@@ -1490,14 +1501,153 @@ button.quarters span svg {
 }
 
 .accordion.violations .info .number span {
-  color: #D0342C;
+  color: #d0342c;
   margin-right: 8px;
 }
-
 
 .accordion.violations .info .recomendation span,
 .accordion.violations .info .action span {
-  color: #BA902E;
+  color: #ba902e;
   margin-right: 8px;
 }
 
+.accordion.violations .info svg.arrow {
+  transition: 0.2s;
+}
+.accordion.violations .info svg.arrow.show-info {
+  transform: rotate(180deg);
+}
+
+/* details */
+.accordion.violations .details {
+  padding: 0 20px;
+}
+.accordion.violations .details .right,
+.accordion.violations .details .left {
+  width: 50%;
+}
+.accordion.violations .details label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000;
+}
+.accordion.violations .details .right .input {
+  margin-bottom: 26px;
+}
+.accordion.violations input.small {
+  width: 168px;
+  height: 48px;
+  background: #fafbfc;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+}
+
+.accordion.violations .details textarea.ant-input {
+  background: #FAFBFC;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  margin-bottom: 26px;
+  padding: 12px;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Comments */
+.accordion.violations .comments {
+  background: #FAFBFC;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+}
+.accordion.violations .comments .comments-container {
+  padding: 15px 15px 0 15px;
+}
+.accordion.violations .comments .comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.accordion.violations .comments .comments-container .comment:not(:last-child) {
+  margin-bottom: 20px !important;
+}
+.accordion.violations .comments .avatar {
+  background: #002044;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+.accordion.violations .comments .comment .details p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 14px;
+}
+.accordion.violations .comments .comment .details .name span,
+.accordion.violations .comments .comment .details .from {
+  font-size: 12px;
+  color: #717171;
+}
+.accordion.violations .comments .comment .details .name span {
+  margin-right: 5px;
+}
+
+.accordion.violations .comments .ant-divider {
+  margin: 15px 0;
+}
+.accordion.violations .comments .add-comment {
+  display: flex;
+  align-items: center;
+  padding: 0 15px 15px 15px;
+}
+.accordion.violations .comments .add-comment input {
+  background: #FFFFFF;
+  border: 1px solid #BBBBBB;
+  border-radius: 5px;
+  padding: 9px 12px;
+  height: 38px;
+  width: 90%;
+}
+
+/* decision */
+.accordion.violations .decision {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.accordion.violations .decision .input:first-child {
+  margin-left: 75px;
+}
+
+.accordion.violations .decision .ant-select {
+  background-color: #fafbfc;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 240px;
+}
+.accordion.violations .decision .ant-select.ant-select-focused .ant-select-selector {
+  box-shadow: unset !important;
+}
+
+.accordion.violations .decision
+  .ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  border: unset;
+  background-color: #fafbfc;
+  color: #000;
+}
+
+.accordion.violations .decision button {
+  width: 137.26px;
+  height: 46px;
+  background: #BA902E;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
