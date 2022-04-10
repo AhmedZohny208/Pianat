@@ -1296,7 +1296,12 @@ button.quarters span svg {
   font-size: 14px;
   color: #000;
   padding: 12px 27px 12px 14px;
+  line-height: 26px;
 }
+.stock-fund-item .content div:first-child {
+  padding: 24px 27px 24px 14px;
+}
+
 .stock-fund-item .content > div:nth-of-type(odd),
 .stock-fund-item .content-rows > div:nth-of-type(odd) {
   background: #fff;
@@ -1304,6 +1309,15 @@ button.quarters span svg {
 .stock-fund-item .content > div:nth-of-type(even),
 .stock-fund-item .content-rows > div:nth-of-type(even) {
   background: #fafbfc;
+}
+
+.stock-fund-item .content .content-w-input {
+  line-height: 30px;
+}
+
+.stock-fund-item .content p {
+  margin-bottom: 0;
+  padding: 12px 0;
 }
 
 .stock-fund-item .title {
@@ -1316,6 +1330,20 @@ button.quarters span svg {
 .stock-fund-item .desc {
   padding: 14px;
   width: 82%;
+}
+
+/* Inputs */
+input.inline-input {
+  width: 188px;
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #B4B5B8;
+  border-radius: 5px;
+  margin: 0 8px;
+  padding: 8px;
+}
+input.inline-input::placeholder {
+  color: #7D7D7D;
 }
 
 /* Sidebar Items */
