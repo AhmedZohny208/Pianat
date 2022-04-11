@@ -1,0 +1,264 @@
+.stock-fund-item .content,
+.stock-fund-item .content-rows {
+  color: #000;
+}
+
+.stock-fund-item .content div {
+  font-size: 14px;
+  color: #000;
+  padding: 12px 27px 12px 14px;
+  line-height: 26px;
+}
+
+.stock-fund-item .content div:first-child {
+  padding: 24px 27px 24px 14px;
+}
+
+.stock-fund-item .content > div:nth-of-type(odd),
+.stock-fund-item .content-rows > div:nth-of-type(odd) {
+  background: #fff;
+}
+
+.stock-fund-item .content > div:nth-of-type(even),
+.stock-fund-item .content-rows > div:nth-of-type(even) {
+  background: #fafbfc;
+}
+
+.stock-fund-item .content-rows > div:first-child {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.stock-fund-item .content .content-w-input {
+  line-height: 30px;
+}
+
+.stock-fund-item .content p {
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+
+.stock-fund-item .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  width: 18%;
+  padding: 14px;
+  line-height: 28px;
+}
+
+.stock-fund-item .desc {
+  padding: 14px;
+  width: 82%;
+}
+
+.listed-input {
+  width: 100%;
+  position: relative;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  padding: 0px 1px;
+}
+
+.listed-input input {
+  border: none;
+  padding: 7px 24px 7px 7px;
+}
+
+.listed-input .bullet {
+  background-color: #002044;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.listed-input .hint {
+  color: #9d9d9d !important;
+  font-size: 14px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.listed-input .items {
+  padding: 20px 24px 7px 7px;
+}
+
+.listed-input .items p {
+  position: relative;
+}
+
+.listed-input .items p::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -14px;
+  background-color: #002044;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.listed-input .items p:last-child {
+  margin-bottom: 5px;
+}
+
+.stock-fund-item .header {
+  margin-top: 16px;
+  margin-bottom: 9px;
+}
+
+.stock-fund-item .header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  height: 34px;
+  line-height: 34px;
+}
+
+.stock-fund-item .header .icon {
+  margin-left: 9px;
+}
+
+.stock-fund-item .header svg {
+  cursor: pointer;
+}
+
+.stock-fund-item .items-header {
+  height: 61px;
+  background: #002044;
+  border-radius: 5px;
+  padding: 18px 13px;
+}
+
+.stock-fund-item .items-header h4 {
+  height: 34px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navigate {
+  margin-top: 56px;
+}
+
+.navigate .btn.prev,
+.navigate .btn.next {
+  height: 50px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.navigate .btn.prev {
+  width: 184px;
+  background: #ddd;
+  color: #050505;
+}
+
+.navigate .btn.next {
+  width: 230px;
+  background: #002044;
+  color: #ffffff;
+}
+
+.navigate .btn svg {
+  margin-bottom: 2px;
+}
+
+.navigate .btn.prev svg {
+  margin-left: 13px;
+}
+
+.navigate .btn.next svg {
+  margin-right: 13px;
+}
+
+.sidebar-items {
+  background-color: #fff;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 278px;
+  height: calc(100% - 80px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0 16px 0 7px;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.show-sidebar {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.sidebar-items .sidebar-header {
+  margin: 40px 0;
+  position: relative;
+}
+
+.sidebar-items .sidebar-header svg {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  cursor: pointer;
+}
+
+.sidebar-items .sidebar-header h6 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+}
+
+.sidebar-items .links {
+  padding-right: 17px;
+}
+
+.sidebar-items .links li {
+  margin-bottom: 15px;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar-items .links li.active {
+  background: rgba(0, 32, 68, 0.05);
+  border-radius: 4px;
+}
+
+.sidebar-items .links svg {
+  margin-left: 18px;
+}
+
+.sidebar-items .links a {
+  color: #002044;
+  display: block;
+}
+
+/* width */
+.sidebar-items::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.sidebar-items::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.sidebar-items::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 32, 68, 0);
+  border-radius: 8px;
+}
+
+.sidebar-items:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 32, 68, 0.08);
+  border-radius: 8px;
+}
+/*# sourceMappingURL=styles.css.map */

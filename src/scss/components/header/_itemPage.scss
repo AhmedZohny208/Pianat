@@ -1,0 +1,30 @@
+.stock-fund-item .header {
+  margin-top: 16px;
+  margin-bottom: 9px;
+}
+.stock-fund-item .header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  height: 34px;
+  line-height: 34px;
+}
+.stock-fund-item .header .icon {
+  margin-left: 9px;
+}
+.stock-fund-item .header svg {
+  cursor: pointer;
+}
+
+.stock-fund-item .items-header {
+  height: 61px;
+  background: #002044;
+  border-radius: 5px;
+  padding: 18px 13px;
+}
+.stock-fund-item .items-header h4 {
+  height: 34px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
