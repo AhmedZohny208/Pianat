@@ -26,7 +26,8 @@
   padding-bottom: 24px;
 }
 
-.stock-fund-item .content .content-w-input {
+.stock-fund-item .content .content-w-input,
+.stock-fund-item .content-rows .content-w-input {
   line-height: 30px;
 }
 
@@ -48,4 +49,37 @@
 .stock-fund-item .desc {
   padding: 14px;
   width: 82%;
+}
+
+// Hint - Grey
+.hint {
+  margin-bottom: 0px;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+.hint.grey {
+  color: #5E6660;
+  margin-top: 4px;
+}
+
+.hint svg {
+  margin-left: 9px;
+}
+
+// Ordered List & Unordered List
+ol, ul {
+  padding-right: unset;
+  margin-right: 18px;
+}
+ol {
+  color: #5E7DB3;
+}
+ul {
+  color: #000;
+}
+ol li, ul li {
+  list-style: unset;
+  line-height: 26px;
+  margin-bottom: 7px;
 }

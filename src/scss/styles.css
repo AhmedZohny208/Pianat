@@ -29,7 +29,8 @@
   padding-bottom: 24px;
 }
 
-.stock-fund-item .content .content-w-input {
+.stock-fund-item .content .content-w-input,
+.stock-fund-item .content-rows .content-w-input {
   line-height: 30px;
 }
 
@@ -56,6 +57,41 @@
 .stock-fund-item .desc {
   padding: 14px;
   width: 82%;
+}
+
+.hint {
+  margin-bottom: 0px;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.hint.grey {
+  color: #5E6660;
+  margin-top: 4px;
+}
+
+.hint svg {
+  margin-left: 9px;
+}
+
+ol, ul {
+  padding-right: unset;
+  margin-right: 18px;
+}
+
+ol {
+  color: #5E7DB3;
+}
+
+ul {
+  color: #000;
+}
+
+ol li, ul li {
+  list-style: unset;
+  line-height: 26px;
+  margin-bottom: 7px;
 }
 
 .listed-input {
@@ -135,6 +171,96 @@ input.inline-input::-ms-input-placeholder {
 
 input.inline-input::placeholder {
   color: #7d7d7d;
+}
+
+.ant-picker {
+  padding: 0 !important;
+  padding-left: 8px !important;
+  background: #ffffff;
+  border: 1px solid #b4b5b8;
+  border-radius: 5px;
+  margin: 0 8px;
+}
+
+.inline-input .ant-picker-input {
+  height: 40px;
+}
+
+.inline-input .ant-picker-input input {
+  padding: 8px;
+}
+
+.inline-input .ant-picker-input input::-webkit-input-placeholder {
+  color: #7d7d7d;
+}
+
+.inline-input .ant-picker-input input:-ms-input-placeholder {
+  color: #7d7d7d;
+}
+
+.inline-input .ant-picker-input input::-ms-input-placeholder {
+  color: #7d7d7d;
+}
+
+.inline-input .ant-picker-input input::placeholder {
+  color: #7d7d7d;
+}
+
+.ant-picker-focused {
+  border-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  border-right-width: 1px;
+  outline: 0;
+}
+
+.ant-picker:hover, .ant-picker-focused {
+  border-color: unset;
+  border-right-width: 1px;
+}
+
+.ant-picker svg {
+  fill: #4B506D;
+}
+
+.ant-select {
+  background-color: #fff;
+  padding: 5px 0;
+  border: 1px solid #B4B5B8;
+  border-radius: 5px;
+  width: 186px;
+  margin: 0 8px;
+}
+
+.ant-select input::-webkit-input-placeholder {
+  color: #7D7D7D;
+}
+
+.ant-select input:-ms-input-placeholder {
+  color: #7D7D7D;
+}
+
+.ant-select input::-ms-input-placeholder {
+  color: #7D7D7D;
+}
+
+.ant-select input::placeholder {
+  color: #7D7D7D;
+}
+
+.ant-select svg {
+  fill: #9A9AB0;
+}
+
+.ant-select.ant-select-focused .ant-select-selector {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: unset;
+  background-color: #fff;
+  color: #000;
 }
 
 .stock-fund-item .header {

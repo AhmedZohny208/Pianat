@@ -1650,3 +1650,9 @@ button.quarters span svg {
 .staff-form .hint svg {
   margin-left: 9px;
 }
+
+
+/* Radio */
+.ant-radio-group span {
+  color: #000;
+}
