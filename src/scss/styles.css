@@ -45,6 +45,12 @@
   width: 18%;
   padding: 14px;
   line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stock-fund-item .desc {
@@ -104,6 +110,31 @@
 
 .listed-input .items p:last-child {
   margin-bottom: 5px;
+}
+
+input.inline-input {
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #b4b5b8;
+  border-radius: 5px;
+  margin: 0 8px;
+  padding: 8px;
+}
+
+input.inline-input::-webkit-input-placeholder {
+  color: #7d7d7d;
+}
+
+input.inline-input:-ms-input-placeholder {
+  color: #7d7d7d;
+}
+
+input.inline-input::-ms-input-placeholder {
+  color: #7d7d7d;
+}
+
+input.inline-input::placeholder {
+  color: #7d7d7d;
 }
 
 .stock-fund-item .header {
