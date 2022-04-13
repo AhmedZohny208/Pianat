@@ -1229,19 +1229,18 @@ button.quarters span svg {
 
 /* ================ Stock fund page item ================ */
 
-
 /* Inputs */
 input.inline-input {
   width: 188px;
   height: 42px;
-  background: #FFFFFF;
-  border: 1px solid #B4B5B8;
+  background: #ffffff;
+  border: 1px solid #b4b5b8;
   border-radius: 5px;
   margin: 0 8px;
   padding: 8px;
 }
 input.inline-input::placeholder {
-  color: #7D7D7D;
+  color: #7d7d7d;
 }
 /* ====================== Accordion ====================== */
 .accordion.violations {
@@ -1391,8 +1390,8 @@ input.inline-input::placeholder {
 }
 
 .accordion.violations .details textarea.ant-input {
-  background: #FAFBFC;
-  border: 1px solid #EFEFEF;
+  background: #fafbfc;
+  border: 1px solid #efefef;
   border-radius: 5px;
   margin-bottom: 26px;
   padding: 12px;
@@ -1402,8 +1401,8 @@ input.inline-input::placeholder {
 
 /* Comments */
 .accordion.violations .comments {
-  background: #FAFBFC;
-  border: 1px solid #EFEFEF;
+  background: #fafbfc;
+  border: 1px solid #efefef;
   border-radius: 5px;
 }
 .accordion.violations .comments .comments-container {
@@ -1419,7 +1418,7 @@ input.inline-input::placeholder {
 }
 .accordion.violations .comments .avatar {
   background: #002044;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 40px;
   height: 40px;
   line-height: 43px;
@@ -1452,8 +1451,8 @@ input.inline-input::placeholder {
   padding: 0 15px 15px 15px;
 }
 .accordion.violations .comments .add-comment input {
-  background: #FFFFFF;
-  border: 1px solid #BBBBBB;
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
   border-radius: 5px;
   padding: 9px 12px;
   height: 38px;
@@ -1478,11 +1477,15 @@ input.inline-input::placeholder {
   border-radius: 5px;
   width: 240px;
 }
-.accordion.violations .decision .ant-select.ant-select-focused .ant-select-selector {
+.accordion.violations
+  .decision
+  .ant-select.ant-select-focused
+  .ant-select-selector {
   box-shadow: unset !important;
 }
 
-.accordion.violations .decision
+.accordion.violations
+  .decision
   .ant-select:not(.ant-select-customize-input)
   .ant-select-selector {
   border: unset;
@@ -1493,8 +1496,172 @@ input.inline-input::placeholder {
 .accordion.violations .decision button {
   width: 137.26px;
   height: 46px;
-  background: #BA902E;
+  background: #ba902e;
   color: #fff;
   border-radius: 5px;
   font-size: 16px;
+}
+
+/* ============================== Contributers Table ============================== */
+.contributers-table p {
+  margin-bottom: 0;
+}
+.contributers-table .gold {
+  background: #ba902e;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 18.5px 70px;
+}
+.contributers-table .gold p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.btn.add-doc-holder {
+  padding: 8px 16px;
+  border: 1px solid #002044;
+  border-radius: 5px;
+  color: #002044;
+  font-weight: 500;
+  font-size: 14px;
+}
+.btn.add-doc-holder svg {
+  margin-left: 8px;
+}
+
+.btn.download-doc-gold {
+  padding: 8px 16px;
+  border: 1px solid #ba902e;
+  border-radius: 12px;
+  color: #ba902e;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 24px;
+}
+.btn.download-doc-gold svg {
+  margin-left: 8px;
+}
+
+.btn.download-Shareholder-form {
+  padding: 9.6px 19.2px;
+  background: #002044;
+  border: 1.2px solid #416a98;
+  border-radius: 14.4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16.8px;
+  margin-right: 24px;
+}
+.btn.download-Shareholder-form svg {
+  margin-left: 8px;
+}
+
+.btn.upload-Shareholder-form {
+  padding: 9.6px 19.2px;
+  background: #fff2d5;
+  border: 1.2px solid #fdefd0;
+  border-radius: 14.4px;
+  color: #BA902E;
+  font-weight: 500;
+  font-size: 16.8px;
+  margin-right: 24px;
+}
+.btn.upload-Shareholder-form svg {
+  margin-left: 8px;
+}
+
+.btn.add-name {
+  background: #002044;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.btn.add-name svg {
+  margin-left: 8px;
+}
+
+.contributers-table .contributers-table-content {
+  padding: 16px;
+}
+
+.contributers-table .white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contributers-table .white .left-side {
+  display: flex;
+  align-items: center;
+}
+
+.contributers-table .white .left-side .red {
+  color: #d0342c;
+  font-weight: 700;
+  font-size: 15px;
+}
+.table-search {
+  width: 232px;
+  height: 40px;
+  margin-right: 24px;
+  position: relative;
+}
+.table-search input {
+  background: #f4f4f4;
+  border-radius: 12px;
+  padding: 8px 48px 8px 8px;
+}
+.table-search svg {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/* staff-form */
+.staff-form-header {
+  color: #000;
+  font-size: 14;
+  font-weight: 400;
+  margin-bottom: 8px;
+  height: 29px;
+  line-height: 26px;
+}
+.staff-form {
+  background: #FFFFFF;
+  border: 1px solid #9A9AB0;
+  border-radius: 5px;
+  padding: 16px 17px;
+}
+.staff-form .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+.staff-form .input {
+  margin-bottom: 8px;
+}
+.staff-form input {
+  border: 1px solid #B4B5B8;
+  border-radius: 5px;
+  height: 42px;
+}
+
+.staff-form .hint {
+  color: #0E6027;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.staff-form .hint svg {
+  margin-left: 9px;
 }
