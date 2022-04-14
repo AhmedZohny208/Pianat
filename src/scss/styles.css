@@ -232,19 +232,7 @@ input.inline-input::placeholder {
   margin: 0 8px;
 }
 
-.ant-select input::-webkit-input-placeholder {
-  color: #7D7D7D;
-}
-
-.ant-select input:-ms-input-placeholder {
-  color: #7D7D7D;
-}
-
-.ant-select input::-ms-input-placeholder {
-  color: #7D7D7D;
-}
-
-.ant-select input::placeholder {
+.ant-select-selection-placeholder {
   color: #7D7D7D;
 }
 
