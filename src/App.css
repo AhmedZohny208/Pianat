@@ -13,6 +13,10 @@
   margin-bottom: 36px;
 }
 
+.text-red {
+  color: #D0342C !important;
+}
+
 .ant-form-item-label {
   margin-bottom: 0 !important;
   text-align: right !important;
