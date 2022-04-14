@@ -41,7 +41,11 @@ export default function StockFundItem2() {
           <Input className='inline-input' placeholder={item.ph1} style={style} />
           {item.p7_3}
           <p>{item.p7_4}</p>
-          <p>{item.p7_5}</p>
+          <p>
+            {item.p7_5}
+            {' '}
+            {item.p7_6}
+          </p>
         </div>
       </div>
 
