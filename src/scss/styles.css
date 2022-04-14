@@ -94,6 +94,19 @@ ol li, ul li {
   margin-bottom: 7px;
 }
 
+.unordered-inline {
+  margin-left: 12px;
+}
+
+.unordered-inline-bullet {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
 .listed-input {
   width: 100%;
   position: relative;

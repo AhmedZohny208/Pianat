@@ -2,8 +2,9 @@ import { Input, Select } from 'antd'
 import React from 'react'
 import Header from '../../../components/shared-components/Headers/ItemPage'
 import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item from '../../../configs/stockFundItems/Item1'
+import item, { unorderedList } from '../../../configs/stockFundItems/Item1'
 import { ReactComponent as Close } from '../../../components/shared-components/svgs/close.svg'
+import AddNameBtn from '../../../components/shared-components/Buttons/AddName'
 
 const { Option } = Select
 
@@ -137,12 +138,17 @@ export default function StockFundItem1() {
           <div className='title'>{item.t16}</div>
           <div className='desc'>
             <p className='mb-3'>{item.p15_1}</p>
-            <div>
-              <span className='label'>{item.p15_2}</span>
-              <Select placeholder={item.ph4} style={{ width: '600px' }} >
-                <Option value='jack'>Jack</Option>
-              </Select>
-              <Close />
+            <div className='d-flex'>
+              <div style={{ width: '15%', lineHeight: '40px' }}>
+                <span className='label'>{item.p15_2}</span>
+              </div>
+              <div>
+                <Select placeholder={item.ph4} style={{ width: '600px' }} >
+                  <Option value='jack'>Jack</Option>
+                </Select>
+                <Close />
+                <AddNameBtn classn={'mx-2'} content={'أضف صندوق جديد'} />
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +162,17 @@ export default function StockFundItem1() {
         </div>
         <div className='d-flex'>
           <div className='title'>{item.t19}</div>
-          <div className='desc'></div>
+          <div className='desc'>
+            {item.p19_1} <br />
+            {unorderedList.map(ele => (
+              <>
+              <span className='unordered-inline'>{ele}{' '}</span>
+              <span className='unordered-inline-bullet'></span>
+              </>
+            ))}
+            <br /> 
+            {item.p19_2}
+          </div>
         </div>
         <div className='d-flex'>
           <div className='title'>{item.t20}</div>
