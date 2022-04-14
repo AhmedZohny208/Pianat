@@ -5,10 +5,14 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import DownloadShareholderFormBtn from '../../../../components/shared-components/Buttons/DownloadShareholderForm'
 import UploadShareholderFormBtn from '../../../../components/shared-components/Buttons/UploadShareholderForm'
 import { ReactComponent as Exclamation } from '../../../../components/shared-components/svgs/exclamationBlue.svg'
+import AddDocHolderBtn from '../../../../components/shared-components/Buttons/AddDocHolder'
+import DownloadDocGoldBtn from '../../../../components/shared-components/Buttons/DownloadDocGold'
+import TableSearch from '../../../../components/shared-components/Form/TableSearch'
 import Item from '../../../../configs/stockFundItems/Item3'
-import Rows15 from './Rows_15'
 import Rows1To6 from './Rows_1_6'
 import Rows7To12 from './Rows_7_12'
+import Row14 from './Row_14'
+import Rows15 from './Rows_15'
 
 const { Option } = Select
 
@@ -68,7 +72,7 @@ export default function StockFundItem3() {
               </div>
             </div>
 
-            <p className='fw-500'>{Item.p13_6}</p>
+            <p className='fw-500 mb-4'>{Item.p13_6}</p>
 
             <div className="row mb-36">
               <div className="col-6">
@@ -81,14 +85,30 @@ export default function StockFundItem3() {
                 <Exclamation className='ms-3' />
               </div>
             </div>
+
+            <div className='contributers-table'>
+              <div className='gold'>
+                <p>اجمالي عدد المساهمين: 28</p>
+                <p>اجمالي عدد الاسهم: 54326</p>
+              </div>
+
+              <div className='contributers-table-content'>
+                <div className='white'>
+                  <AddDocHolderBtn />
+                  <div className='left-side'>
+                    <p className='red'>عرض جميع الأخطاء: 13</p>
+                    <TableSearch placeholder={'ابحث بالاسم او رقم البطاقة'} />
+                    <DownloadDocGoldBtn />
+                  </div>
+                </div>
+                <div className='table'></div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="d-flex">
-          <div className="title">{Item.t14}</div>
-          <div className="desc"></div>
-        </div>
         
+        <Row14 />
         <Rows15 />
       </div>
 
