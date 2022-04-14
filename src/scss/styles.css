@@ -107,6 +107,117 @@ ol li, ul li {
   margin-left: 12px;
 }
 
+.new-category-card {
+  background: #FAFBFC;
+  border-radius: 8px;
+  margin: 49px 0;
+  padding: 16px 24px !important;
+}
+
+.new-category-card div {
+  padding: 0 !important;
+}
+
+.new-category-card hr {
+  color: #EBEBEB;
+}
+
+.new-category-card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 !important;
+  margin-bottom: 18px !important;
+}
+
+.new-category-card .header div {
+  background: #EFEFEF;
+  border-radius: 5px;
+  width: 45%;
+}
+
+.new-category-card .header div p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #002044;
+  margin-bottom: 0;
+  padding: 8px 16px;
+}
+
+.new-category-card .header div p span {
+  font-weight: 700;
+}
+
+.new-category-card .select-boxs .raw,
+.radio-boxs .raw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.new-category-card .select-boxs .raw .left,
+.new-category-card .select-boxs .raw .right,
+.radio-boxs .raw .left,
+.radio-boxs .raw .right {
+  width: 45%;
+}
+
+.new-category-card .select-boxs .raw .left {
+  margin-right: auto;
+}
+
+.new-category-card .select-boxs .raw .label,
+.radio-boxs .raw .label {
+  color: #002044;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.new-category-card .select-boxs .ant-select {
+  margin: 0;
+  padding: 5px !important;
+}
+
+.new-category-card .select-boxs .ant-select svg {
+  fill: #002044;
+}
+
+.radio-boxs .raw .left,
+.radio-boxs .raw .right {
+  background: #EFEFEF;
+  border-radius: 5px;
+  padding: 8px 16px !important;
+}
+
+.radio-boxs .raw .ant-radio-wrapper span {
+  color: #002044;
+}
+
+.ant-radio .ant-radio-inner,
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: #002044;
+}
+
+.radio-boxs .ant-radio-inner::after {
+  background-color: #002044;
+}
+
+.radio-boxs .percentage {
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  color: #002044;
+  font-size: 14px;
+}
+
 .listed-input {
   width: 100%;
   position: relative;
