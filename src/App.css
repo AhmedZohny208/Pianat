@@ -1,6 +1,17 @@
 @import '~antd/dist/antd.css';
 
 /* General */
+.fw-500 {
+  font-weight: 500;
+}
+
+.fs-17 {
+  font-size: 16.8px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
 
 .ant-form-item-label {
   margin-bottom: 0 !important;
@@ -1529,34 +1540,6 @@ button.quarters span svg {
   margin-right: 24px;
 }
 .btn.download-doc-gold svg {
-  margin-left: 8px;
-}
-
-.btn.download-Shareholder-form {
-  padding: 9.6px 19.2px;
-  background: #002044;
-  border: 1.2px solid #416a98;
-  border-radius: 14.4px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16.8px;
-  margin-right: 24px;
-}
-.btn.download-Shareholder-form svg {
-  margin-left: 8px;
-}
-
-.btn.upload-Shareholder-form {
-  padding: 9.6px 19.2px;
-  background: #fff2d5;
-  border: 1.2px solid #fdefd0;
-  border-radius: 14.4px;
-  color: #BA902E;
-  font-weight: 500;
-  font-size: 16.8px;
-  margin-right: 24px;
-}
-.btn.upload-Shareholder-form svg {
   margin-left: 8px;
 }
 

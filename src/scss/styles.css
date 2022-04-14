@@ -406,4 +406,32 @@ input.inline-input::placeholder {
   background: rgba(0, 32, 68, 0.08);
   border-radius: 8px;
 }
+
+.btn.download-Shareholder-form {
+  padding: 9.6px 19.2px;
+  background: #002044;
+  border: 1.2px solid #416a98;
+  border-radius: 14.4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16.8px;
+}
+
+.btn.download-Shareholder-form svg {
+  margin-left: 8px;
+}
+
+.btn.upload-Shareholder-form {
+  padding: 9.6px 19.2px;
+  background: #fff2d5;
+  border: 1.2px solid #fdefd0;
+  border-radius: 14.4px;
+  color: #BA902E;
+  font-weight: 500;
+  font-size: 16.8px;
+}
+
+.btn.upload-Shareholder-form svg {
+  margin-left: 8px;
+}
 /*# sourceMappingURL=styles.css.map */
