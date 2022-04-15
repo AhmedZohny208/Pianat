@@ -1,3 +1,104 @@
+.staff-form-header {
+  color: #000;
+  font-size: 14;
+  font-weight: 400;
+  margin-bottom: 8px;
+  height: 29px;
+  line-height: 26px;
+}
+
+.staff-form {
+  background: #FFFFFF;
+  border: 1px solid #9A9AB0;
+  border-radius: 5px;
+  padding: 16px 17px;
+}
+
+.staff-form .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+.staff-form .input {
+  margin-bottom: 8px;
+}
+
+.staff-form input {
+  border: 1px solid #B4B5B8;
+  border-radius: 5px;
+  height: 42px;
+}
+
+.staff-form .hint {
+  color: #0E6027;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.staff-form .hint svg {
+  margin-left: 9px;
+}
+
+.contributers-table p {
+  margin-bottom: 0;
+}
+
+.contributers-table .gold {
+  background: #ba902e;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px 5px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18.5px 70px;
+}
+
+.contributers-table .gold p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.contributers-table .contributers-table-content {
+  padding: 16px;
+}
+
+.contributers-table .white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contributers-table .white .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contributers-table .white .left-side .red {
+  color: #d0342c;
+  font-weight: 700;
+  font-size: 15px;
+}
+
 .stock-fund-item .content,
 .stock-fund-item .content-rows {
   color: #000;
@@ -6,12 +107,7 @@
 .stock-fund-item .content div {
   font-size: 14px;
   color: #000;
-  padding: 12px 27px 12px 14px;
   line-height: 26px;
-}
-
-.stock-fund-item .content div:first-child {
-  padding: 24px 27px 24px 14px;
 }
 
 .stock-fund-item .content > div:nth-of-type(odd),

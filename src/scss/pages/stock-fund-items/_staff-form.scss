@@ -1,0 +1,39 @@
+.staff-form-header {
+  color: #000;
+  font-size: 14;
+  font-weight: 400;
+  margin-bottom: 8px;
+  height: 29px;
+  line-height: 26px;
+}
+.staff-form {
+  background: #FFFFFF;
+  border: 1px solid #9A9AB0;
+  border-radius: 5px;
+  padding: 16px 17px;
+}
+.staff-form .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+.staff-form .input {
+  margin-bottom: 8px;
+}
+.staff-form input {
+  border: 1px solid #B4B5B8;
+  border-radius: 5px;
+  height: 42px;
+}
+
+.staff-form .hint {
+  color: #0E6027;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.staff-form .hint svg {
+  margin-left: 9px;
+}

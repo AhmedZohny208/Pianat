@@ -4,6 +4,9 @@
 .fw-500 {
   font-weight: 500;
 }
+.fw-600 {
+  font-weight: 500;
+}
 
 .fs-17 {
   font-size: 16.8px;
@@ -15,6 +18,13 @@
 
 .text-red {
   color: #D0342C !important;
+}
+
+.p-in {
+  padding: 12px 27px 12px 14px;
+}
+.p-in-first {
+  padding: 24px 27px 24px 14px;
 }
 
 hr {
@@ -1507,25 +1517,6 @@ button.quarters span svg {
 }
 
 /* ============================== Contributers Table ============================== */
-.contributers-table p {
-  margin-bottom: 0;
-}
-.contributers-table .gold {
-  background: #ba902e;
-  border: 1px solid #bbbbbb;
-  border-radius: 5px 5px 0px 0px;
-  display: flex;
-  justify-content: space-between;
-  padding: 18.5px 70px;
-}
-.contributers-table .gold p {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-  height: 34px;
-  line-height: 34px;
-}
-
 .btn.add-doc-holder {
   padding: 8px 16px;
   border: 1px solid #002044;
@@ -1564,26 +1555,6 @@ button.quarters span svg {
   margin-left: 8px;
 }
 
-.contributers-table .contributers-table-content {
-  padding: 16px;
-}
-
-.contributers-table .white {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contributers-table .white .left-side {
-  display: flex;
-  align-items: center;
-}
-
-.contributers-table .white .left-side .red {
-  color: #d0342c;
-  font-weight: 700;
-  font-size: 15px;
-}
 .table-search {
   width: 232px;
   height: 40px;
@@ -1600,48 +1571,6 @@ button.quarters span svg {
   top: 8px;
   right: 8px;
 }
-
-/* staff-form */
-.staff-form-header {
-  color: #000;
-  font-size: 14;
-  font-weight: 400;
-  margin-bottom: 8px;
-  height: 29px;
-  line-height: 26px;
-}
-.staff-form {
-  background: #FFFFFF;
-  border: 1px solid #9A9AB0;
-  border-radius: 5px;
-  padding: 16px 17px;
-}
-.staff-form .label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-  height: 26px;
-  line-height: 26px;
-  margin-bottom: 4px;
-}
-.staff-form .input {
-  margin-bottom: 8px;
-}
-.staff-form input {
-  border: 1px solid #B4B5B8;
-  border-radius: 5px;
-  height: 42px;
-}
-
-.staff-form .hint {
-  color: #0E6027;
-  font-size: 12px;
-  margin-top: 4px;
-}
-.staff-form .hint svg {
-  margin-left: 9px;
-}
-
 
 /* Radio */
 .ant-radio-group span {
