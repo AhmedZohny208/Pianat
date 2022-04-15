@@ -15,6 +15,9 @@
 .mb-36 {
   margin-bottom: 36px;
 }
+.mb-12 {
+  margin-bottom: 12px !important;
+}
 
 .text-red {
   color: #D0342C !important;
