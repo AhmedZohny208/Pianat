@@ -30,10 +30,14 @@
 }
 
 .staff-form .hint {
-  color: #0E6027;
-  font-size: 12px;
+  color: #0E6027 !important;
+  font-size: 12px !important;
   margin-top: 4px;
 }
 .staff-form .hint svg {
   margin-left: 9px;
+}
+
+.staff-form hr {
+  color: #bbb;
 }

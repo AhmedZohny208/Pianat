@@ -22,6 +22,9 @@
 .text-red {
   color: #D0342C !important;
 }
+.text-darkblue {
+  color: #002044;
+}
 
 .p-in {
   padding: 12px 27px 12px 14px;
@@ -1556,6 +1559,30 @@ button.quarters span svg {
 }
 .btn.add-name svg {
   margin-left: 8px;
+}
+
+.btn.add-name-light {
+  background: #EFEFEF;
+  color: #002044;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.btn.add-name-light svg {
+  margin-left: 8px;
+}
+
+.btn.save {
+  background: #2A9F20;
+  border-radius: 5px;
+  color: #fff;
+  width: 142px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 24px;
 }
 
 .table-search {

@@ -34,13 +34,17 @@
 }
 
 .staff-form .hint {
-  color: #0E6027;
-  font-size: 12px;
+  color: #0E6027 !important;
+  font-size: 12px !important;
   margin-top: 4px;
 }
 
 .staff-form .hint svg {
   margin-left: 9px;
+}
+
+.staff-form hr {
+  color: #bbb;
 }
 
 .contributers-table p {
@@ -293,7 +297,8 @@ ol li, ul li {
   padding: 8px 16px !important;
 }
 
-.radio-boxs .raw .ant-radio-wrapper span {
+.radio-boxs .raw .ant-radio-wrapper span,
+.staff-form .ant-radio-wrapper span {
   color: #002044;
 }
 
@@ -302,7 +307,8 @@ ol li, ul li {
   border-color: #002044;
 }
 
-.radio-boxs .ant-radio-inner::after {
+.radio-boxs .ant-radio-inner::after,
+.staff-form .ant-radio-inner::after {
   background-color: #002044;
 }
 
