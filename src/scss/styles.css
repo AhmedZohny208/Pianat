@@ -476,7 +476,7 @@ input.grey-input::placeholder {
 
 .ant-select {
   background-color: #fff;
-  padding: 5px 0;
+  padding: 3.8px 0;
   border: 1px solid #B4B5B8;
   border-radius: 5px;
   width: 186px;
@@ -488,7 +488,7 @@ input.grey-input::placeholder {
 }
 
 .ant-select svg {
-  fill: #9A9AB0;
+  fill: #4B506D;
 }
 
 .ant-select.ant-select-focused .ant-select-selector {
