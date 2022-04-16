@@ -200,3 +200,25 @@ ol li, ul li {
   color: #002044;
   font-size: 14px;
 }
+
+// Black Radio box
+.black .raw .ant-radio-wrapper span {
+  color: #000;
+}
+
+.ant-radio .ant-radio-inner, 
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: #000;
+}
+
+.black .ant-radio-inner::after {
+  background-color: #000;
+}
+
+.ant-radio-checked::after {
+  border-color: #000;
+}
+
+.ant-radio-input:focus + .ant-radio-inner {
+  box-shadow: 0 0 0 3px rgb(245, 245, 245);
+}

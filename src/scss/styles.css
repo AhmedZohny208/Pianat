@@ -33,13 +33,13 @@
   height: 42px;
 }
 
-.staff-form .hint {
+.hint {
   color: #0E6027 !important;
   font-size: 12px !important;
   margin-top: 4px;
 }
 
-.staff-form .hint svg {
+.hint svg {
   margin-left: 9px;
 }
 
@@ -318,6 +318,28 @@ ol li, ul li {
   left: 14px;
   color: #002044;
   font-size: 14px;
+}
+
+.black .raw .ant-radio-wrapper span {
+  color: #000;
+}
+
+.ant-radio .ant-radio-inner,
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: #000;
+}
+
+.black .ant-radio-inner::after {
+  background-color: #000;
+}
+
+.ant-radio-checked::after {
+  border-color: #000;
+}
+
+.ant-radio-input:focus + .ant-radio-inner {
+  -webkit-box-shadow: 0 0 0 3px whitesmoke;
+          box-shadow: 0 0 0 3px whitesmoke;
 }
 
 .listed-input {
