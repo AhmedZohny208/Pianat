@@ -1,0 +1,11 @@
+input.grey-input {
+  height: 42px;
+  background: #EFEFEF;
+  color: #000;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  padding: 8px;
+}
+input.grey-input::placeholder {
+  color: #000;
+}

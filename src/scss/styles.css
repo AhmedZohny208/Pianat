@@ -399,6 +399,31 @@ input.inline-input::placeholder {
   color: #7d7d7d;
 }
 
+input.grey-input {
+  height: 42px;
+  background: #EFEFEF;
+  color: #000;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+input.grey-input::-webkit-input-placeholder {
+  color: #000;
+}
+
+input.grey-input:-ms-input-placeholder {
+  color: #000;
+}
+
+input.grey-input::-ms-input-placeholder {
+  color: #000;
+}
+
+input.grey-input::placeholder {
+  color: #000;
+}
+
 .ant-picker {
   padding: 0 !important;
   padding-left: 8px !important;

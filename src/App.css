@@ -18,6 +18,9 @@
 .mb-12 {
   margin-bottom: 12px !important;
 }
+.mb-60 {
+  margin-bottom: 60px;
+}
 
 .text-red {
   color: #D0342C !important;

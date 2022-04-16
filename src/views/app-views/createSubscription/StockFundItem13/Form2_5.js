@@ -83,7 +83,7 @@ export default function Form2_5() {
         <hr className='my-4' />
 
         <div>
-          <p className='fw-bold text-darkblue p-0'>{item.p18}</p>
+          <p className='fw-bold text-darkblue p-0 mb-2'>{item.p18}</p>
           <Radio.Group>
             <Radio className='me-5' value={1}>لا</Radio>
             <Radio value={2}>نعم</Radio>
