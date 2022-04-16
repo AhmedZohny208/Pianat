@@ -12,11 +12,11 @@
   font-size: 16.8px;
 }
 
-.mb-36 {
-  margin-bottom: 36px;
-}
 .mb-12 {
   margin-bottom: 12px !important;
+}
+.mb-36 {
+  margin-bottom: 36px;
 }
 .mb-60 {
   margin-bottom: 60px;
@@ -25,8 +25,14 @@
 .text-red {
   color: #D0342C !important;
 }
+.text-black {
+  color: #000;
+}
 .text-darkblue {
   color: #002044;
+}
+.text-lightblue {
+  color: #5E7DB2;
 }
 
 .p-in {
@@ -34,6 +40,12 @@
 }
 .p-in-first {
   padding: 24px 27px 24px 14px;
+}
+
+.flex-cvhb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 hr {
