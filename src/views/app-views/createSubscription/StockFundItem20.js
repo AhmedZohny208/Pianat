@@ -13,7 +13,7 @@ export default function StockFundItem20() {
       />
 
       <div className="content">
-        <div>
+        <div className="p-in-first">
           <p>{item.p1}</p>
           <p>{item.p2}</p>
           <p>{item.p3}</p>
