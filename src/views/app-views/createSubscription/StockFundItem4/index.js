@@ -7,7 +7,7 @@ import ListedInput from '../../../../components/shared-components/Form/ListedInp
 export default function StockFundItem4() {
   const [target, setTarget] = useState('')
   const [purpose, setPurpose] = useState('')
-  const [items, setItems] = useState([])
+  const [items, setItems] = useState(['الهدف الاساسي الاول من الصندوق  هذا كلام غير حقيقي وغير مطابق للواقع ولكنه فقط يمثل ما سوف يتم ظهوره في حالة كتابة كلام'])
   const [itemsTwo, setItemsTwo] = useState([])
 
   return (

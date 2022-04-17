@@ -6,6 +6,10 @@
   padding: 0px 1px;
 }
 
+// .listed-input > div {
+//   width: 100%;
+// }
+
 .listed-input input {
   border: none;
   padding: 7px 24px 7px 7px;
@@ -41,10 +45,11 @@
 
 .listed-input .items p {
   position: relative;
-  word-break: break-all; 
+  // word-break: break-all; 
+  height: auto;
   padding: 0;
   margin-bottom: 1rem;
-  height: 20px;
+  // height: 20px;
   line-height: 20px;
 }
 .listed-input .items p::before {
