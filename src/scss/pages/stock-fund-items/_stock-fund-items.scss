@@ -203,8 +203,8 @@ ol li, ul li {
   color: #000;
 }
 
-.ant-radio .ant-radio-inner, 
-.ant-radio-input:focus + .ant-radio-inner {
+.black .ant-radio .ant-radio-inner, 
+.black .ant-radio-input:focus + .ant-radio-inner {
   border-color: #000;
 }
 
@@ -212,10 +212,32 @@ ol li, ul li {
   background-color: #000;
 }
 
-.ant-radio-checked::after {
+.black .ant-radio-checked::after {
   border-color: #000;
 }
 
-.ant-radio-input:focus + .ant-radio-inner {
+.black .ant-radio-input:focus + .ant-radio-inner {
+  box-shadow: 0 0 0 3px rgb(245, 245, 245);
+}
+
+// Blue Radio box
+.blue .ant-radio-wrapper span {
+  color: #002044;
+}
+
+.blue .ant-radio .ant-radio-inner, 
+.blue .ant-radio-input:focus + .ant-radio-inner {
+  border-color: #002044;
+}
+
+.blue .ant-radio-inner::after {
+  background-color: #002044;
+}
+
+.blue .ant-radio-checked::after {
+  border-color: #002044;
+}
+
+.blue .ant-radio-input:focus + .ant-radio-inner {
   box-shadow: 0 0 0 3px rgb(245, 245, 245);
 }

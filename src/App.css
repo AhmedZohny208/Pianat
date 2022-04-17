@@ -1,6 +1,9 @@
 @import '~antd/dist/antd.css';
 
 /* General */
+.w-45 {
+  width: 45% !important;
+}
 .w-60 {
   width: 60% !important;
 }
@@ -37,11 +40,18 @@
 .text-black {
   color: #000;
 }
+.text-grey {
+  color: #4B506D;
+}
 .text-darkblue {
   color: #002044;
 }
 .text-lightblue {
   color: #5E7DB2;
+}
+
+.lh-26 {
+  line-height: 26px;
 }
 
 .p-in {
@@ -73,6 +83,9 @@ hr {
 
 input.ant-input:focus {
   box-shadow: none !important;
+}
+input.ant-input:hover {
+  border-color: #007dfa ;
 }
 
 .ant-input-affix-wrapper:focus,
