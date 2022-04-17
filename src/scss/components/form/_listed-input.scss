@@ -8,7 +8,6 @@
 
 .listed-input input {
   border: none;
-  // border-radius: 5px;
   padding: 7px 24px 7px 7px;
 }
 
@@ -22,8 +21,13 @@
   right: 10px;
 }
 
+.listed-input input:focus .hint {
+  display: none;
+}
+
 .listed-input .hint {
   color: #9d9d9d !important;
+  line-height: unset;
   font-size: 14px;
   position: absolute;
   left: 15px;
@@ -32,10 +36,12 @@
 
 .listed-input .items {
   padding: 20px 24px 7px 7px;
+  background-color: #fff;
 }
 
 .listed-input .items p {
   position: relative;
+  word-break: break-all; 
 }
 .listed-input .items p::before {
   content: '';

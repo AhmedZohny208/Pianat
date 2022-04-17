@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input } from 'antd'
 
-export default function ListedInput({ placeholder, ph2, value, setValue, items, setItems }) {
+export default function ListedInput({ placeholder, ph2, value, setValue, items, setItems, minHeight }) {
   return (
     <div className='listed-input'>
       <div>
@@ -22,14 +22,24 @@ export default function ListedInput({ placeholder, ph2, value, setValue, items, 
           }}
         />
         <div className='bullet'></div>
-        <div className='hint'>{ph2}</div>
+        {!value && <div className='hint'>{ph2}</div>}
       </div>
-      {items.length > 0 && (
-        <div className='items'>
+      {minHeight ? (
+        <div className='items' style={{ minHeight }}>
           {items.map((ele) => (
             <p>{ele}</p>
           ))}
         </div>
+      ) : (
+        <>
+          {items.length > 0 && (
+            <div className='items'>
+              {items.map((ele) => (
+                <p>{ele}</p>
+              ))}
+            </div>
+          )}
+        </>
       )}
     </div>
   )

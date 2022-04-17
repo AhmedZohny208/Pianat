@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item from '../../../configs/stockFundItems/Item4'
-import ListedInput from '../../../components/shared-components/Form/ListedInput'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
+import item from '../../../../configs/stockFundItems/Item4'
+import ListedInput from '../../../../components/shared-components/Form/ListedInput'
 
 export default function StockFundItem4() {
   const [target, setTarget] = useState('')
