@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
 
 export default function StockFundItem21() {
   return (

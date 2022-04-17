@@ -1,6 +1,9 @@
 @import '~antd/dist/antd.css';
 
 /* General */
+.w-40 {
+  width: 40%;
+}
 .w-45 {
   width: 45% !important;
 }
@@ -12,6 +15,9 @@
 }
 .w-80 {
   width: 80% !important;
+}
+.w-90 {
+  width: 90%;
 }
 .fw-500 {
   font-weight: 500;
@@ -52,6 +58,12 @@
 
 .lh-26 {
   line-height: 26px;
+}
+.lh-29 {
+  line-height: 29px;
+}
+.lh-45 {
+  line-height: 49px !important;
 }
 
 .p-in {

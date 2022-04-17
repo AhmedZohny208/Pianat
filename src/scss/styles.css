@@ -308,7 +308,7 @@ ol li, ul li {
   background-color: #002044;
 }
 
-.radio-boxs .percentage {
+.percentage {
   position: absolute;
   top: 8px;
   left: 14px;
@@ -358,6 +358,16 @@ ol li, ul li {
 .blue .ant-radio-input:focus + .ant-radio-inner {
   -webkit-box-shadow: 0 0 0 3px whitesmoke;
           box-shadow: 0 0 0 3px whitesmoke;
+}
+
+ul.grey li {
+  line-height: 35px;
+}
+
+ul.grey li::marker {
+  color: #D9D9D9;
+  width: 8px;
+  height: 8px;
 }
 
 .listed-input {
