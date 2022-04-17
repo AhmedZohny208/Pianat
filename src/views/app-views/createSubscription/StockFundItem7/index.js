@@ -14,7 +14,7 @@ export default function StockFundItem7() {
         info={'البند السابع'}
       />
       <div className="content">
-        <div className='content-w-input'>
+        <div className='content-w-input p-in-first'>
           <div className="d-flex align-items-center p-0">
             <div style={{ width: '21%' }} className='p-0'>{item.p1}</div>
             <Input style={{ width: '65%' }} className='inline-input' placeholder={item.ph1} />

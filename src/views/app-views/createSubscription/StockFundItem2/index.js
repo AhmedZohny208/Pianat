@@ -1,8 +1,8 @@
 import React from 'react'
 import { Input } from 'antd'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item from '../../../configs/stockFundItems/Item2'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
+import item from '../../../../configs/stockFundItems/Item2'
 
 const style = { width: '188px' }
 
@@ -16,17 +16,18 @@ export default function StockFundItem2() {
       />
 
       <div className='content'>
-        <div className='content-w-input'>
+        <div className='content-w-input p-in-first'>
           {item.p1_1}
           <Input className='inline-input' placeholder={item.ph1} style={style} />
           {item.p1_2}
         </div>
-        <div>{item.p2}</div>
-        <div>{item.p3}</div>
-        <div>{item.p4}</div>
-        <div>{item.p5}</div>
 
-        <div className='content-w-input'>
+        <div className='p-in'>{item.p2}</div>
+        <div className='p-in-first'>{item.p3}</div>
+        <div className='p-in'>{item.p4}</div>
+        <div className='p-in-first'>{item.p5}</div>
+
+        <div className='content-w-input p-in'>
           {item.p6_1}
           <Input className='inline-input' placeholder={item.ph1} style={style} />
           {item.p6_2}
@@ -34,7 +35,7 @@ export default function StockFundItem2() {
           {item.p6_3}
         </div>
 
-        <div className='content-w-input'>
+        <div className='content-w-input p-in-first'>
           {item.p7_1}
           <Input className='inline-input' placeholder={item.ph1} style={style} />
           {item.p7_2}
