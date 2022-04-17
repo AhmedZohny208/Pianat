@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Input, Radio, Select } from 'antd'
 import item from '../../../../configs/stockFundItems/Item7'
 import { ReactComponent as Percentage } from '../../../../components/shared-components/svgs/percentage.svg'
 import AddName from '../../../../components/shared-components/Buttons/AddName'
+import ListedInput from '../../../../components/shared-components/Form/ListedInput'
 
 const { Option } = Select
 
 export default function Card() {
+  const [target, setTarget] = useState('')
+  const [purpose, setPurpose] = useState('')
+  const [items, setItems] = useState([])
+  const [itemsTwo, setItemsTwo] = useState([])
+
   return (
     <div className='new-category-card'>
 
@@ -25,8 +31,28 @@ export default function Card() {
         </div>
       </div>
 
-      <p className='fs-6 fw-600 p-0'>{item.p16}</p>
-      <p className='fs-6 fw-600 p-0'>{item.p17}</p>
+      <div className='mb-3'>
+        <p className='fs-6 fw-600 p-0 mb-2'>{item.p16}</p>
+        <ListedInput
+          placeholder={'اكتب هنا'}
+          value={target}
+          setValue={setTarget}
+          items={items}
+          setItems={setItems}
+          minHeight={85}
+        />
+      </div>
+      <div className='mb-60'>
+        <p className='fs-6 fw-600 p-0 mb-2'>{item.p17}</p>
+        <ListedInput
+          placeholder={'اكتب هنا'}
+          value={purpose}
+          setValue={setPurpose}
+          items={itemsTwo}
+          setItems={setItemsTwo}
+          minHeight={85}
+        />
+      </div>
 
       <div className='select-boxs'>
         <div className='raw'>

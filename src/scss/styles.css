@@ -214,10 +214,6 @@ ol li, ul li {
   padding: 16px 24px !important;
 }
 
-.new-category-card div {
-  padding: 0 !important;
-}
-
 .new-category-card hr {
   color: #EBEBEB;
 }
@@ -386,6 +382,10 @@ ol li, ul li {
 .listed-input .items p {
   position: relative;
   word-break: break-all;
+  padding: 0;
+  margin-bottom: 1rem;
+  height: 20px;
+  line-height: 20px;
 }
 
 .listed-input .items p::before {
