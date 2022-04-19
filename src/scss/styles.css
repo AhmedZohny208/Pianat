@@ -469,19 +469,19 @@ input.grey-input {
 }
 
 input.grey-input::-webkit-input-placeholder {
-  color: #000;
+  color: #7D7D7D;
 }
 
 input.grey-input:-ms-input-placeholder {
-  color: #000;
+  color: #7D7D7D;
 }
 
 input.grey-input::-ms-input-placeholder {
-  color: #000;
+  color: #7D7D7D;
 }
 
 input.grey-input::placeholder {
-  color: #000;
+  color: #7D7D7D;
 }
 
 .ant-picker {
