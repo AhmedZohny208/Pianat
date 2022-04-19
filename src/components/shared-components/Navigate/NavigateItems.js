@@ -21,6 +21,7 @@ export default function NavigateItems({ item }) {
       </button>
       <button
         className='btn next'
+        style={{ visibility: item === 34 ? 'hidden' : 'visible' }}
         onClick={() => history.push(`${path}/${item + 1}`)}
       >
         التالى: بند {item + 1}
