@@ -1,6 +1,9 @@
 @import '~antd/dist/antd.css';
 
 /* General */
+.w-20 {
+  width: 20%;
+}
 .w-30 {
   width: 30%;
 }
