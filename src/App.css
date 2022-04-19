@@ -1,6 +1,12 @@
 @import '~antd/dist/antd.css';
 
 /* General */
+.w-30 {
+  width: 30%;
+}
+.w-35 {
+  width: 35%;
+}
 .w-40 {
   width: 40%;
 }
@@ -26,6 +32,9 @@
   font-weight: 600;
 }
 
+.fs-12 {
+  font-size: 12px !important;
+}
 .fs-17 {
   font-size: 16.8px;
 }
@@ -35,6 +44,9 @@
 }
 .mb-36 {
   margin-bottom: 36px;
+}
+.mb-40 {
+  margin-bottom: 40px;
 }
 .mb-60 {
   margin-bottom: 60px !important;
@@ -56,6 +68,13 @@
   color: #5E7DB2;
 }
 
+.bg-light {
+  background-color: #E5E5E5;
+}
+
+.lh-23 {
+  line-height: 23px;
+}
 .lh-26 {
   line-height: 26px;
 }
