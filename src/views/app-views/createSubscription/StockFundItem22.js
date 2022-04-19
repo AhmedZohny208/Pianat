@@ -13,7 +13,7 @@ export default function StockFundItem22() {
       />
 
       <div className='content'>
-        <div style={{ paddingTop: '12px', paddingBottom: '12px' }}>
+        <div className="p-in-first">
           <p style={{ lineHeight: '36px' }}>
             {item.p1} <br />
             {item.p2} <br />
