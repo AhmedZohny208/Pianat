@@ -573,6 +573,17 @@ textarea.ant-input {
   font-size: 14px;
 }
 
+.ordered-input-list {
+  position: relative;
+}
+
+.ordered-input-list .order {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 16px !important;
+}
+
 .stock-fund-item .header {
   margin-top: 16px;
   margin-bottom: 9px;
