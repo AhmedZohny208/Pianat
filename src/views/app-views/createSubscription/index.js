@@ -48,7 +48,7 @@ export default function CreateSubscription({ match }) {
   }
   return (
     <>
-    <SidebarItems isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} />
+    <SidebarItems isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} match={match} />
     
     <Suspense fallback={<Loading cover='content' />}>
       <Switch>
