@@ -668,6 +668,11 @@ textarea.ant-input {
           transform: translate(100%);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  z-index: 999999999;
+}
+
+.ant-layout-sider-collapsed + section .sidebar-items {
+  background-color: red !important;
 }
 
 .show-sidebar {

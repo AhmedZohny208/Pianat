@@ -4,7 +4,7 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import item from '../../../../configs/stockFundItems/Item4'
 import ListedInput from '../../../../components/shared-components/Form/ListedInput'
 
-export default function StockFundItem4() {
+export default function StockFundItem4({openSidebar}) {
   const [target, setTarget] = useState('')
   const [purpose, setPurpose] = useState('')
   const [items, setItems] = useState(['الهدف الاساسي الاول من الصندوق  هذا كلام غير حقيقي وغير مطابق للواقع ولكنه فقط يمثل ما سوف يتم ظهوره في حالة كتابة كلام'])
@@ -16,6 +16,7 @@ export default function StockFundItem4() {
         title={'4. هدف وغرض الصندوق'}
         progress={10}
         info={'البند الرابع'}
+        openSidebar={openSidebar}
       />
 
       <div className='content-rows'>

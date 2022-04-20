@@ -1,21 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
-import SidebarItems from '../../../views/app-views/createSubscription/SidebarItems'
 import CreateSubscriptionBreadcrumb from '../Breadcrumbs/CreateSubscription'
 import MainProgressBar from '../Progressbar/MainProgressBar'
 import { ReactComponent as Humburger } from '../svgs/humburger.svg'
 import { ReactComponent as RightArrow } from '../svgs/rightArrow.svg'
 
-export default function ItemPage({title, progress, info}) {
+export default function ItemPage({title, progress, info, openSidebar}) {
   const history = useHistory()
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
 
-  const openSidebar = () => {
-    setIsSidebarOpen(true)
-  }
-  const closeSidebar = () => {
-    setIsSidebarOpen(false)
-  }
   return (
     <div>
       <CreateSubscriptionBreadcrumb />
@@ -34,8 +26,6 @@ export default function ItemPage({title, progress, info}) {
       <div className='items-header'>
         <h4>عناصر البند</h4>
       </div>
-
-      <SidebarItems isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} />
     </div>
   )
 }

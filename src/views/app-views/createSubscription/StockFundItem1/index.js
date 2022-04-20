@@ -8,13 +8,15 @@ import AddNameBtn from '../../../../components/shared-components/Buttons/AddName
 
 const { Option } = Select
 
-export default function StockFundItem1() {
+export default function StockFundItem1({openSidebar}) {
+
   return (
     <div className='stock-fund-item'>
       <Header
         title={'1. تعريفات عامة عن النشرة'}
         progress={10}
         info={'البند الأول'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

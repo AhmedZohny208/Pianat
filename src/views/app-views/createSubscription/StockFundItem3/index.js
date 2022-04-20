@@ -16,13 +16,14 @@ import Rows15 from './Rows_15'
 
 const { Option } = Select
 
-export default function StockFundItem3() {
+export default function StockFundItem3({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'3. تعريف وشكل الصندوق'}
         progress={50}
         info={'البند الثالث'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

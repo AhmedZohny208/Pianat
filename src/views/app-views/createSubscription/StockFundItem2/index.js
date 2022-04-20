@@ -6,13 +6,14 @@ import item from '../../../../configs/stockFundItems/Item2'
 
 const style = { width: '188px' }
 
-export default function StockFundItem2() {
+export default function StockFundItem2({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'2. مقدمة وأحكام عامة'}
         progress={40}
         info={'البند التاني'}
+        openSidebar={openSidebar}
       />
 
       <div className='content'>
