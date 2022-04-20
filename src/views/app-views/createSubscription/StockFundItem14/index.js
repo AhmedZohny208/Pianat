@@ -5,13 +5,14 @@ import item, { unorderedList } from '../../../../configs/stockFundItems/Item14'
 import Form1 from './Form_1'
 import Form2 from './Form_2'
 
-export default function index() {
+export default function index({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'14. أصول وموجودات الصندوق'}
         progress={40}
         info={'البند الرابع عشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

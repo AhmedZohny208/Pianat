@@ -7,7 +7,7 @@ import ListedInput from '../../../../components/shared-components/Form/ListedInp
 
 const { Option } = Select
 
-export default function StockFundItem24() {
+export default function StockFundItem24({openSidebar}) {
   const [purpose, setPurpose] = useState('')
   const [items, setItems] = useState([])
   return (
@@ -16,6 +16,7 @@ export default function StockFundItem24() {
         title={'24. أرباح الصندوق و عائد الوثيقة و توزيعات الأرباح'}
         progress={10}
         info={'البند الرابع و العشرون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

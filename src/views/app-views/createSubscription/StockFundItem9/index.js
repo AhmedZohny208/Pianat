@@ -4,7 +4,7 @@ import Header from '../../../../components/shared-components/Headers/ItemPage'
 import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
 import item from '../../../../configs/stockFundItems/Item9'
 
-export default function StockFundItem9() {
+export default function StockFundItem9({openSidebar}) {
   const [target, setTarget] = useState('')
   const [items, setItems] = useState(['تتبع إدارة الصندوق سياسة استثمارية تستهدف تحقيق عائد على استثمارات الصندوق بما يتناسب مع'])
   return (
@@ -13,6 +13,7 @@ export default function StockFundItem9() {
         title={'9. نوعية المستثمر المخاطب بنشرة الاكتتاب'}
         progress={10}
         info={'البند التاسع'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

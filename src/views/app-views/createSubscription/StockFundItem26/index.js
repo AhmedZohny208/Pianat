@@ -6,13 +6,14 @@ import item from '../../../../configs/stockFundItems/Item26'
 
 const { TextArea } = Input
 
-export default function StockFundItem26() {
+export default function StockFundItem26({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'26. إنهاء وتصفية الصندوق'}
         progress={10}
         info={'البند السادس و العشرون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

@@ -9,7 +9,7 @@ const { Option } = Select
 
 const style = { width: '31px', display: 'inline-block' }
 
-export default function StockFundItem10() {
+export default function StockFundItem10({openSidebar}) {
   const [target, setTarget] = useState('')
   const [target1, setTarget1] = useState('')
   const [target2, setTarget2] = useState('')
@@ -25,6 +25,7 @@ export default function StockFundItem10() {
         title={'10. أصول وموجودات الصندوق'}
         progress={50}
         info={'البند العاشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

@@ -7,13 +7,14 @@ import GreenHint from '../../../../components/shared-components/Hints/GreenHint'
 
 const { Option } = Select
 
-export default function StockFundItem19() {
+export default function StockFundItem19({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'19. شراء / استرداد الوثائق'}
         progress={10}
         info={'البند التاسع عشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

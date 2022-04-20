@@ -5,13 +5,14 @@ import item from '../../../../configs/stockFundItems/Item15'
 import Form1 from './Form1'
 import Form2 from './Form2'
 
-export default function index() {
+export default function index({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'15. مراقبا حسابات الصندوق'}
         progress={10}
         info={'البند الخامس عشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

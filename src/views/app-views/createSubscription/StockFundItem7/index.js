@@ -5,13 +5,14 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import item from '../../../../configs/stockFundItems/Item7'
 import Card from './Card'
 
-export default function StockFundItem7() {
+export default function StockFundItem7({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'7. السياسة الاستثمارية للصندوق'}
         progress={20}
         info={'البند السابع'}
+        openSidebar={openSidebar}
       />
       <div className="content">
         <div className='content-w-input p-in-first'>

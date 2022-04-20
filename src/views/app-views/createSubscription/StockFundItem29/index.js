@@ -5,13 +5,14 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import item from '../../../../configs/stockFundItems/Item29'
 import Form from './Form'
 
-export default function StockFundItem29() {
+export default function StockFundItem29({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'29. إقرار الشركة ومدير الاستثمار'}
         progress={10}
         info={'البند التاسع و العشرون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

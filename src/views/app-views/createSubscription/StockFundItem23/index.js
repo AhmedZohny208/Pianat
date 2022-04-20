@@ -4,13 +4,14 @@ import Header from '../../../../components/shared-components/Headers/ItemPage'
 import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
 import item from '../../../../configs/stockFundItems/item23'
 
-export default function StockFundItem23() {
+export default function StockFundItem23({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'23. وسائل تجنب تعارض المصالح'}
         progress={50}
         info={'البند الثالث و العشرون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

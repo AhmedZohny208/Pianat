@@ -5,13 +5,14 @@ import Header from '../../../../components/shared-components/Headers/ItemPage'
 import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
 import item from '../../../../configs/stockFundItems/Item6'
 
-export default function StockFundItem6() {
+export default function StockFundItem6({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'6. الجهات متلقية الاكتتاب والشراء والاسترداد'}
         progress={10}
         info={'البند السادس'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

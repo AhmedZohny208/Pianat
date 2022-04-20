@@ -3,13 +3,14 @@ import Header from '../../../../components/shared-components/Headers/ItemPage'
 import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
 import item from '../../../../configs/stockFundItems/Item20'
 
-export default function StockFundItem20() {
+export default function StockFundItem20({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={' 20. تخفيض حجم الصندوق'}
         progress={10}
         info={'البند العشرون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

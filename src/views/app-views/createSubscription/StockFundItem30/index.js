@@ -7,13 +7,14 @@ import SignatureUpload from '../../../../components/shared-components/Buttons/Si
 
 const { Option } = Select
 
-export default function StockFundItem30() {
+export default function StockFundItem30({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'30. إقرار مراقبا الحسابات'}
         progress={10}
         info={'البند الثلاثون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

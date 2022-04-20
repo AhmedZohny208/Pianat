@@ -6,13 +6,14 @@ import item from '../../../../configs/stockFundItems/Item18'
 
 const { Option } = Select
 
-export default function StockFundItem18() {
+export default function StockFundItem18({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'18. الاكتتاب في الوثائق'}
         progress={50}
         info={'البند الثامن عشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content-rows">

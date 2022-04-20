@@ -10,13 +10,14 @@ import AddNameBtn from '../../../../components/shared-components/Buttons/AddName
 
 const p_style = 'fs-6 fw-500 mb-2 p-0'
 
-export default function StockFundItem1() {
+export default function StockFundItem1({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header 
         title={'11.  شركة الصندوق'} 
         progress={10} 
         info={'البند الحادي عشر'} 
+        openSidebar={openSidebar}
       />
 
       <div className="content">

@@ -5,13 +5,14 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import item from '../../../../configs/stockFundItems/Item28'
 import AddName from '../../../../components/shared-components/Buttons/AddName'
 
-export default function StockFundItem28() {
+export default function StockFundItem28({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'28. أسماء و عناوين مسؤولي الاتصال'}
         progress={10}
         info={'البند الثامن و العشرون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

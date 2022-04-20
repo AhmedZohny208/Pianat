@@ -8,13 +8,14 @@ import Form2 from '../StockFundItem16/Form2'
 import Form3 from '../StockFundItem16/Form3'
 import Form4 from '../StockFundItem16/Form4'
 
-export default function index() {
+export default function index({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'16. أمين الحفظ'}
         progress={10}
         info={'البند السادس عشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

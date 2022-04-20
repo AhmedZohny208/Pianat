@@ -8,13 +8,14 @@ import Form2 from './Form2'
 
 const { Option } = Select
 
-export default function StockFundItem13() {
+export default function StockFundItem13({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'13. مدير الاستثمار'}
         progress={30}
         info={'البند الثالث عشر'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">

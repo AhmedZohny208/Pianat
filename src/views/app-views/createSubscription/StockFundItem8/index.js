@@ -6,10 +6,15 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 
 const { Option } = Select
 
-export default function StockFundItem8() {
+export default function StockFundItem8({openSidebar}) {
   return (
     <div className='stock-fund-item'>
-      <Header title={'8. المخاطر ( استرشادية )'} progress={10} info={'البند الثامن'} />
+      <Header 
+        title={'8. المخاطر ( استرشادية )'} 
+        progress={10} 
+        info={'البند الثامن'} 
+        openSidebar={openSidebar}
+      />
 
       <div className="content">
         <div className="p-in-first" style={{ height: '1200px' }}>

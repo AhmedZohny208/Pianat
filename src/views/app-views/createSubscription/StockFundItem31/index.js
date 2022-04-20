@@ -5,13 +5,14 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import item from '../../../../configs/stockFundItems/Item31'
 import SignatureUpload from '../../../../components/shared-components/Buttons/SignatureUpload'
 
-export default function StockFundItem31() {
+export default function StockFundItem31({openSidebar}) {
   return (
     <div className='stock-fund-item'>
       <Header
         title={'31. إقرار المستشار القانوني'}
         progress={10}
         info={'البند الاول و الثلاثون'}
+        openSidebar={openSidebar}
       />
 
       <div className="content">
