@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item from '../../../configs/stockFundItems/Item20'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
+import item from '../../../../configs/stockFundItems/Item20'
 
 export default function StockFundItem20() {
   return (

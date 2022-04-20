@@ -1,10 +1,10 @@
 import { Input, Select } from 'antd'
 import React from 'react'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item, { unorderedList } from '../../../configs/stockFundItems/Item1'
-import { ReactComponent as Close } from '../../../components/shared-components/svgs/close.svg'
-import AddNameBtn from '../../../components/shared-components/Buttons/AddName'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
+import item, { unorderedList } from '../../../../configs/stockFundItems/Item1'
+import { ReactComponent as Close } from '../../../../components/shared-components/svgs/close.svg'
+import AddNameBtn from '../../../../components/shared-components/Buttons/AddName'
 
 const { Option } = Select
 

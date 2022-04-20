@@ -1,8 +1,8 @@
 import { Input, Select } from 'antd'
 import React from 'react'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item from '../../../configs/stockFundItems/Item5'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
+import item from '../../../../configs/stockFundItems/Item5'
 
 const { Option } = Select
 

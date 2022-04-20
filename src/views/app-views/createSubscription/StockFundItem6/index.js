@@ -1,9 +1,9 @@
 import { Input } from 'antd'
 import React from 'react'
-import AddName from '../../../components/shared-components/Buttons/AddName'
-import Header from '../../../components/shared-components/Headers/ItemPage'
-import NavigateItems from '../../../components/shared-components/Navigate/NavigateItems'
-import item from '../../../configs/stockFundItems/Item6'
+import AddName from '../../../../components/shared-components/Buttons/AddName'
+import Header from '../../../../components/shared-components/Headers/ItemPage'
+import NavigateItems from '../../../../components/shared-components/Navigate/NavigateItems'
+import item from '../../../../configs/stockFundItems/Item6'
 
 export default function StockFundItem6() {
   return (

@@ -9,13 +9,17 @@ export default function AppViews() {
       <Switch>
         <Route path={`${APP_PREFIX_PATH}`} component={lazy(() => import(`./home`))} exact />
 
+        <Route path={`${APP_PREFIX_PATH}/create-subscription`} component={lazy(() => import(`./createSubscription`))} />
+
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations`} component={lazy(() => import(`./mokhalfat/investmentFundsViolations`))} exact />
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/Investment-policy-violations`} component={lazy(() => import(`./mokhalfat/investmentPolicyViolations`))} exact />
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/service-provider-violations`} component={lazy(() => import(`./mokhalfat/serviceProviderViolations`))} exact />
 
         <Route path={`${APP_PREFIX_PATH}/indicators/market-size`} component={lazy(() => import(`./indications/marketSizeIndicators`))} exact />
 
-        <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund`} component={lazy(() => import(`./createSubscription/StockFund`))} exact />
+        
+
+        {/* <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund`} component={lazy(() => import(`./createSubscription/StockFund`))} exact />
 
         <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/1`} component={lazy(() => import(`./createSubscription/StockFundItem1`))} exact />
         <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/2`} component={lazy(() => import(`./createSubscription/StockFundItem2`))} exact />
@@ -50,7 +54,7 @@ export default function AppViews() {
         <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/31`} component={lazy(() => import(`./createSubscription/StockFundItem31`))} exact />
         <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/32`} component={lazy(() => import(`./createSubscription/StockFundItem32`))} exact />
         <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/33`} component={lazy(() => import(`./createSubscription/StockFundItem33`))} exact />
-        <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/34`} component={lazy(() => import(`./createSubscription/StockFundItem34`))} exact />
+        <Route path={`${APP_PREFIX_PATH}/create-subscription/stock-fund/34`} component={lazy(() => import(`./createSubscription/StockFundItem34`))} exact /> */}
 
         {/* <Redirect from={`${APP_PREFIX_PATH}`} to={`${APP_PREFIX_PATH}`} /> */}
       </Switch>
