@@ -28,13 +28,14 @@ export default function SingleItemBtn({ content, rightIcon, leftIcon, tip, to })
       <button 
         style={{ fontSize: content.length > 49 ? '13px' : '14px' }} 
         className='btn single-item'
-        onClick={() => history.push(to)}
+        onClick={(e) => history.push(to)}
       >
         <span className='right-icon'>{rightIcon && rightIcon}</span>
         {content}
         <span 
           className='left-icon' 
-          onClick={() => {
+          onClick={(e) => {
+            e.stopPropagation(); 
             if (tip === 'comment') {
               showCommentModal()
             } else {

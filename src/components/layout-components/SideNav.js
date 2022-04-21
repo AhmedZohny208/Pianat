@@ -52,6 +52,21 @@ export default function SideNav({ collapsed }) {
           <Menu.Item icon={<Minus />} key="13">مؤشرات السيولة</Menu.Item>
           <Menu.Item icon={<Minus />} key="14">مؤشرات بين القطاعات و المؤشرات</Menu.Item>
         </SubMenu>
+
+        <SubMenu key="sub3" icon={<GrBarChart />} title="افصاحات">
+          <Menu.Item icon={<Minus />} key="15">
+            افصاح بيانات حملة الوثائق
+            <Link to={`${APP_PREFIX_PATH}/disclosures/policy-holders`} />
+          </Menu.Item>
+          <Menu.Item icon={<Minus />} key="16">
+            افصاح بيانات الاستثمار
+            <Link to={`${APP_PREFIX_PATH}/disclosures/investment-data`} />
+          </Menu.Item>
+          <Menu.Item icon={<Minus />} key="17">
+            عرض افصاحات المراقب الداخلي
+            <Link to={`${APP_PREFIX_PATH}/disclosures/internal-controller`} />
+          </Menu.Item>
+        </SubMenu>
       </Menu>
     </Sider>
         

@@ -185,17 +185,17 @@ export default function SidebarItems({ isSidebarOpen, closeSidebar }) {
           <div className="number">31</div>
           <Link to={`${path}/31`}>{'31. إقرار المستشار القانوني'}</Link>
         </li>
-        <li key={31} className={location.pathname === `${path}/32` ? 'active' : ''} onClick={() => history.push(`${path}/32`)}>
+        <li key={32} className={location.pathname === `${path}/32` ? 'active' : ''} onClick={() => history.push(`${path}/32`)}>
           <div className='icon'><Square /></div>
           <div className="number">32</div>
           <Link to={`${path}/32`}>{'32. إقرار شركة خدمات الادارة'}</Link>
         </li>
-        <li key={31} className={location.pathname === `${path}/33` ? 'active' : ''} onClick={() => history.push(`${path}/33`)}>
+        <li key={33} className={location.pathname === `${path}/33` ? 'active' : ''} onClick={() => history.push(`${path}/33`)}>
           <div className='icon'><Square /></div>
           <div className="number">33</div>
           <Link to={`${path}/33`}>{'33. إقرار أمين الحفظ'}</Link>
         </li>
-        <li key={31} className={location.pathname === `${path}/34` ? 'active' : ''} onClick={() => history.push(`${path}/34`)}>
+        <li key={34} className={location.pathname === `${path}/34` ? 'active' : ''} onClick={() => history.push(`${path}/34`)}>
           <div className='icon'><Square /></div>
           <div className="number">34</div>
           <Link to={`${path}/34`}>{'34. إقرار لجنة الرقابة الشرعية'}</Link>
