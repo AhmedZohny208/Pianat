@@ -672,7 +672,7 @@ textarea.ant-input {
 }
 
 .ant-layout-sider-collapsed + section .sidebar-items {
-  background-color: red !important;
+  width: 110px;
 }
 
 .show-sidebar {
@@ -693,13 +693,33 @@ textarea.ant-input {
 }
 
 .sidebar-items .sidebar-header h6 {
-  text-align: center;
   color: #000;
   font-size: 18px;
 }
 
+.sidebar-items .sidebar-header h6.title {
+  text-align: center;
+}
+
+.sidebar-items .sidebar-header h6.title-sm {
+  text-align: right;
+  display: none;
+}
+
+.ant-layout-sider-collapsed + section .sidebar-items .sidebar-header .title {
+  display: none;
+}
+
+.ant-layout-sider-collapsed + section .sidebar-items .sidebar-header .title-sm {
+  display: block;
+}
+
 .sidebar-items .links {
   padding-right: 17px;
+}
+
+.ant-layout-sider-collapsed + section .sidebar-items .links {
+  padding-right: 0px;
 }
 
 .sidebar-items .links li {
@@ -708,11 +728,20 @@ textarea.ant-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .sidebar-items .links li.active {
   background: rgba(0, 32, 68, 0.05);
   border-radius: 4px;
+}
+
+.sidebar-items .links li .number {
+  display: none;
+}
+
+.ant-layout-sider-collapsed + section .sidebar-items .links li .number {
+  display: block;
 }
 
 .sidebar-items .links li .icon {
@@ -723,9 +752,17 @@ textarea.ant-input {
   margin-left: 18px;
 }
 
+.ant-layout-sider-collapsed + section .sidebar-items .links svg {
+  margin-left: 0px;
+}
+
 .sidebar-items .links a {
   color: #002044;
   display: block;
+}
+
+.ant-layout-sider-collapsed + section .sidebar-items .links a {
+  display: none;
 }
 
 /* width */
