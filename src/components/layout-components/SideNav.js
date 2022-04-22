@@ -4,6 +4,7 @@ import AlertTriangle from '../shared-components/svgs/alertTriangle'
 import Grid from '../shared-components/svgs/grid'
 import { GrBarChart } from 'react-icons/gr'
 import Minus from '../shared-components/svgs/Minus';
+import {ReactComponent as Spider} from '../shared-components/svgs/spider.svg';
 import { Link } from 'react-router-dom';
 import { APP_PREFIX_PATH } from '../../configs/AppConfig';
 
@@ -53,7 +54,7 @@ export default function SideNav({ collapsed }) {
           <Menu.Item icon={<Minus />} key="14">مؤشرات بين القطاعات و المؤشرات</Menu.Item>
         </SubMenu>
 
-        <SubMenu key="sub3" icon={<GrBarChart />} title="افصاحات">
+        <SubMenu key="sub3" icon={<Spider />} title="افصاحات">
           <Menu.Item icon={<Minus />} key="15">
             افصاح بيانات حملة الوثائق
             <Link to={`${APP_PREFIX_PATH}/disclosures/policy-holders`} />

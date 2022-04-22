@@ -64,6 +64,11 @@ const options = {
       borderWidth: 4
     }
   },
+  // onClick: function(e) {
+  //   let ctx = e.chart
+
+  //   console.log(ctx)
+  // }
 };
 
 const plugins = [{
@@ -86,9 +91,10 @@ const plugins = [{
 }]
 
 export default function InvestmentFundViolationsGraph() {
+
   return (
     <div style={{ width: '340px', height: '340px' }}>
-      <Doughnut data={data} options={options} plugins={plugins} />
+      <Doughnut id='mychart' data={data} options={options} plugins={plugins} />
     </div>
   )
 }

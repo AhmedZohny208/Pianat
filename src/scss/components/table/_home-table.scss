@@ -1,0 +1,44 @@
+.ant-table-content thead tr th {
+  background-color: #002044;
+  color: #fff;
+}
+.ant-table-content thead tr th::before {
+  background: unset !important;
+}
+.ant-table-container table > thead > tr:first-child th:first-child {
+  border-top-left-radius: unset !important;
+}
+.ant-table-container table > thead > tr:first-child th:last-child {
+  border-top-right-radius: unset !important;
+}
+.ant-table-content td,
+.ant-table-content th {
+  text-align: right !important;
+  padding-right: 24px !important;
+}
+
+.ant-table-content td {
+  color: #425466;
+}
+
+.home-table-action {
+  position: relative;
+}
+
+.home-table-btn {
+  height: 28px;
+  background: #f1e9d5;
+  color: #ba902e;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1px;
+}
+
+.home-table-btn-review {
+  position: absolute;
+  top: 0%;
+  width: 10px;
+  height: 10px;
+  background-color: #d0342c;
+  border-radius: 50%;
+}
