@@ -786,6 +786,12 @@ textarea.ant-input {
   border-radius: 8px;
 }
 
+.items-sider {
+  position: fixed;
+  top: 80px;
+  right: 0;
+}
+
 .btn.download-Shareholder-form {
   padding: 9.6px 19.2px;
   background: #002044;

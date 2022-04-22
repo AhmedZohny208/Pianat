@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Link, useLocation, useHistory } from 'react-router-dom'
 import { ReactComponent as Exit } from '../../../components/shared-components/svgs/sidebarExit.svg'
 import { ReactComponent as Circle } from '../../../components/shared-components/svgs/sidebarCircle.svg'
@@ -12,12 +12,64 @@ const path = `${APP_PREFIX_PATH}/create-subscription/stock-fund`
 export default function SidebarItems({ isSidebarOpen, closeSidebar }) {
   const location = useLocation()
   const history = useHistory()
+  const myref = useRef(null)
+
+  useEffect(() => {
+    console.log("myref..", myref.current);
+  });
+
+  useEffect(() => {
+    console.log(Number(location.pathname.split('/')[4]))
+    if (Number(location.pathname.split('/')[4]) >= 1 && Number(location.pathname.split('/')[4]) < 8) {
+      myref.current.scrollTo({
+        top: 0,
+      });
+    } 
+    else if (Number(location.pathname.split('/')[4]) >= 8 && Number(location.pathname.split('/')[4]) < 15) {
+      myref.current.scrollTo({
+        top: 497,
+      });
+    }
+    else if (Number(location.pathname.split('/')[4]) >= 15 && Number(location.pathname.split('/')[4]) < 24) {
+      myref.current.scrollTo({
+        top: 947,
+      });
+    } else if (Number(location.pathname.split('/')[4]) >= 24 && Number(location.pathname.split('/')[4]) < 32) {
+      myref.current.scrollTo({
+        top: 1404,
+      });
+    } else {
+      myref.current.scrollTo({
+        top: 1531,
+      });
+    }
+  })
+
+  // const goToTop = () => {
+  //   myref.current.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth',
+  //   });
+  // };
+
+  const onScroll = (e) => {
+    // console.log(e.target.clientHeight)
+    // console.log(e.target.scrollHeight)
+    console.log(e.target.scrollTop)
+
+    // let element = e.target
+    // if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+    //   // do something at end of scroll
+    // }
+  }
 
   return (
     <aside
       className={`${
         isSidebarOpen ? 'sidebar-items show-sidebar' : 'sidebar-items'
       }`}
+      ref={myref}
+      onScroll={onScroll}
     >
       <div className='sidebar-header'>
         <h6 className='title'>بنود نشرة الإكتتاب</h6>
@@ -201,6 +253,7 @@ export default function SidebarItems({ isSidebarOpen, closeSidebar }) {
           <Link to={`${path}/34`}>{'34. إقرار لجنة الرقابة الشرعية'}</Link>
         </li>
       </ul>
+      {/* <button className="btn" onClick={goToTop}>Go to top</button> */}
     </aside>
   )
 }

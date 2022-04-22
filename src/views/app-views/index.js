@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Loading from '../../components/shared-components/Loading';
 import { APP_PREFIX_PATH } from '../../configs/AppConfig'
 
-export default function AppViews() {
+export default function AppViews({ collapsed }) {
   return (
     <Suspense fallback={<Loading cover="content"/>}>
       <Switch>

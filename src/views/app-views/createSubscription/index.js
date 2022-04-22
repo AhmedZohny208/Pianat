@@ -46,6 +46,7 @@ export default function CreateSubscription({ match }) {
   const closeSidebar = () => {
     setIsSidebarOpen(false)
   }
+
   return (
     <>
     <SidebarItems isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} match={match} />
