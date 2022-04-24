@@ -1,0 +1,85 @@
+// Main Create Card
+.main-create-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  background: #002044;
+  box-shadow: inset 0px -1px 0px #edf2f7;
+  padding: 0 17px;
+}
+
+.main-create-card .header .right, 
+.main-create-card .header .left {
+  display: flex;
+  align-items: center;
+}
+
+.main-create-card .header h5 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.main-create-card .header .late-hint {
+  background: #FAFAFA;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  color: #D0342C;
+  margin-right: 24px;
+}
+
+.main-create-card .header .left .btn.login-records {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.main-create-card .header .left .btn.login-records svg {
+  margin-left: 11px;
+}
+
+.main-create-card .header .left .btn.download {
+  background: #022751;
+  color: #fff;
+  border: 1.5px solid #416a98;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+.main-create-card .header .left .btn.download svg {
+  margin-left: 8px;
+}
+
+.main-create-card .main {
+  padding: 28px 16px;
+  background-color: #fff;
+}
+
+.main-create-card .main .create-card {
+  background: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.create-card button.save-no-icon {
+  width: 134px;
+  height: 40px;
+  background: #2A9F20;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+} 
+.create-card button.delete-no-icon {
+  width: 134px;
+  height: 40px;
+  background: #D0342C;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-right: 16px;
+} 

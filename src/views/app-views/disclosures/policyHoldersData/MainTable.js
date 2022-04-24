@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Table, Card, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { AiOutlinePlus } from 'react-icons/ai'
@@ -25,7 +26,8 @@ function UnderConstruction() {
   )
 }
 
-export default function MainTable() {
+export default function MainTable({ match }) {
+  const history = useHistory()
 
   const columns = [
     {
@@ -65,7 +67,7 @@ export default function MainTable() {
       render: (text, record) => (
         <div className='d-flex'>
           <div className='home-table-action'>
-            <button className='btn home-table-btn'>
+            <button className='btn home-table-btn' onClick={() => history.push(`${match.url}/create`)}>
               <AiOutlinePlus className='me-2' />
               انشاء افصاح جديد 
             </button>
