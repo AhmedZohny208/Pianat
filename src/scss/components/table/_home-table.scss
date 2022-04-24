@@ -1,3 +1,7 @@
+.table .ant-spin-container {
+  padding: 0;
+}
+
 .ant-table-content thead tr th {
   background-color: #002044;
   color: #fff;
@@ -18,7 +22,8 @@
 }
 
 .ant-table-content td {
-  color: #425466;
+  // color: #425466;
+  color: #002044;
 }
 
 .home-table-action {
@@ -42,3 +47,34 @@
   background-color: #d0342c;
   border-radius: 50%;
 }
+
+.action-icons svg {
+  visibility: hidden;
+}
+.action-icons svg.red {
+  visibility: visible;
+}
+
+.ant-table-tbody tr:hover .action-icons svg {
+  visibility: visible;
+}
+
+// Setting small fontsize for large tables 
+.large-table .ant-table-content tr {
+  font-size: 12px;
+}
+.large-table .ant-table-tbody tr .action-icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1400px) {
+  .large-table .ant-table-content tr {
+    font-size: 14px;
+  }
+  .large-table .ant-table-tbody tr:hover .action-icons svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+

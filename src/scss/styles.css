@@ -47,13 +47,17 @@
   color: #bbb;
 }
 
+.contributers-table {
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+
 .contributers-table p {
   margin-bottom: 0;
 }
 
 .contributers-table .gold {
   background: #ba902e;
-  border: 1px solid #bbbbbb;
   border-radius: 5px 5px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1243,6 +1247,10 @@ textarea.ant-input {
   margin-right: 5px;
 }
 
+.table .ant-spin-container {
+  padding: 0;
+}
+
 .ant-table-content thead tr th {
   background-color: #002044;
   color: #fff;
@@ -1267,7 +1275,7 @@ textarea.ant-input {
 }
 
 .ant-table-content td {
-  color: #425466;
+  color: #002044;
 }
 
 .home-table-action {
@@ -1290,6 +1298,37 @@ textarea.ant-input {
   height: 10px;
   background-color: #d0342c;
   border-radius: 50%;
+}
+
+.action-icons svg {
+  visibility: hidden;
+}
+
+.action-icons svg.red {
+  visibility: visible;
+}
+
+.ant-table-tbody tr:hover .action-icons svg {
+  visibility: visible;
+}
+
+.large-table .ant-table-content tr {
+  font-size: 12px;
+}
+
+.large-table .ant-table-tbody tr .action-icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1400px) {
+  .large-table .ant-table-content tr {
+    font-size: 14px;
+  }
+  .large-table .ant-table-tbody tr:hover .action-icons svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .w-20 {
