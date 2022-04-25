@@ -1,0 +1,25 @@
+.records-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 24px 18.5px 40px 18.5px;
+}
+
+.records-card .content {
+  border: 1px solid #BBBBBB;
+  border-radius: 6.0556px;
+}
+
+.records-card .content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 81px;
+  padding: 0 24px;
+}
+
+.records-card .content .header h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0;
+}

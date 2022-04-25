@@ -962,3 +962,15 @@ button.add:hover {
   padding: 8px 48px;
   font-size: 600;
 }
+
+button.display-disclosure,
+button.display-disclosure:hover {
+  background: #B3BCC7;
+  border-radius: 6.0556px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #002044;
+}
+button.display-disclosure svg {
+  margin-left: 12px;
+}
