@@ -1,6 +1,8 @@
 import React from 'react'
 import { Input, Select, DatePicker } from 'antd'
 import { Country }  from 'country-state-city';
+import { ReactComponent as Percentage } from '../../../../components/shared-components/svgs/percentageGold.svg'
+import SingleOption from '../../../../components/shared-components/Form/SingleOption';
 
 const { Option } = Select
 
@@ -15,7 +17,17 @@ export default function CreateCard() {
       <div className="row">
         <div className="col-3 mb-4">
           <label className='mb-2'>نوع المستثمر / حامل الوثيقة</label>
-          <Select className='mx-0 w-100' value={'مؤسسة'}></Select>
+          <Select className='mx-0 w-100' defaultValue={'مؤسسة'}>
+            <Option value='مؤسسة'>
+              <SingleOption option={'مؤسسة'} />
+            </Option>
+            <Option value='فرد'>
+              <SingleOption option={'فرد'} />
+            </Option>
+            <Option value='صندوق'>
+              <SingleOption option={'صندوق'} />
+            </Option>
+          </Select>
         </div>
         <div className="col-3 mb-4">
           <label className='mb-2'>اسم المستثمر / الشركة او الصندوق</label>
@@ -23,7 +35,7 @@ export default function CreateCard() {
         </div>
         <div className="col-3 mb-4">
           <label className='mb-2'>الجنسية</label>
-          <Select className='mx-0 w-100' value={'مؤسسة'}>
+          <Select className='mx-0 w-100' value={'Egypt'}>
             {Country && Country.getAllCountries().map(e => (
               <Option value='jack'>{e.name}</Option>
             ))}
@@ -47,15 +59,24 @@ export default function CreateCard() {
         </div>
         <div className="col-3 mb-4">
           <label className='mb-2'>الملكية الوثائق بعد الشراء او الاسترداد</label>
-          <Input className='inline-input mx-0' value={'3%'} />
+          <div className='position-relative'>
+            <Input className='inline-input mx-0' value={'3%'} />
+            <Percentage className='percentage-gold' />
+          </div>
         </div>
         <div className="col-6 mb-4">
           <label className='mb-2'>تاريخ عملية الشراء</label>
-          <DatePicker className='inline-input w-100 mx-0' />
+          <DatePicker 
+            className='inline-input w-100 mx-0' 
+            placeholder=' ' 
+          />
         </div>
         <div className="col-6 mb-4">
           <label className='mb-2'>تاريخ عملية الاسترداد</label>
-          <DatePicker className='inline-input w-100 mx-0' />
+          <DatePicker 
+            className='inline-input w-100 mx-0' 
+            placeholder=' ' 
+          />
         </div>
       </div>
 

@@ -27,3 +27,43 @@
 .ant-select-selection-item {
   font-weight: 600;
 }
+
+.ant-select-item-option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: unset;
+}
+
+// Single Option
+.single-option {
+  display: flex;
+  align-items: center;
+}
+.single-option .icon {
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-option .icon .selected {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: none;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) .single-option .icon .selected {
+  display: block;
+}
+
+.ant-select-selection-item .single-option .icon {
+  display: none;
+}

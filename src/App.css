@@ -5,37 +5,6 @@ hr {
   margin: 0;
 }
 
-.ant-form-item-label {
-  margin-bottom: 0 !important;
-  text-align: right !important;
-}
-
-.ant-input-affix-wrapper {
-  padding: 0 !important;
-  border: none;
-}
-
-input.ant-input:focus {
-  box-shadow: none !important;
-}
-input.ant-input:hover {
-  border-color: #007dfa ;
-}
-
-.ant-input-affix-wrapper:focus,
-.ant-input-affix-wrapper-focused {
-  border-color: unset;
-  box-shadow: none;
-  border-right-width: 0px;
-  outline: 0;
-}
-
-.ant-input:focus,
-.ant-input-focused {
-  border-color: unset;
-  box-shadow: none !important;
-}
-
 textarea {
   color: #000;
 }
@@ -1102,4 +1071,34 @@ button.quarters span svg {
 /* Radio */
 .ant-radio-group span {
   color: #000;
+}
+
+/* Disclosure buttons */
+button.delete-disclosure,
+button.delete-disclosure:hover {
+  background: #D0342C;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+button.future-save-disclosure,
+button.future-save-disclosure:hover {
+  background: #BA902E;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+button.send-disclosure,
+button.send-disclosure:hover {
+  background: #002044;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+button.delete-disclosure svg,
+button.future-save-disclosure svg,
+button.send-disclosure svg {
+  margin-left: 8px;
 }
