@@ -22,9 +22,6 @@ export default function MainCreateCard() {
     showUploadedTable(!uploadedTable)
   }
 
-  const showCreateNewDoc = () => {
-    isNewDocVisible(true)
-  }
   const handleCancelCreateNewDoc = () => {
     isNewDocVisible(false)
   }
