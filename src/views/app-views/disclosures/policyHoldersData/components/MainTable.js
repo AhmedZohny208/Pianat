@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { Table, Card, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { AiOutlinePlus } from 'react-icons/ai'
-import data from './MainTableData'
+import data from '../data/MainTableData'
 
 const menu = () => {
   return (

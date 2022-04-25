@@ -1,8 +1,8 @@
 import React from 'react'
 import { Input, Select, DatePicker } from 'antd'
 import { Country }  from 'country-state-city';
-import { ReactComponent as Percentage } from '../../../../components/shared-components/svgs/percentageGold.svg'
-import SingleOption from '../../../../components/shared-components/Form/SingleOption';
+import { ReactComponent as Percentage } from '../../../../../components/shared-components/svgs/percentageGold.svg'
+import SingleOption from '../../../../../components/shared-components/Form/SingleOption';
 
 const { Option } = Select
 

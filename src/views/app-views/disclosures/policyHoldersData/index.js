@@ -1,6 +1,6 @@
 import React from 'react'
-import Features from './Features'
-import MainTable from './MainTable'
+import Features from './components/Features'
+import MainTable from './components/MainTable'
 
 export default function PolicyHoldersData({ match }) {
   return (

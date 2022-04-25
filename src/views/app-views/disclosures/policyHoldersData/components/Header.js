@@ -1,6 +1,6 @@
 import React from 'react'
-import { ReactComponent as Records } from '../../../../components/shared-components/svgs/logIntoRecords.svg'
-import { ReactComponent as Download } from '../../../../components/shared-components/svgs/download.svg'
+import { ReactComponent as Records } from '../../../../../components/shared-components/svgs/logIntoRecords.svg'
+import { ReactComponent as Download } from '../../../../../components/shared-components/svgs/download.svg'
 
 export default function Header() {
   return (

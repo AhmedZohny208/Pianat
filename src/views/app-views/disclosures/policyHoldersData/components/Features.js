@@ -1,7 +1,7 @@
 import React from 'react'
-import {ReactComponent as Spider} from '../../../../components/shared-components/svgs/spider-lg.svg';
-import {ReactComponent as Calender} from '../../../../components/shared-components/svgs/calender.svg';
-import {ReactComponent as Employee} from '../../../../components/shared-components/svgs/employee.svg';
+import {ReactComponent as Spider} from '../../../../../components/shared-components/svgs/spider-lg.svg';
+import {ReactComponent as Calender} from '../../../../../components/shared-components/svgs/calender.svg';
+import {ReactComponent as Employee} from '../../../../../components/shared-components/svgs/employee.svg';
 
 export default function Features() {
   return (

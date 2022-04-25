@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import CreateCard from './CreateCard'
 import Header from './Header'
-import DownloadShareholderFormBtn from '../../../../components/shared-components/Buttons/DownloadShareholderForm'
-import UploadShareholderFormBtn from '../../../../components/shared-components/Buttons/UploadShareholderForm'
-import { ReactComponent as Exclamation } from '../../../../components/shared-components/svgs/exclamationBlue.svg'
-import AddName from '../../../../components/shared-components/Buttons/AddName'
+import DownloadShareholderFormBtn from '../../../../../components/shared-components/Buttons/DownloadShareholderForm'
+import UploadShareholderFormBtn from '../../../../../components/shared-components/Buttons/UploadShareholderForm'
+import { ReactComponent as Exclamation } from '../../../../../components/shared-components/svgs/exclamationBlue.svg'
+import AddName from '../../../../../components/shared-components/Buttons/AddName'
 import UploadedTable from './UploadedTable'
-import DeleteDisclosure from '../../../../components/shared-components/Buttons/DeleteDisclosure'
-import FutureSaveDisclosure from '../../../../components/shared-components/Buttons/FutureSaveDisclosure'
-import SendDisclosure from '../../../../components/shared-components/Buttons/SendDisclosure'
-import NewDocHolderModal from '../../../../components/shared-components/Modals/NewDocHolderModal'
+import DeleteDisclosure from '../../../../../components/shared-components/Buttons/DeleteDisclosure'
+import FutureSaveDisclosure from '../../../../../components/shared-components/Buttons/FutureSaveDisclosure'
+import SendDisclosure from '../../../../../components/shared-components/Buttons/SendDisclosure'
+import NewDocHolderModal from '../../../../../components/shared-components/Modals/NewDocHolderModal'
 
 export default function MainCreateCard() {
   const [createCard, showCreateCard] = useState(true)

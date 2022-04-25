@@ -1,7 +1,7 @@
 import React from 'react'
 import CreatePolicyHolder from '../../../../components/shared-components/Breadcrumbs/CreatePolicyHolder'
 import {ReactComponent as StockFundIcon} from '../../../../components/shared-components/svgs/stockFund.svg';
-import MainCreateCard from './MainCreateCard';
+import MainCreateCard from './components/MainCreateCard';
 
 export default function CreateDisclosure() {
   return (
