@@ -6,8 +6,11 @@ import CreateDisclosure from './policyHoldersData/CreateDisclosure'
 import Records from './policyHoldersData/Records'
 import SingleDisclosure from './policyHoldersData/SingleDisclosure'
 
-import InternalController from './internalController'
 import InvestmentData from './investmentData'
+import CreateInvestmentDisclosure from './investmentData/CreateInvestmentDisclosure'
+import InvestmentDataRecords from './investmentData/InvestmentDataRecords'
+
+import InternalController from './internalController'
 
 export default function Disclosures({ match }) {
   return (
@@ -19,6 +22,8 @@ export default function Disclosures({ match }) {
         <Route path={`${match.url}/policy-holders/records/1`} component={SingleDisclosure} exact />
 
         <Route path={`${match.url}/investment-data`} component={InvestmentData} exact />
+        <Route path={`${match.url}/investment-data/create`} component={CreateInvestmentDisclosure} exact />
+        <Route path={`${match.url}/investment-data/records`} component={InvestmentDataRecords} exact />
         <Route path={`${match.url}/internal-controller`} component={InternalController} exact />
       </Switch>
     </Suspense>

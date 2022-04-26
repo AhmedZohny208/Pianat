@@ -366,105 +366,6 @@ ul.grey li::marker {
   height: 8px;
 }
 
-.main-create-card .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 64px;
-  background: #002044;
-  -webkit-box-shadow: inset 0px -1px 0px #edf2f7;
-          box-shadow: inset 0px -1px 0px #edf2f7;
-  padding: 0 17px;
-}
-
-.main-create-card .header .right,
-.main-create-card .header .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-create-card .header h5 {
-  margin-bottom: 0;
-  font-size: 16px;
-  color: #fff;
-}
-
-.main-create-card .header .late-hint {
-  background: #FAFAFA;
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 14px;
-  color: #D0342C;
-  margin-right: 24px;
-}
-
-.main-create-card .header .left .btn.login-records {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.main-create-card .header .left .btn.login-records svg {
-  margin-left: 11px;
-}
-
-.main-create-card .header .left .btn.download {
-  background: #022751;
-  color: #fff;
-  border: 1.5px solid #416a98;
-  border-radius: 12px;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 16px;
-}
-
-.main-create-card .header .left .btn.download svg {
-  margin-left: 8px;
-}
-
-.main-create-card .main {
-  padding: 28px 16px;
-  background-color: #fff;
-}
-
-.main-create-card .main .create-card {
-  background: #F8F8F8;
-  border: 1px solid #CCCCCC;
-  border-radius: 5px;
-  padding: 16px;
-}
-
-.create-card button.save-no-icon {
-  width: 134px;
-  height: 40px;
-  background: #2A9F20;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-.create-card button.delete-no-icon {
-  width: 134px;
-  height: 40px;
-  background: #D0342C;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #FFFFFF;
-  margin-right: 16px;
-}
-
 .ant-layout-header {
   height: 80px;
   background: #002044;
@@ -1311,6 +1212,244 @@ textarea.ant-input {
   margin-left: 8px;
 }
 
+button.quarters {
+  font-size: 20px;
+  border-radius: 16px;
+  height: 55px;
+}
+
+button.quarters span svg {
+  font-size: 12px !important;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.btn.rejectAdd {
+  width: 224px;
+  height: 60px;
+  background: #d0342c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn.add-comment {
+  width: 224px;
+  height: 60px;
+  background: rgba(186, 144, 46, 0.29);
+  color: #000;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn.approval {
+  width: 224px;
+  height: 60px;
+  background: #002044;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.btn.rejectAdd svg,
+.btn.add-comment svg,
+.btn.approval svg {
+  margin-left: 10px;
+}
+
+.btn.send {
+  width: 137px;
+  height: 46px;
+  width: 137px;
+  height: 46px;
+  color: #ffffff;
+  background-color: #ba902e;
+}
+
+.btn.download-doc {
+  width: 109px;
+  height: 38px;
+  border: 1px solid #007dfa;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #007dfa;
+}
+
+.btn.download-doc svg {
+  margin-left: 14px;
+}
+
+.btn.upload-file {
+  width: 99.44px;
+  height: 38px;
+  border: 1px solid #dfdddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #a8a8a8;
+  padding: 4px !important;
+}
+
+.btn.upload-file svg {
+  margin-left: 10px;
+}
+
+.btn.day {
+  border-radius: 5px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #000;
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+
+.btn.day.active {
+  background: #002044;
+  color: #fff;
+}
+
+.btn.add-doc-holder {
+  padding: 8px 16px;
+  border: 1px solid #002044;
+  border-radius: 5px;
+  color: #002044;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn.add-doc-holder svg {
+  margin-left: 8px;
+}
+
+.btn.download-doc-gold {
+  padding: 8px 16px;
+  border: 1px solid #ba902e;
+  border-radius: 12px;
+  color: #ba902e;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 24px;
+}
+
+.btn.download-doc-gold svg {
+  margin-left: 8px;
+}
+
+.btn.add-name {
+  background: #002044;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.btn.add-name svg {
+  margin-left: 8px;
+}
+
+.btn.add-name-light {
+  background: #EFEFEF;
+  color: #002044;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.btn.add-name-light svg {
+  margin-left: 8px;
+}
+
+.btn.save {
+  background: #2A9F20;
+  border-radius: 5px;
+  color: #fff;
+  width: 142px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+button.save-no-icon {
+  width: 134px;
+  height: 40px;
+  background: #2A9F20;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+button.delete-no-icon {
+  width: 134px;
+  height: 40px;
+  background: #D0342C;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+
+button.delete-disclosure,
+button.delete-disclosure:hover {
+  background: #D0342C;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+button.future-save-disclosure,
+button.future-save-disclosure:hover {
+  background: #BA902E;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+button.send-disclosure,
+button.send-disclosure:hover {
+  background: #002044;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+}
+
+button.delete-disclosure svg,
+button.future-save-disclosure svg,
+button.send-disclosure svg {
+  margin-left: 8px;
+}
+
+button.add,
+button.add:hover {
+  background: #002044;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 48px;
+  font-size: 600;
+}
+
+button.display-disclosure,
+button.display-disclosure:hover {
+  background: #B3BCC7;
+  border-radius: 6.0556px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #002044;
+}
+
+button.display-disclosure svg {
+  margin-left: 12px;
+}
+
 .ant-card {
   border-radius: 5px;
 }
@@ -1344,6 +1483,96 @@ textarea.ant-input {
 
 .under-construction-btn span {
   margin-right: 5px;
+}
+
+.main-create-card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  background: #002044;
+  -webkit-box-shadow: inset 0px -1px 0px #edf2f7;
+          box-shadow: inset 0px -1px 0px #edf2f7;
+  padding: 0 17px;
+}
+
+.main-create-card .header .right,
+.main-create-card .header .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-create-card .header h5 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.main-create-card .header .late-hint {
+  background: #FAFAFA;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  color: #D0342C;
+  margin-right: 24px;
+}
+
+.main-create-card .header .left .btn.login-records {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main-create-card .header .left .btn.login-records svg {
+  margin-left: 11px;
+}
+
+.main-create-card .header .left .btn.download {
+  background: #022751;
+  color: #fff;
+  border: 1.5px solid #416a98;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 16px;
+}
+
+.main-create-card .header .left .btn.download svg {
+  margin-left: 8px;
+}
+
+.main-create-card .main {
+  padding: 28px 16px;
+  background-color: #fff;
+}
+
+.main-create-card .main .create-card {
+  background: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.main-create-card .content-grey {
+  background: #FAFAFA;
+  font-size: 14px;
+  padding: 43px 24px;
+  margin-top: 13px;
+}
+
+.main-create-card .content-grey p {
+  color: #000;
+  font-weight: 500;
 }
 
 .records-card {
@@ -1834,6 +2063,10 @@ button.no:hover {
 
 .bg-light {
   background-color: #E5E5E5;
+}
+
+.bg-light-1 {
+  background-color: #FAFAFA;
 }
 
 .lh-23 {

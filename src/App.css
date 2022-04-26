@@ -325,17 +325,6 @@ textarea {
   font-weight: 700;
 }
 
-button.quarters {
-  font-size: 20px;
-  border-radius: 16px;
-  height: 55px;
-}
-button.quarters span svg {
-  font-size: 12px !important;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
 .main-card.indications .graph {
   margin: 32px 0;
 }
@@ -485,91 +474,6 @@ button.quarters span svg {
 .all-items .btn.single-item .left-icon {
   position: absolute;
   left: 10px;
-}
-
-/* buttons */
-.btn.rejectAdd {
-  width: 224px;
-  height: 60px;
-  background: #d0342c;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.btn.add-comment {
-  width: 224px;
-  height: 60px;
-  background: rgba(186, 144, 46, 0.29);
-  color: #000;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.btn.approval {
-  width: 224px;
-  height: 60px;
-  background: #002044;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.btn.rejectAdd svg,
-.btn.add-comment svg,
-.btn.approval svg {
-  margin-left: 10px;
-}
-
-.btn.send {
-  width: 137px;
-  height: 46px;
-  width: 137px;
-  height: 46px;
-  color: #ffffff;
-  background-color: #ba902e;
-}
-
-.btn.download-doc {
-  width: 109px;
-  height: 38px;
-  border: 1px solid #007dfa;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #007dfa;
-}
-.btn.download-doc svg {
-  margin-left: 14px;
-}
-
-.btn.upload-file {
-  width: 99.44px;
-  height: 38px;
-  border: 1px solid #dfdddd;
-  border-radius: 5px;
-  font-size: 14px;
-  color: #a8a8a8;
-  padding: 4px !important;
-}
-.btn.upload-file svg {
-  margin-left: 10px;
-}
-
-.btn.day {
-  border-radius: 5px;
-  padding: 4px 8px;
-  font-size: 14px;
-  color: #000;
-  margin-left: 12px;
-  margin-bottom: 10px;
-}
-.btn.day.active {
-  background: #002044;
-  color: #fff;
 }
 
 .solution-text {
@@ -840,68 +744,6 @@ button.quarters span svg {
 }
 
 /* ============================== Contributers Table ============================== */
-.btn.add-doc-holder {
-  padding: 8px 16px;
-  border: 1px solid #002044;
-  border-radius: 5px;
-  color: #002044;
-  font-weight: 500;
-  font-size: 14px;
-}
-.btn.add-doc-holder svg {
-  margin-left: 8px;
-}
-
-.btn.download-doc-gold {
-  padding: 8px 16px;
-  border: 1px solid #ba902e;
-  border-radius: 12px;
-  color: #ba902e;
-  font-weight: 500;
-  font-size: 14px;
-  margin-right: 24px;
-}
-.btn.download-doc-gold svg {
-  margin-left: 8px;
-}
-
-.btn.add-name {
-  background: #002044;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 16px;
-}
-.btn.add-name svg {
-  margin-left: 8px;
-}
-
-.btn.add-name-light {
-  background: #EFEFEF;
-  color: #002044;
-  border-radius: 5px;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 16px;
-}
-.btn.add-name-light svg {
-  margin-left: 8px;
-}
-
-.btn.save {
-  background: #2A9F20;
-  border-radius: 5px;
-  color: #fff;
-  width: 142px;
-  height: 42px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-top: 24px;
-}
-
 .table-search {
   width: 232px;
   height: 40px;
@@ -922,55 +764,4 @@ button.quarters span svg {
 /* Radio */
 .ant-radio-group span {
   color: #000;
-}
-
-/* Disclosure buttons */
-button.delete-disclosure,
-button.delete-disclosure:hover {
-  background: #D0342C;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px 16px;
-}
-
-button.future-save-disclosure,
-button.future-save-disclosure:hover {
-  background: #BA902E;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px 16px;
-}
-button.send-disclosure,
-button.send-disclosure:hover {
-  background: #002044;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px 16px;
-}
-
-button.delete-disclosure svg,
-button.future-save-disclosure svg,
-button.send-disclosure svg {
-  margin-left: 8px;
-}
-
-button.add,
-button.add:hover {
-  background: #002044;
-  color: #fff;
-  border-radius: 5px;
-  padding: 8px 48px;
-  font-size: 600;
-}
-
-button.display-disclosure,
-button.display-disclosure:hover {
-  background: #B3BCC7;
-  border-radius: 6.0556px;
-  padding: 8px 16px;
-  font-size: 14px;
-  color: #002044;
-}
-button.display-disclosure svg {
-  margin-left: 12px;
 }
