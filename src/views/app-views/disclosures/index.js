@@ -11,6 +11,7 @@ import CreateInvestmentDisclosure from './investmentData/CreateInvestmentDisclos
 import InvestmentDataRecords from './investmentData/InvestmentDataRecords'
 
 import InternalController from './internalController'
+import InternalControllerRecord from './internalController/InternalControllerRecord'
 
 export default function Disclosures({ match }) {
   return (
@@ -25,6 +26,7 @@ export default function Disclosures({ match }) {
         <Route path={`${match.url}/investment-data/create`} component={CreateInvestmentDisclosure} exact />
         <Route path={`${match.url}/investment-data/records`} component={InvestmentDataRecords} exact />
         <Route path={`${match.url}/internal-controller`} component={InternalController} exact />
+        <Route path={`${match.url}/internal-controller/records/1`} component={InternalControllerRecord} exact />
       </Switch>
     </Suspense>
   )

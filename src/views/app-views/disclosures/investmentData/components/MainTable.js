@@ -1,30 +1,9 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import { Table, Card, Dropdown, Menu } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { Table, Card } from 'antd';
 import { AiOutlinePlus } from 'react-icons/ai'
 import data from '../data/MainTableData'
-
-const menu = () => {
-  return (
-    <Menu>
-      <Menu.Item className='text-start' key="0">
-        <button className='btn'>الكل</button>
-      </Menu.Item>
-      <Menu.Item className='text-start' key="1">
-        <button className='btn'>تحت الانشاء</button>
-      </Menu.Item>
-    </Menu>
-  )
-}
-
-function UnderConstruction() {
-  return (
-    <Dropdown overlay={menu} trigger={['click']}>
-      <button className="btn under-construction-btn" onClick={e => e.preventDefault()}>الكل <DownOutlined /></button>
-    </Dropdown>
-  )
-}
+import UnderConstruction from '../../../../../components/shared-components/Dropdown/UnderConstruction'
 
 export default function MainTable({ match }) {
   const history = useHistory()
