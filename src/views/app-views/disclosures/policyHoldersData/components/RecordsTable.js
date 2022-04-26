@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Table } from 'antd'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import data from '../data/RecordsData'
 import DisplayDisclosure from '../../../../../components/shared-components/Buttons/DisplayDisclosure'
 
 export default function RecordsTable() {
+  const history = useHistory()
   const [alreadySelectedRows, setAlreadySelectedRows] = useState([])
 
   useEffect(() => {
@@ -31,7 +33,7 @@ export default function RecordsTable() {
       title: 'اجرائات',
       key: 'اجرائات',
       width: '30%',
-      render: () => <DisplayDisclosure width={250} content={'عرض الافصاح'} />
+      render: () => <DisplayDisclosure width={250} content={'عرض الافصاح'} onclick={() => history.push('/home/disclosures/policy-holders/records/1')} />
     }
   ]
 
@@ -50,7 +52,7 @@ export default function RecordsTable() {
           onSelect: (record) => {
             console.log({record})
           },
-          // hideSelectAll: true
+          hideSelectAll: true
         }}
       />
     </div>
