@@ -1792,4 +1792,8 @@ textarea.ant-input {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */

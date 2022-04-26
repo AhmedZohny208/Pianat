@@ -5,6 +5,7 @@ import NavigateItems from '../../../../components/shared-components/Navigate/Nav
 import item, { unorderedList } from '../../../../configs/stockFundItems/Item1'
 import { ReactComponent as Close } from '../../../../components/shared-components/svgs/close.svg'
 import AddNameBtn from '../../../../components/shared-components/Buttons/AddName'
+import SingleOption from '../../../../components/shared-components/Form/SingleOption'
 
 const { Option } = Select
 
@@ -130,7 +131,10 @@ export default function StockFundItem1({openSidebar}) {
             <div>
               <span className='label'>{item.p15_2}</span>
               <Select placeholder={item.ph3} style={{ width: '316px' }} >
-                <Option value='jack'>Jack</Option>
+                <Option value='يومى'><SingleOption option={'يومى'} /></Option>
+                <Option value='اسبوعى'><SingleOption option={'اسبوعى'} /></Option>
+                <Option value='شهري'><SingleOption option={'شهري'} /></Option>
+                <Option value='سنوى'><SingleOption option={'سنوى'} /></Option>
               </Select>
             </div>
           </div>
