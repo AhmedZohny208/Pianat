@@ -49,46 +49,49 @@ export default function CreateSubscription({ match }) {
 
   return (
     <>
-    <SidebarItems isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} match={match} />
     
     <Suspense fallback={<Loading cover='content' />}>
       <Switch>
         <Route path={`${match.url}/stock-fund`} component={lazy(() => import(`./StockFund`))} exact />
 
-        <Route path={`${match.url}/stock-fund/1`} component={() => <StockFundItem1 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/2`} component={() => <StockFundItem2 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/3`} component={() => <StockFundItem3 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/4`} component={() => <StockFundItem4 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/5`} component={() => <StockFundItem5 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/6`} component={() => <StockFundItem6 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/7`} component={() => <StockFundItem7 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/8`} component={() => <StockFundItem8 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/9`} component={() => <StockFundItem9 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/10`} component={() => <StockFundItem10 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/11`} component={() => <StockFundItem11 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/12`} component={() => <StockFundItem12 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/13`} component={() => <StockFundItem13 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/14`} component={() => <StockFundItem14 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/15`} component={() => <StockFundItem15 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/16`} component={() => <StockFundItem16 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/17`} component={() => <StockFundItem17 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/18`} component={() => <StockFundItem18 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/19`} component={() => <StockFundItem19 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/20`} component={() => <StockFundItem20 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/21`} component={() => <StockFundItem21 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/22`} component={() => <StockFundItem22 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/23`} component={() => <StockFundItem23 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/24`} component={() => <StockFundItem24 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/25`} component={() => <StockFundItem25 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/26`} component={() => <StockFundItem26 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/27`} component={() => <StockFundItem27 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/28`} component={() => <StockFundItem28 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/29`} component={() => <StockFundItem29 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/30`} component={() => <StockFundItem30 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/31`} component={() => <StockFundItem31 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/32`} component={() => <StockFundItem32 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/33`} component={() => <StockFundItem33 openSidebar={openSidebar} />} exact />
-        <Route path={`${match.url}/stock-fund/34`} component={() => <StockFundItem34 openSidebar={openSidebar} />} exact />
+        <div>
+          <SidebarItems isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} match={match} />
+
+          <Route path={`${match.url}/stock-fund/1`} component={() => <StockFundItem1 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/2`} component={() => <StockFundItem2 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/3`} component={() => <StockFundItem3 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/4`} component={() => <StockFundItem4 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/5`} component={() => <StockFundItem5 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/6`} component={() => <StockFundItem6 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/7`} component={() => <StockFundItem7 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/8`} component={() => <StockFundItem8 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/9`} component={() => <StockFundItem9 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/10`} component={() => <StockFundItem10 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/11`} component={() => <StockFundItem11 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/12`} component={() => <StockFundItem12 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/13`} component={() => <StockFundItem13 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/14`} component={() => <StockFundItem14 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/15`} component={() => <StockFundItem15 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/16`} component={() => <StockFundItem16 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/17`} component={() => <StockFundItem17 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/18`} component={() => <StockFundItem18 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/19`} component={() => <StockFundItem19 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/20`} component={() => <StockFundItem20 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/21`} component={() => <StockFundItem21 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/22`} component={() => <StockFundItem22 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/23`} component={() => <StockFundItem23 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/24`} component={() => <StockFundItem24 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/25`} component={() => <StockFundItem25 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/26`} component={() => <StockFundItem26 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/27`} component={() => <StockFundItem27 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/28`} component={() => <StockFundItem28 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/29`} component={() => <StockFundItem29 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/30`} component={() => <StockFundItem30 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/31`} component={() => <StockFundItem31 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/32`} component={() => <StockFundItem32 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/33`} component={() => <StockFundItem33 openSidebar={openSidebar} />} exact />
+          <Route path={`${match.url}/stock-fund/34`} component={() => <StockFundItem34 openSidebar={openSidebar} />} exact />
+        </div>
       </Switch>
     </Suspense>
     </>
