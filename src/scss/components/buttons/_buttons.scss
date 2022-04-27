@@ -228,3 +228,30 @@ button.display-disclosure:hover {
 button.display-disclosure svg {
   margin-left: 12px;
 }
+
+.btn.download-transparent {
+  background: #022751;
+  color: #fff;
+  border: 1.5px solid #416a98;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0px 16px;
+  height: 40px;
+}
+.btn.download-transparent svg {
+  margin-left: 8px;
+}
+
+.btn.download-light-blue,
+.btn.download-light-blue:hover {
+  height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+  color: #007DFA;
+  border: 1px solid #007DFA;
+}
+.btn.download-light-blue svg {
+  margin-left: 12px;
+}

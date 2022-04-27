@@ -2,7 +2,8 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import Breadcrumb from '../../../../components/shared-components/Breadcrumbs/InternalControllerRecord'
 import {ReactComponent as StockFundIcon} from '../../../../components/shared-components/svgs/stockFund.svg';
-import { ReactComponent as RightArrow } from '../../../../components/shared-components/svgs/rightArrow.svg'
+import { ReactComponent as RightArrow } from '../../../../components/shared-components/svgs/rightArrow.svg';
+import RecordCardItems from './components/RecordCardItems';
 
 export default function InternalControllerRecord() {
   const history = useHistory()
@@ -24,7 +25,7 @@ export default function InternalControllerRecord() {
         </div>
       </div>
 
-
+      <RecordCardItems />
     </div>
   )
 }

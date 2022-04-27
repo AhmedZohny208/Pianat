@@ -19,7 +19,6 @@ export default function SidebarItems({ isSidebarOpen, closeSidebar }) {
   });
 
   useEffect(() => {
-    console.log(Number(location.pathname.split('/')[4]))
     if (Number(location.pathname.split('/')[4]) >= 1 && Number(location.pathname.split('/')[4]) < 8) {
       myref.current.scrollTo({
         top: 0,
