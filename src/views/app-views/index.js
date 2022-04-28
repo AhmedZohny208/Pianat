@@ -13,7 +13,7 @@ export default function AppViews({ collapsed }) {
         <Route path={`${APP_PREFIX_PATH}/disclosures`} component={lazy(() => import(`./disclosures`))} />
 
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations`} component={lazy(() => import(`./mokhalfat/investmentFundsViolations`))} exact />
-        <Route path={`${APP_PREFIX_PATH}/mokhlfat/Investment-policy-violations`} component={lazy(() => import(`./mokhalfat/investmentPolicyViolations`))} exact />
+        <Route path={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations/Investment-policy-violations`} component={lazy(() => import(`./mokhalfat/investmentPolicyViolations`))} exact />
         <Route path={`${APP_PREFIX_PATH}/mokhlfat/service-provider-violations`} component={lazy(() => import(`./mokhalfat/serviceProviderViolations`))} exact />
 
         <Route path={`${APP_PREFIX_PATH}/indicators/market-size`} component={lazy(() => import(`./indications/marketSizeIndicators`))} exact />

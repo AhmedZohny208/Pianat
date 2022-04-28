@@ -4,7 +4,7 @@ import {
   ArrowLeftOutlined,
   DownOutlined
 } from '@ant-design/icons';
-import {ReactComponent as Dots} from './svgs/dots.svg';
+// import {ReactComponent as Dots} from './svgs/dots.svg';
 import data from '../../views/app-views/home/dataSource'
 
 const menu = () => {
@@ -76,7 +76,11 @@ export default function HomeTable() {
             <button className='btn home-table-btn'>مراجعة النشرة <ArrowLeftOutlined className='ms-2' /></button>
             <div className={`home-table-btn-review ${record.review === false && 'd-none'}`}></div>
           </div>
-          <Dots style={{ marginRight: '6px' }} />
+          {/* <Dots 
+            style={{ marginRight: '6px' }}
+            className='cursor-pointer'
+            onClick={() => console.log('clicked')}
+          /> */}
         </div>
       )
     },

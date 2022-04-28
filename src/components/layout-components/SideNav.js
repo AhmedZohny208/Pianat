@@ -29,10 +29,10 @@ export default function SideNav({ collapsed }) {
             مخالفات صناديق الإستثمار
             <Link to={`${APP_PREFIX_PATH}/mokhlfat/investment-funds-violations`} />
           </Menu.Item>
-          <Menu.Item icon={<Minus />} key="15">
-                        مخالفات السياسات الاستثمارية على مستوى الصناديق
+          {/* <Menu.Item icon={<Minus />} key="15">
+            مخالفات السياسات الاستثمارية على مستوى الصناديق
             <Link to={`${APP_PREFIX_PATH}/mokhlfat/Investment-policy-violations`} />
-          </Menu.Item>
+          </Menu.Item> */}
           <Menu.Item icon={<Minus />} key="4">
             مخالفات مقدمى الخدمات
               <Link to={`${APP_PREFIX_PATH}/mokhlfat/service-provider-violations`} />

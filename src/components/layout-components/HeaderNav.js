@@ -1,12 +1,9 @@
 import React from 'react'
 import { Layout } from 'antd';
-import {
-  MenuUnfoldOutlined,
-  MenuFoldOutlined
-} from '@ant-design/icons';
 import { BiSearch } from 'react-icons/bi'
 import NavProfile from './NavProfile';
 import NavNotification from './NavNotification';
+import { ReactComponent as Humburger } from '../shared-components/svgs/humburger.svg'
 
 const { Header } = Layout;
 
@@ -16,8 +13,8 @@ export default function HeaderNav({ collapsed, toggle }) {
       <div className="d-flex collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
 
         <div className='right-side d-flex align-items-center'>
-          {React.createElement(collapsed ? MenuFoldOutlined : MenuUnfoldOutlined, {
-            className: 'trigger',
+          {React.createElement(collapsed ? Humburger : Humburger, {
+            className: 'trigger cursor-pointer',
             onClick: toggle,
           })}
           <form className="search d-flex position-relative">

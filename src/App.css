@@ -9,6 +9,11 @@ textarea {
   color: #000;
 }
 
+.anticon.anticon-loading.anticon-spin svg {
+  /* fill: #002044; */
+  fill: #ba902e;
+}
+
 /* input[type="password"] {
   -webkit-text-security: disc;
 } */
