@@ -1,0 +1,43 @@
+.contributers-table {
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+.contributers-table p {
+  margin-bottom: 0;
+}
+.contributers-table .gold {
+  background: #ba902e;
+  // border: 1px solid #bbbbbb;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 18.5px 70px;
+}
+.contributers-table .gold p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.contributers-table .contributers-table-content {
+  padding: 16px;
+}
+
+.contributers-table .white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contributers-table .white .left-side {
+  display: flex;
+  align-items: center;
+}
+
+.contributers-table .white .left-side .red {
+  color: #d0342c;
+  font-weight: 700;
+  font-size: 15px;
+}

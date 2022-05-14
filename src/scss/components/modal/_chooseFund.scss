@@ -1,0 +1,13 @@
+.ant-modal.help-modal.chooseFund-modal {
+  width: 428px !important;
+  height: 70% !important;
+}
+.ant-modal.help-modal.chooseFund-modal .ant-modal-content {
+  height: 100% !important;
+  position: relative;
+}
+.ant-modal.help-modal.chooseFund-modal .ant-modal-content div.text-end {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}

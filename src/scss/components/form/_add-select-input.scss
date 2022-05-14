@@ -1,0 +1,19 @@
+.add-select-input {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+.add-select-input input {
+  border: unset;
+  border-bottom: 1px solid #7d7d7d !important;
+  border-radius: 0;
+}
+
+.add-select-input p {
+  margin-bottom: 0;
+  color: #7d7d7d;
+  border-bottom: 1px solid #7d7d7d;
+  width: 100%;
+  margin: 0 10px;
+  cursor: pointer;
+}

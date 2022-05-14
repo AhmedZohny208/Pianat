@@ -1,0 +1,116 @@
+.ant-select {
+  background-color: #fff;
+  padding: 3.8px 0;
+  border: 1px solid #b4b5b8;
+  border-radius: 5px;
+  width: 186px;
+  margin: 0 8px;
+}
+
+.ant-select-selection-placeholder {
+  color: #7d7d7d;
+}
+
+.ant-select svg {
+  fill: #4b506d;
+}
+
+.ant-select.ant-select-focused .ant-select-selector {
+  box-shadow: unset !important;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: unset;
+  background-color: #fff;
+  color: #000;
+}
+.ant-select-selection-item {
+  font-weight: 600;
+}
+
+.ant-select-item-option {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: unset;
+}
+
+.ant-select-dropdown {
+  border: 1px solid #b4b5b8;
+  border-radius: 5px;
+}
+.ant-select-item {
+  color: #000;
+}
+
+// Single Option
+.single-option {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #000;
+}
+.single-option .icon {
+  background-color: #fff;
+  border: 2px solid #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-option .icon .selected {
+  background-color: #000;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: none;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  .single-option
+  .icon
+  .selected {
+  display: block;
+}
+
+.ant-select-selection-item .single-option .icon {
+  display: none;
+}
+
+// Single Option small
+.single-option.sm .icon {
+  width: 16px;
+  height: 16px;
+}
+.single-option.sm .icon .selected {
+  width: 8px;
+  height: 8px;
+}
+
+// currency
+.currency-selector.ant-select-open {
+  border-radius: 5px 5px 0 0;
+}
+.currency-dropdown {
+  padding: 0;
+  border-radius: 0 0 5px 5px;
+  border-top: unset;
+}
+.currency-dropdown .ant-select-item {
+  border-bottom: 1px solid #ddd;
+}
+
+// Rotating repeat
+.rotating-repeat.ant-select-open {
+  border-radius: 5px 5px 0 0;
+  border-bottom-color: transparent;
+}
+.rotating-dropdown {
+  padding: 0;
+  border-radius: 0 0 5px 5px;
+  border-top-color: transparent;
+}

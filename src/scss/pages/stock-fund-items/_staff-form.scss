@@ -1,0 +1,66 @@
+.staff-form-header {
+  color: #000;
+  font-size: 14;
+  font-weight: 400;
+  margin-bottom: 8px;
+  height: 29px;
+  line-height: 26px;
+}
+.staff-form {
+  background: #FFFFFF;
+  border: 1px solid #9A9AB0;
+  border-radius: 5px;
+  padding: 16px 17px;
+}
+.staff-form.names-exist {
+  border-radius: 0px 0px 5px 5px;
+}
+.staff-form .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+.staff-form .input {
+  margin-bottom: 8px;
+}
+.staff-form input {
+  border: 1px solid #B4B5B8;
+  border-radius: 5px;
+  height: 42px;
+}
+
+.hint {
+  color: #0E6027 !important;
+  font-size: 12px !important;
+  margin-top: 4px;
+}
+.hint svg {
+  margin-left: 9px;
+}
+
+.staff-form hr {
+  color: #bbb;
+}
+
+.staff-form .btn.save-changes {
+  width: 151px;
+  background: #2A9F20;
+  border-radius: 3px;
+  padding: 8px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.staff-form .btn.delete-lg {
+  width: 151px;
+  background: #D0342C;
+  border-radius: 3px;
+  padding: 8px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 8px;
+}

@@ -1,0 +1,11 @@
+input.inline-input {
+  height: 42px;
+  background: #ffffff;
+  border: 1px solid #b4b5b8;
+  border-radius: 5px;
+  margin: 0 8px;
+  padding: 8px;
+}
+input.inline-input::placeholder {
+  color: #7d7d7d;
+}

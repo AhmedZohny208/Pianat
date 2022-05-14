@@ -1,0 +1,298 @@
+@import './staff-form';
+@import './contributers-table';
+@import './risks';
+
+.stock-fund-item .content,
+.stock-fund-item .content-rows {
+  color: #000;
+}
+.stock-fund-item .content div {
+  font-size: 14px;
+  color: #000;
+  // padding: 12px 27px 12px 14px;
+  line-height: 26px;
+}
+// .stock-fund-item .content div:first-child {
+//   padding: 24px 27px 24px 14px;
+// }
+
+.stock-fund-item .content > div:nth-of-type(odd),
+.stock-fund-item .content-rows > div:nth-of-type(odd) {
+  background: #fff;
+}
+.stock-fund-item .content > div:nth-of-type(even),
+.stock-fund-item .content-rows > div:nth-of-type(even) {
+  background: #fafbfc;
+}
+
+.stock-fund-item .content-rows > div:first-child {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.stock-fund-item .content .content-w-input,
+.stock-fund-item .content-rows .content-w-input {
+  line-height: 30px;
+}
+
+.stock-fund-item .content p {
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+
+.stock-fund-item .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  width: 18%;
+  padding: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+}
+.stock-fund-item .desc {
+  padding: 14px;
+  width: 82%;
+}
+
+// Hint - Grey
+.hint {
+  margin-bottom: 0px;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+.hint.grey {
+  color: #5e6660;
+  margin-top: 4px;
+}
+
+.hint svg {
+  margin-left: 9px;
+}
+
+// Ordered List & Unordered List
+ol,
+ul {
+  padding-right: unset;
+  margin-right: 18px;
+}
+ol {
+  color: #5e7db3;
+}
+ul {
+  color: #000;
+}
+ol li,
+ul li {
+  list-style: unset;
+  line-height: 26px;
+  margin-bottom: 7px;
+}
+
+// Unordered Inline Items (Item 1)
+.unordered-inline {
+  margin-left: 12px;
+}
+.unordered-inline-bullet {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #c4c4c4;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
+// Add New Category Card (Item 7)
+// ==============================
+.new-category-card {
+  background: #fafbfc;
+  border-radius: 8px;
+  margin: 49px 0;
+  padding: 16px 24px !important;
+}
+.new-category-card hr {
+  color: #ebebeb;
+}
+
+.new-category-card .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 !important;
+  margin-bottom: 18px !important;
+}
+.new-category-card .header div {
+  background: #efefef;
+  border-radius: 5px;
+  width: 45%;
+}
+.new-category-card .header div p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #002044;
+  margin-bottom: 0;
+  padding: 8px 16px;
+}
+.new-category-card .header div p span {
+  font-weight: 700;
+}
+
+.new-category-card ul {
+  background: #efefef;
+  padding: 10px 13px;
+  list-style-position: inside;
+  margin-right: 0;
+}
+.new-category-card ul li:last-child {
+  margin-bottom: 0;
+}
+.new-category-card ul li::marker {
+  font-size: 1.1rem;
+  color: #002044;
+}
+
+.new-category-card-hr {
+  height: 4px;
+  width: 100%;
+  background-color: #ba902e;
+}
+
+// Select boxs & radio boxs
+.new-category-card .select-boxs .raw,
+.radio-boxs .raw {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.new-category-card .select-boxs .raw .left,
+.new-category-card .select-boxs .raw .right,
+.radio-boxs .raw .left,
+.radio-boxs .raw .right {
+  width: 45%;
+}
+
+.new-category-card .select-boxs .raw .left {
+  margin-right: auto;
+}
+
+.new-category-card .select-boxs .raw .label,
+.radio-boxs .raw .label {
+  color: #002044;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.new-category-card .select-boxs .ant-select {
+  margin: 0;
+  padding: 5px !important;
+}
+.new-category-card .select-boxs .ant-select svg {
+  fill: #002044;
+}
+
+.radio-boxs .raw .left,
+.radio-boxs .raw .right {
+  background: #efefef;
+  border-radius: 5px;
+  padding: 8px 16px !important;
+}
+
+.radio-boxs .raw .ant-radio-wrapper span,
+.staff-form .ant-radio-wrapper span {
+  color: #002044;
+}
+
+.ant-radio .ant-radio-inner,
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: #002044;
+}
+
+.radio-boxs .ant-radio-inner::after,
+.staff-form .ant-radio-inner::after {
+  background-color: #002044;
+}
+
+// Black Radio box
+.black .raw .ant-radio-wrapper span {
+  color: #000;
+}
+
+.black .ant-radio .ant-radio-inner,
+.black .ant-radio-input:focus + .ant-radio-inner {
+  border-color: #000;
+}
+
+.black .ant-radio-inner::after {
+  background-color: #000;
+}
+
+.black .ant-radio-checked::after {
+  border-color: #000;
+}
+
+.black .ant-radio-input:focus + .ant-radio-inner {
+  box-shadow: 0 0 0 3px rgb(245, 245, 245);
+}
+
+// Blue Radio box
+.blue .ant-radio-wrapper span {
+  color: #002044;
+}
+
+.blue .ant-radio .ant-radio-inner,
+.blue .ant-radio-input:focus + .ant-radio-inner {
+  border-color: #002044;
+}
+
+.blue .ant-radio-inner::after {
+  background-color: #002044;
+}
+
+.blue .ant-radio-checked::after {
+  border-color: #002044;
+}
+
+.blue .ant-radio-input:focus + .ant-radio-inner {
+  box-shadow: 0 0 0 3px rgb(245, 245, 245);
+}
+
+// Unordered List with grey bullet color
+ul.grey li {
+  line-height: 35px;
+}
+ul.grey li::marker {
+  color: #d9d9d9;
+  width: 8px;
+  height: 8px;
+}
+
+// Wait Signatures
+.wait-signature {
+  background: #f7f7f7;
+  padding: 8px 17px;
+  border-radius: 5px;
+}
+.wait-signature .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.wait-signature .title h6 {
+  margin-bottom: 0px;
+  margin-right: 8px;
+}
+.wait-signature p {
+  margin-bottom: 0;
+  line-height: 26px;
+  color: #2a9f20;
+  text-align: center;
+}
+.wait-signature + .last {
+  display: flex;
+  align-items: center;
+}
+.wait-signature + .last p {
+  margin-bottom: 0;
+  margin-left: 24px;
+}

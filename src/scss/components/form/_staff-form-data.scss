@@ -1,0 +1,81 @@
+.staff-form-data.names-exist {
+  display: block;
+  color: #fff;
+  border: 1px solid #9A9AB0;
+  border-radius: 5px 5px 0px 0px;
+}
+.staff-form-data {
+  display: none;
+}
+
+.staff-form-data .data-header {
+  background: #002044;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.staff-form-data .data-header p {
+  margin-bottom: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.staff-form-data .single-name {
+  background: #FFF;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.staff-form-data .single-name .head {
+  background: #EEEEEE;
+  border-radius: 5px 5px 0px 0px;
+  padding: 7px 11px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staff-form-data .single-name .head .number {
+  font-weight: 600;
+  font-size: 14px;
+  color: #022751;
+}
+
+.staff-form-data .single-name .head .btn.staff-form-modify {
+  width: 88px;
+  background: #022751;
+  border-radius: 3px;
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.staff-form-data .single-name .head .btn.staff-form-delete {
+  width: 88px;
+  background: #D0342C;
+  border-radius: 3px;
+  padding: 5px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 4px;
+}
+
+.staff-form-data .single-name .content {
+  padding: 16px;
+  background: #F8F8F8;
+}
+.staff-form-data .single-name .content .row {
+  background: #F8F8F8;
+}
+.staff-form-data .single-name .content .label {
+  color: #4B506D;
+  margin-bottom: 4px;
+}
+.staff-form-data .single-name .content .value {
+  font-weight: 600;
+}
