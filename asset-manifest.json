@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/pianat-frontend/static/css/main.44f7a498.css",
-    "main.js": "/pianat-frontend/static/js/main.99517a77.js",
+    "main.js": "/pianat-frontend/static/js/main.d5091800.js",
     "static/js/462.c2d5639d.chunk.js": "/pianat-frontend/static/js/462.c2d5639d.chunk.js",
-    "static/js/243.97bda399.chunk.js": "/pianat-frontend/static/js/243.97bda399.chunk.js",
+    "static/js/243.88ee0bc7.chunk.js": "/pianat-frontend/static/js/243.88ee0bc7.chunk.js",
     "static/js/726.58d24437.chunk.js": "/pianat-frontend/static/js/726.58d24437.chunk.js",
     "static/js/407.1be65a8f.chunk.js": "/pianat-frontend/static/js/407.1be65a8f.chunk.js",
     "static/js/561.28957e82.chunk.js": "/pianat-frontend/static/js/561.28957e82.chunk.js",
@@ -110,9 +110,9 @@
     "static/media/arrowDownBlue.svg": "/pianat-frontend/static/media/arrowDownBlue.909ef5d390435daa492e9ce7dc52a386.svg",
     "static/media/ArrowupWhite.svg": "/pianat-frontend/static/media/ArrowupWhite.d2be3a8efa38f89dd5770f96f12fdac1.svg",
     "main.44f7a498.css.map": "/pianat-frontend/static/css/main.44f7a498.css.map",
-    "main.99517a77.js.map": "/pianat-frontend/static/js/main.99517a77.js.map",
+    "main.d5091800.js.map": "/pianat-frontend/static/js/main.d5091800.js.map",
     "462.c2d5639d.chunk.js.map": "/pianat-frontend/static/js/462.c2d5639d.chunk.js.map",
-    "243.97bda399.chunk.js.map": "/pianat-frontend/static/js/243.97bda399.chunk.js.map",
+    "243.88ee0bc7.chunk.js.map": "/pianat-frontend/static/js/243.88ee0bc7.chunk.js.map",
     "726.58d24437.chunk.js.map": "/pianat-frontend/static/js/726.58d24437.chunk.js.map",
     "407.1be65a8f.chunk.js.map": "/pianat-frontend/static/js/407.1be65a8f.chunk.js.map",
     "561.28957e82.chunk.js.map": "/pianat-frontend/static/js/561.28957e82.chunk.js.map",
@@ -139,6 +139,6 @@
   },
   "entrypoints": [
     "static/css/main.44f7a498.css",
-    "static/js/main.99517a77.js"
+    "static/js/main.d5091800.js"
   ]
 }
